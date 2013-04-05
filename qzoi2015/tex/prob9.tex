@@ -1,0 +1,15 @@
+\question[256]{\begin{large}\textbf{The Last But One} \end{large}}
+\vspace{6pt} \par
+令$A$是一个由非负整数组成的序列。我们想要把$A$中的每个数染成要么红要么蓝两个颜色，
+满足一下要求：
+\begin{itemize}
+\item 至少一个元素被染成红色。
+\item 至少一个元素被染成蓝色。
+\item 所有红色数的AND的结果等于所有蓝色数AND的结果。
+\end{itemize}
+\par 你得到了这个序列$A$，你需要计算合法染色方案数。
+\par
+定义一个$\mathbf{Z} \times \mathbf{Z} \to \mathbf{Z}$的函数AND，
+对于一位二进制数，有$1$ AND $1 = 1$，$1$ AND $0 = 0$，$0$ AND $1 = 0$，$0$ AND $0 = 0$。
+对于高位二进制数，可以独立每一位处理，位数不等在前面补0。\par
+给定的序列$A=\{13,10,4,15,4,8,4,2,4,14,12,0\}$。

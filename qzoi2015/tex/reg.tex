@@ -1,0 +1,170 @@
+\question[512]{\begin{large}\textbf{正则表达式} \end{large}} 
+\vspace{6pt} \par
+正则表达式是一个强大的字符串处理工具。在这里我们考虑其简化版本：egrep。
+\par \vspace{6pt}
+{\itshape{\large 基本概念}} \vspace{6pt} \par 
+
+
+\textbf{字符}包括大小写字母、数字、空格、以及各种符号。\textbf{字符串}是由字符链接产生的。
+例如\verb#a#,\verb#b#,\verb#+#,\verb#[#都是字符，而\verb#a+b_-c*d/e#是字符串。
+一个字符串的\textbf{长度}只其包含的字符数。特别的，一个字符也是一个长度为1的字符串。
+%\par
+%为使空格能更好得分辨出来，我们统一用\textbf{（包括答题）}下划线\verb#_#来代替空格。
+\par
+\textbf{正则表达式(Regular Expression)}是一个能描述一个字符串集合的模式。
+设某个正则表达式为$p$，它所能描述的字符串集合为$A$。对于一个字符串$s$，
+如果说$p$能\textbf{匹配}$s$，那么等价于$s \in A$。
+\par
+\textbf{连接(Concatenation)}是最基本的正则表达式操作。设有正则表达式$p_1,p_2$，其对应的集合分别为
+$A_1, A_2$，那么正则表达式$p_1p_2$对应的集合就是$\{ a_1a_2 | a_1 \in A_1, a_2 \in A_2 \}$。
+\par
+大多数字符本身就是一个正则表达式，如字母、数字。它们能且仅能匹配自身。
+还有一些特殊的字符拥有特殊的含义，我们称它们为\textbf{元字符}。
+\par
+\textbf{点号(Dot)}\verb#.#也是一个元字符，它可以匹配任意字符。如果仅想匹配元字符本身，需要在前面加转义符
+\verb#\#。例如，可以用\verb#\.o\.#来匹配\verb#.o.#。
+\par 
+\textbf{字符组(Character Classes)}\verb#[...]#可以用来\textbf{匹配若干字符之一}。
+如想匹配所有单个数字，则可以用\verb#[0123456789]#，或者简写做\verb#[0-9]#。
+\verb#[a-z]#则表示所有小写字母。而\verb#[a-zA-Z]#则匹配大小写所有字母。 \\
+如果我们想搜索单词"grey"，但又不确定它是否写作"gray"，就可以使用正则表达式\verb#gr[ae]y#。
+\\ 类似的，我们有排除性字符组\verb#[^...]#，匹配不在其中的字符。
+如果要排除\verb#^#可以用\verb#[^\^]#。
+
+\par
+\textbf{行的起始与末尾(Start and End of the Line)}可以用元字符\verb#^#和\verb#$#来表示。
+\verb#^#匹配行首，\verb#$#匹配行尾。如\verb#^cat#能匹配以下行：\\
+\verb#cat# \\
+\verb#catch# \\
+\verb#category# \\
+
+类似的，我们可以用\verb#\<#和\verb#\>#分别匹配单词首和单词尾。这道题中，
+\textbf{单词}指连续一段由字母、数字构成的字符串。
+\par
+\textbf{多选(Alternation)}\verb#|#的意思是"或"。依赖它我们能够把不同的子表达式组合成一个
+总表达式。如\verb#Alice|Bob#既能匹配\verb#Alice#又能匹配\verb#Bob#，
+但不能匹配\verb#AliceBob#或者\verb#Alice|Bob#。\verb#|#的优先级非常低。
+如\verb#6|7*#的含义与\verb#6|(7*)#含义相同，不能匹配\verb#677#。
+
+\par
+\textbf{可选(Option)}\verb#?#的意思是前面一项最多匹配一次，i.e. 可以匹配一次也可以不匹配。
+如\verb#colou?r#可以匹配\verb#color#与\verb#colour#。可以用\textbf{括号}\verb#(...)#来将
+一个子表达式变为可选。如\verb#^[0-9]([0-9])?$#可以匹配一个一位数或者两位数。
+
+\par
+除了可选元字符\verb#?#，其他表示重复的还有：
+\begin{itemize}
+\item 星号\verb#*# \quad 前一项出现0次或多次。
+\item 加号\verb#+#  \quad 前一项出现1次或多次。
+\item \verb#{n}#  \quad 前一项恰好出现n次。
+\item \verb#{n,}#  \quad 前一项出现n次以上。
+\item \verb#{n,m}# \quad  前一项出现次数在n次到m次之间。
+\end{itemize}
+\par
+比如要设计一个正则表达式来匹配身份证号，就可以用\\ \verb#^[0-9]{15}|[0-9]{18}$#
+\par 
+\textbf{反向引用(Backreferences)}是括号的另一大用途。之前我们已经介绍过括号的两大用途：
+限制多选项的范围；将若干字符组合为一个单元，受问号或星号之类量词的作用。\\
+在反向引用中，括号能"记住"他们包含的子表达式\textbf{匹配的文本}。
+例如，\\ 用\verb#\<([0-9])\1\>#能匹配所有能被11整除的两位数。用\verb#\n#能提取
+第n个括号的内容。如果使用多个括号，可以用\verb#\1#,\verb#\2#,\verb#\3#等来表示
+第一、第二、第三组括号匹配的文本。括号是按照左括号\verb#(#从左至右的出现顺序进行的。
+
+\vspace{10pt}
+{\itshape{\large 你也来当一回egrep!}} \vspace{6pt} 
+\par 
+给出一个正则表达式，以及若干个字符串，写出所有能匹配到的字符串标号。（完全正确才有分）
+\begin{parts}
+
+\part[32] subtask0
+\\ 正则表达式：\\
+\verb#^[a-z][a-zA-Z0-9_]{4,15}$#
+\\ 给出的字符串：
+\begin{enumerate}
+\item \verb#csimstu#
+\item \verb#zcwwzdjn#
+\item \verb#leocc#
+\item \verb#844122492#
+\item \verb#jack950703#
+\item \verb#fater#
+\item \verb#rapid#
+\item \verb#Petr#
+\item \verb#nizhidaodetaiduole#
+\item \verb#tooyoung toosimple#
+\end{enumerate}
+
+\part[32] subtask1 
+\\ 正则表达式：\\
+\verb#\<http://[-a-z0-9_.:]+/[-a-z0-9_:@&?=+,.!%$]*\.html?\>#
+\\ 给出的字符串：
+\begin{enumerate}
+\item \verb#http://www.google.com.hk#
+\item \verb#http://goojie/foo.html#
+\item \verb#http://www.goomei.com#
+\item \verb#http://www.goodi.html#
+\end{enumerate}
+
+\part[64] subtask2 
+\\ 正则表达式：\\
+\verb#^-[1-9][0-9]*\.[0-9]*|0\.[0-9]*[1-9]$#
+\\ 给出的字符串：
+\begin{enumerate}
+\item \verb#-.2#
+\item \verb#0.234#
+\item \verb#-1.0#
+\item \verb#-1.000#
+\item \verb#1.11#
+\item \verb#-5.012#
+\item \verb#.01#
+\item \verb#-9#
+\item \verb#1.100#
+\item \verb#1.1#
+\item \verb#1e10#
+\end{enumerate}
+
+\part[128] subtask3 
+\\ 正则表达式：\\
+\verb#^1$|^(11+)\1+$#
+\\ 给出的字符串：
+\begin{enumerate}
+\item \verb#1#
+\item \verb#11#
+\item \verb#111#
+\item \verb#1111#
+\item \verb#11111#
+\item \verb#111111#
+\item \verb#1111111#
+\item \verb#11111111#
+\item \verb#111111111#
+\item \verb#1111111111#
+\end{enumerate}
+\end{parts}
+
+
+
+\vspace{10pt}
+{\itshape{\large Let's Design!}} \vspace{6pt} 
+\par 
+按照每道题目要求设计一个正则表达式来匹配给定集合$A$中的字符串，
+表达式的长度不能超过每题的限制。(Hint:最好在开头和结尾加上\verb#^#与\verb#$#)
+（"符合要求"一方面是指设计出来的正则表达式能匹配集合中的每一个字符串，
+另一方面集合以外的字符串都不能被匹配）
+
+\begin{parts}
+\part[16] subtask0 \\
+$A$=\{正则表达式自身\}，长度不超过1。
+
+\part[16] subtask1 \\
+$A$=\{美元金额（如果有小数点，则小数点后一定有2位）\}，长度不超过30。
+
+\part[32] subtask2 \\
+$A$=\{表示有意义时刻的字符串，例如\verb#9:17 am#,\verb#12:30 pm#,
+	\\ 但不能是\verb#99:99 pm#\}。长度不超过40。
+
+\part[64] subtask3 \\
+$A$=\{1到10000中3的倍数\}，长度无限制。
+
+\part[128] subtask4 \\
+$A$=\{长度为$n$的字符串，使得$3x+15y+8z=n$存在非负整数解\}，长度不超过40。
+
+\end{parts}

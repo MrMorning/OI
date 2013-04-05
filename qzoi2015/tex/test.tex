@@ -1,0 +1,48 @@
+\documentclass[12pt]{exam}
+\usepackage[slantfont, boldfont, CJKtextspaces, CJKmathspaces]{xeCJK}
+\usepackage{fontspec,xunicode,xltxtra}
+%\usepackage[pagestyles]{titlesec}
+\usepackage{indentfirst}
+\usepackage[top=1in,bottom=1in,left=1.25in,right=1.25in]{geometry}
+\usepackage{amsmath}
+\usepackage{verbatim}
+
+\setCJKmainfont[BoldFont={黑体}, ItalicFont={楷体_GB2312}]{宋体}
+%\setmainfont{Liberation Serif} 
+%\setsansfont{Liberation Sans} 
+\setmonofont{文泉驿等宽微米黑}
+
+\punctstyle{kaiming} % 开明式标点格式  
+
+\begin{document}
+\title{成都七中2015级奥赛学科夏令营 \\[2ex] \begin{huge} \itshape  信息学能力测试  \end{huge}}
+\author{CDQZ OI Team}
+\maketitle
+\begin{center}
+{\centering
+\textbf{考试时间：1小时，总分：1023}}
+\end{center}
+
+题目说明：由于考试时间十分有限，题目的分值比较奇葩。
+一共10道题，题目编号为1-10。其中编号为$i$的题目分值为$2^{(i-1)}$。
+请注意合理分配时间。
+\\[2ex] 提示：$\sum_{i=0} ^ {i=k-1} 2^i <2^k$，
+
+\begin{questions}
+\pointname{}
+\pointformat{\bfseries\boldmath(Points for this problem: \thepoints)}
+
+\input{prob1}
+\input{prob2}
+\input{prob3}
+\input{prob4}
+\input{prob5}
+\input{prob6}
+\input{prob7}
+\input{prob8}
+\input{prob9}
+\input{reg}
+
+\end{questions}
+
+\end{document}
