@@ -1,0 +1,22 @@
+\newproblem{43E. Race}
+\begin{prob}
+	在一场直道赛车比赛中
+	，有$n(n\le 100)$辆赛车。
+	每辆赛车有$k(k\le 100)$段行程
+	，第i段行程的速度为$v_i$，时间为$t_i$。
+	求总共的超车次数。
+\end{prob}
+
+\begin{sol}
+	枚举两个赛车$i,j$，然后$O(k_i+k_j)$统计答案。
+	\par
+	画一个路程与时间的图像，想象
+	一条竖着的扫描线从左往右扫过去。
+	具体的方法是维护两个指针,表示对于$i,j$
+	在扫描线前一段的行程。情况有：
+	\begin{itemize}
+		\item 两线段交点处（非端点）超车$\Rightarrow$线段相交判断。
+		\item 在两条线段的公共端点上超车$\Rightarrow$特判。
+		\item 在某条线段的端点上超车，另一条线段经过该点$\Rightarrow$特判。
+	\end{itemize}
+\end{sol}

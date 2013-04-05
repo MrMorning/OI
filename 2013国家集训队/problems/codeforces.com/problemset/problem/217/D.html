@@ -1,0 +1,377 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="-1">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="google-site-verification" content="OTd2dN5x4nS4OPknPI9JFg36fKxjqY0i1PSfFPv_J90"/>    
+    <meta name="verify-reformal" content="f56f99fd7e087fb6ccb48ef2" />
+    <title>Problem - 217D - Codeforces</title>
+        <meta name="description" content="Codeforces. Programming competitions and contests, programming community" />
+        <meta name="keywords" content="programming algorithm contest competition informatics olympiads c++ java graphs vkcup" />
+    <meta name="robots" content="index, follow" />
+    <HEAD><!--CombineResourcesFilter-->
+    <LINK href="../../../../stat.codeforces.ru/favicon.png" rel="shortcut icon" type="image/png"/>
+    <LINK href="../../../../stat.codeforces.ru/css/prettify.css" rel="stylesheet" type="text/css"/>
+    <LINK charset="utf-8" href="../../../../codeforces.ru/static/combine/81d5459d81d074fc8d55b62d42856e2f_afb7247773e175c6194b5a4dbff89aeb.css" rel="stylesheet" type="text/css"/>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <LINK href="../../../../stat.codeforces.ru/markitup/skins/markitup/style.css" rel="stylesheet" type="text/css"/>
+    <LINK href="../../../../stat.codeforces.ru/markitup/sets/markdown/style.css" rel="stylesheet" type="text/css"/>
+
+    <SCRIPT charset="utf-8" src="../../../../yandex.st/share/share.js" type="text/javascript"> </SCRIPT>
+    <LINK charset="utf-8" href="../../../../codeforces.ru/static/combine/eeae61f38a42b29407204616d93d8e8_aa3a566ac2a84e49a8e02f83d509fffe.css" rel="stylesheet" type="text/css"/>
+    
+
+    <!--[if IE]>
+        <style>
+            #sidebar {
+                padding-left: 1em;
+                margin: 1em 1em 1em 0;
+            }
+        </style>
+    <![endif]-->
+    
+    <SCRIPT src="../../../../codeforces.ru/static/combine/92a6f5c66e500b5c1433eae7d3f371bb_5dc6637756ba9e44d6304b6267b72667.js" type="text/javascript"> </SCRIPT>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!--/CombineResourcesFilter--></HEAD>
+</head>
+<body>
+
+
+<!-- Copyright � 2008. Spidersoft Ltd -->
+<style>
+A.applink:hover {border: 2px dotted #DCE6F4;padding:2px;background-color:#ffff00;color:green;text-decoration:none}
+A.applink       {border: 2px dotted #DCE6F4;padding:2px;color:#2F5BFF;background:transparent;text-decoration:none}
+A.info          {color:#2F5BFF;background:transparent;text-decoration:none}
+A.info:hover    {color:green;background:transparent;text-decoration:underline}
+</style>
+<div style='BORDER: 1px solid #DCE6F4; MARGIN-TOP: 20px; MARGIN-BOTTOM: 20px; MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px; PADDING: 5px; BACKGROUND-COLOR: #eef8ff;line-height:180%; COLOR: #000000; font-family: Arial; font-size: 8pt; width=100%; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr="#FFFFFFFF", EndColorStr="#F2F5FAFF");'>
+This page was saved using <a class="applink" href="http://www.spidersoft.com"><b>WebZIP 7.1.2.1052</b></a> <a class="applink" href="http://www.spidersoft.com"><b>offline browser</b></a>  (Unregistered) on  11/09/12 16:28:26.<br>
+<b>Address:</b> <a class="info" href="http://codeforces.com/problemset/problem/217/D">http://codeforces.com/problemset/problem/217/D</a><br>
+<b>Title:</b> Problem - 217D - Codeforces &nbsp;&bull;&nbsp; <b>Size:</b> 18905<br></div>
+<!-- /Copyright � 2008. Spidersoft Ltd -->
+
+
+<!-- Codeforces javascripts. -->
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+    window.updateTypography = function () {
+        $("div.ttypography code").addClass("tt");
+        $("div.ttypography pre>code").addClass("prettyprint").removeClass("tt");
+        $("div.ttypography table").addClass("bordertable");
+        prettyPrint();
+    }
+
+    $.ajaxSetup({ scriptCharset: "utf-8" ,contentType: "application/x-www-form-urlencoded; charset=UTF-8" });
+    window.updateTypography();
+
+    Codeforces.signForms();
+
+    $(".second-level-menu-list").lavaLamp({
+        fx: "backout",
+        speed: 1000
+    });
+
+
+    Codeforces.countdown();
+    $("a[rel='photobox']").colorbox();
+
+
+        });
+    </script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-743380-5']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<div id="body">
+
+<div id="header" style="position:relative;">
+    <div style="float:left;">
+            <a href="http://codeforces.com/"><img src="../../../../stat.codeforces.ru/images/codeforces-logo-with-upper-beta.png"/></a>
+            <div style="position:absolute;left:147px;top:41px;">
+                <a href="http://vk.com/" class="logo-href">Sponsored by <img style="position:relative;top:2px;" src="../../../../stat.codeforces.ru/images/vkontakte-tiny-en.png"/></a>
+            </div>
+    </div>
+    <div class="lang-chooser">
+        <div style="text-align: right;">
+            <a href="http://codeforces.com/problemset/problem/217/?locale=en"><img src="../../../../stat.codeforces.ru/images/flags/24/gb.png" title="In English" alt="In English"/></a>
+            <a href="http://codeforces.com/problemset/problem/217/?locale=ru"><img src="../../../../stat.codeforces.ru/images/flags/24/ru.png" title="По-русски" alt="По-русски"/></a>
+        </div>
+        <div>
+                <a href="http://codeforces.com/enter">Enter</a>
+                 | 
+                <a href="http://codeforces.com/register">Register</a>
+                
+        </div>
+    </div>
+    <div style="font-size:0.8em;margin-top:0.25em;position:absolute;right:0;top:4.25em;">
+    </div>
+    <br style="clear: both;"/>
+</div>
+
+    <div class="roundbox menu-box" style="">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+            <div class="roundbox-lb">&nbsp;</div>
+            <div class="roundbox-rb">&nbsp;</div>
+            <div class="menu-list-container">
+
+<ul class="menu-list">
+        <li class=""><a href="http://codeforces.com/">Home</a></li>
+        <li class=""><a href="http://codeforces.com/contests">Contests</a></li>
+        <li class=""><a href="http://codeforces.com/gyms">Gym</a></li>
+        <li class="current"><a href="http://codeforces.com/problemset">Problemset</a></li>
+        <li class=""><a href="http://codeforces.com/ratings">Rating</a></li>
+        <li class=""><a href="http://codeforces.com/help">FAQ</a></li>
+        <li class=""><a href="http://codeforces.com/croc2012">CROC 2012 <img class="icon" src="../../../../stat.codeforces.ru/images/icons/cup.png"/></a></li>
+        <li class=""><a href="http://codeforces.com/bayan201213">Bayan 2012/13 <img class="icon" src="../../../../stat.codeforces.ru/images/icons/cup.png"/></a></li>
+        <li class=""><a href="http://codeforces.com/croc-bmstu-2012">CROC-MBTU 2012 <img class="icon" src="../../../../stat.codeforces.ru/images/icons/cup.png"/></a></li>
+</ul>
+                <form action="/search">
+                    <input class="search" name="query" value="Search by tag..."/>
+                </form>
+                <br style="clear: both;"/>
+            </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("input.search").focus(function() {
+                var val = $(this).val();
+                if (val.indexOf("...") > 0) {
+                    $(this).val("");
+                }
+            });
+        });
+    </script>
+        <br style="height:3em; clear: both;"/>
+        <div style="position: relative;">
+                <div id="sidebar">
+
+    <div class="roundbox sidebox" style="">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+        <table class="rtable">
+            <tbody>
+                <tr>
+                            <th class="left" style="width:100%;">Codeforces Round #134 (Div. 1)</th>
+                </tr>
+                    <tr>
+                                <td class="left  dark" colspan="1"><span class='contest-state-phase'>Finished</span></td>
+                    </tr>
+                    <tr>
+                                <td class="left bottom" colspan="1"><span class='contest-state-regular countdown' home='http://stat.codeforces.ru' noRedirection='true' textBeforeRedirect=''><center>
+</center></span></td>
+                    </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <div class="roundbox sidebox" style="">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+        <div class="caption titled">&rarr; Problem tags
+            <div class="top-links">
+            </div>
+        </div>
+<div style="padding: 0.5em;">
+    <div class="roundbox " style="margin:2px; padding:0 3px 2px 3px; background-color:#f0f0f0;float:left;">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+            <div class="roundbox-lb">&nbsp;</div>
+            <div class="roundbox-rb">&nbsp;</div>
+<span class="tag-box" style="font-size:12px;" title="Bitmasks">
+    bitmasks
+</span>
+    </div>
+    <div class="roundbox " style="margin:2px; padding:0 3px 2px 3px; background-color:#f0f0f0;float:left;">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+            <div class="roundbox-lb">&nbsp;</div>
+            <div class="roundbox-rb">&nbsp;</div>
+<span class="tag-box" style="font-size:12px;" title="Brute force">
+    brute force
+</span>
+    </div>
+    <div class="roundbox " style="margin:2px; padding:0 3px 2px 3px; background-color:#f0f0f0;float:left;">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+            <div class="roundbox-lb">&nbsp;</div>
+            <div class="roundbox-rb">&nbsp;</div>
+<span class="tag-box" style="font-size:12px;" title="Combinatorics">
+    combinatorics
+</span>
+    </div>
+    <div class="roundbox " style="margin:2px; padding:0 3px 2px 3px; background-color:#f0f0f0;float:left;">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+            <div class="roundbox-lb">&nbsp;</div>
+            <div class="roundbox-rb">&nbsp;</div>
+<span class="tag-box" style="font-size:12px;" title="Dfs and similar">
+    dfs and similar
+</span>
+    </div>
+    <div class="roundbox " style="margin:2px; padding:0 3px 2px 3px; background-color:#f0f0f0;float:left;">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+            <div class="roundbox-lb">&nbsp;</div>
+            <div class="roundbox-rb">&nbsp;</div>
+<span class="tag-box" style="font-size:12px;" title="Mathematics including integration, differential equations, etc">
+    math
+</span>
+    </div>
+    <div style="clear:both;text-align:right;font-size:11px;">
+            <span title="Please login into the Codeforces" class="notice">No tag edit access</span>
+    </div>
+</div>
+    </div>
+
+<form id="addTagForm" action="/data/problemTags" method="post" style="display:none;">
+    <input name="action" type="hidden" value="addTag"/>
+    <input name="problemId" type="hidden" value="1610"/>
+    <input name="tagName" type="hidden" value=""/>
+</form>
+
+<form id="removeTagForm" action="/data/problemTags" method="post" style="display:none;">
+    <input name="action" type="hidden" value="removeTag"/>
+    <input name="problemId" type="hidden" value="1610"/>
+    <input name="tagName" type="hidden" value=""/>
+</form>
+
+<script type="text/javascript">
+    $(".tag-box img").click(function () {
+        var tagName = $(this).attr("value");
+        Codeforces.confirm("Are you sure you want to remove this tag?", function () {
+            $("#removeTagForm input[name=tagName]").val(tagName);
+            $("#removeTagForm").submit();
+        }, function () {
+        }, "Yes", "No");
+    });
+
+    $("#addTagLink").click(function () {
+        $(this).hide();
+        $("#addTagLabel").show();
+        return false;
+    });
+
+    $("#addTagSelect").change(function () {
+        var tagName = $(this).val();
+        if (tagName === "") {
+            $("#addTagLabel").hide();
+            $("#addTagLink").show();
+        } else {
+            $("#addTagForm input[name=tagName]").val(tagName);
+            $("#addTagForm").submit();
+        }
+    });
+</script>
+
+<style type="text/css">
+#new-resource-form tr td {
+padding-top: 0.5em;
+}
+#new-resource-form input:not([type="submit"]) {
+font-size: 0.8em;
+}
+#new-resource-form select {
+font-size: 0.8em;
+}
+</style>
+<div class="roundbox sidebox sidebar-menu" style="">
+<div class="roundbox-lt">&nbsp;</div>
+<div class="roundbox-rt">&nbsp;</div>
+<div class="caption titled">&rarr; Contest materials
+<div class="top-links">
+</div>
+</div>
+<ul>
+<li>
+<span>
+<a href="http://codeforces.com/blog/entry/5083" title="Codeforces Round #134" target="_blank">Announcement</a>
+</span>
+<span style="float: right;">
+<img class="delete-resource-link" resourceId="1148" resourceName="Codeforces Round #134"
+resourceManual="true" src="../../../../stat.codeforces.ru/images/icons/close-10x10.png"
+style="position: relative;bottom: -1px;left: 1px;cursor: pointer;"/>
+</span>
+<div style="clear: both;"></div>
+</li>
+<li>
+<span>
+<a href="http://codeforces.com/blog/entry/5285" title="Editorial for Codeforces Round #134" target="_blank">Tutorial</a>
+</span>
+<span style="float: right;">
+<img class="delete-resource-link" resourceId="1196" resourceName="Editorial for Codeforces Round #134"
+resourceManual="true" src="../../../../stat.codeforces.ru/images/icons/close-10x10.png"
+style="position: relative;bottom: -1px;left: 1px;cursor: pointer;"/>
+</span>
+<div style="clear: both;"></div>
+</li>
+</ul>
+</div>                </div>
+                <div id="content" class="content-with-sidebar">
+                <div class="second-level-menu">
+<ul class="second-level-menu-list">
+    <li class="current"><a href="http://codeforces.com/problemset">Problems</a></li>
+    <li><a href="http://codeforces.com/problemset/submit">Submit</a></li>
+    <li><a href="http://codeforces.com/problemset/status">Status</a></li>
+    <li><a href="http://codeforces.com/problemset/standings">Standings</a></li>
+    <li><a href="http://codeforces.com/problemset/customtest">Custom test</a></li>
+</ul>
+</div>
+
+<div class="ttypography"><div class="problem-statement"><div class="header"><div class="title">D. Bitonix' Patrol</div><div class="time-limit"><div class="property-title">time limit per test</div>2 seconds</div><div class="memory-limit"><div class="property-title">memory limit per test</div>256 megabytes</div><div class="input-file"><div class="property-title">input</div>standard input</div><div class="output-file"><div class="property-title">output</div>standard output</div></div><div><p>Byteland is trying to send a space mission onto the Bit-X planet. Their task is complicated by the fact that the orbit of the planet is regularly patrolled by Captain Bitonix, the leader of the space forces of Bit-X.</p><p>There are <span class="tex-span"><i>n</i></span> stations around Bit-X numbered clockwise from 1 to <span class="tex-span"><i>n</i></span>. The stations are evenly placed on a circular orbit, so the stations number <span class="tex-span"><i>i</i></span> and <span class="tex-span"><i>i</i> + 1</span> <span class="tex-span">(1 ≤ <i>i</i> &lt; <i>n</i>)</span>, and the stations number 1 and <span class="tex-span"><i>n</i></span>, are neighboring. The distance between every pair of adjacent stations is equal to <span class="tex-span"><i>m</i></span> space miles. To go on a patrol, Captain Bitonix jumps in his rocket at one of the stations and flies in a circle, covering a distance of at least one space mile, before finishing in some (perhaps the starting) station.</p><p>Bitonix' rocket moves by burning fuel tanks. After Bitonix attaches an <span class="tex-span"><i>x</i></span>-liter fuel tank and chooses the direction (clockwise or counter-clockwise), the rocket flies exactly <span class="tex-span"><i>x</i></span> space miles along a circular orbit in the chosen direction. Note that the rocket has no brakes; it is not possible for the rocket to stop before depleting a fuel tank.</p><p>For example, assume that <span class="tex-span"><i>n</i> = 3</span> and <span class="tex-span"><i>m</i> = 60</span> and Bitonix has fuel tanks with volumes of 10, 60, 90 and 100 liters. If Bitonix starts from station 1, uses the 100-liter fuel tank to go clockwise, then uses the 90-liter fuel tank to go clockwise, and then uses the 10-liter fuel tank to go counterclockwise, he will finish back at station 1. This constitutes a valid patrol. Note that Bitonix does not have to use all available fuel tanks. Another valid option for Bitonix in this example would be to simply use the 60-liter fuel tank to fly to either station 2 or 3.</p><p>However, if <span class="tex-span"><i>n</i></span> was equal to 3, <span class="tex-span"><i>m</i></span> was equal to 60 and the only fuel tanks available to Bitonix were one 10-liter tank and one 100-liter tank, he would have no way of completing a valid patrol (he wouldn't be able to finish any patrol exactly at the station).</p><p>The Byteland space agency wants to destroy some of Captain Bitonix' fuel tanks so that he cannot to complete any valid patrol. Find how many different subsets of the tanks the agency can destroy to prevent Captain Bitonix from completing a patrol and output the answer modulo <span class="tex-span">1000000007</span> <span class="tex-span">(10<sup class="upper-index">9</sup> + 7)</span>.</p></div><div class="input-specification"><div class="section-title">Input</div><p>The first line of the input contains three integers <span class="tex-span"><i>n</i></span> (<span class="tex-span">2 ≤ <i>n</i> ≤ 1000</span>) — the number of stations, <span class="tex-span"><i>m</i></span> (<span class="tex-span">1 ≤ <i>m</i> ≤ 120</span>) — the distance between adjacent stations, and <span class="tex-span"><i>t</i></span> (<span class="tex-span">1 ≤ <i>t</i> ≤ 10000</span>) — the number of fuel tanks owned by Captain Bitonix.</p><p>The second line of the input contains <span class="tex-span"><i>t</i></span> space-separated integers between <span class="tex-span">1</span> and <span class="tex-span">10<sup class="upper-index">9</sup></span>, inclusive — the volumes of Bitonix' fuel tanks.</p></div><div class="output-specification"><div class="section-title">Output</div><p>Output a single number — the number of distinct subsets of tanks that the Bytelandian space agency can destroy in order to prevent Captain Bitonix from completing a patrol, modulo <span class="tex-span">10<sup class="upper-index">9</sup> + 7</span>.</p></div><div class="sample-tests"><div class="section-title">Sample test(s)</div><div class="sample-test"><div class="input"><div class="title">Input</div><pre>7 6 5<br />5 4 12 6 5<br /></pre></div><div class="output"><div class="title">Output</div><pre>6<br /></pre></div><div class="input"><div class="title">Input</div><pre>3 60 2<br />10 100<br /></pre></div><div class="output"><div class="title">Output</div><pre>4<br /></pre></div></div></div><div class="note"><div class="section-title">Note</div><p>All the fuel tanks are distinct, even if some of them have the same capacity.</p></div></div></div>            </div>
+        </div>
+          <br style="clear:both;"/> 
+          <div id="footer">
+               <div><a href="http://codeforces.com/">Codeforces</a> (c) Copyright 2010-2012 Mike Mirzayanov</div>
+               <div>The only programming contests Web 2.0 platform</div>
+               
+               <div>Server time: 11/09/2012 12:27PM.</div>
+          </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            Codeforces.focusOnError();
+        });
+    </script>
+</div>    
+</body>                                       
+</html>                                       

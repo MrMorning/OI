@@ -1,0 +1,48 @@
+\section{三角形不等式的启示 Inspiration of Triangle Inequality}
+\subsection{预备知识 Preliminary}
+图论中最为经典的例子莫过于最短路了。在这里只讨论单源最短路(SSSP)。
+设$f[i]$为目前已知的从源点$s$到$i$顶点的最短路径估计，$f^*[i]$为实际最短路。则显然$f[i] \geq f^*[i]$。
+
+\subsubsection{松弛性质 Relaxation Property}
+\par 令$d[u][v] = \left\{ \begin{array}{ll}
+	\min\{p.weight\} & \text{存在$u$到$v$的路径$p$} \\
+	\infty & \text{$u$到$v$不存在路径}
+	\end{array} \right.$
+
+\par 可以得到三角形不等式：
+\begin{equation} \label{eq:tri}
+\forall u, v \in V, f^*[u] \leq f^*[v] + d[v][u]
+\end{equation}
+
+若发现对于$v$节点，有$f[v] > f[u] + d[u][v]$,则可以更新$f[v]$使其更接近目标$f^*[v]$,即让 $f[v] = f[u] + d[u][v]$。这便是松弛操作(relaxation)。而几乎所有的最短路算法都依赖于松弛操作。
+\par 若对任何节点都无法松弛，那么有$f = f^*$。反之亦然。证明在此略过。
+
+\subsubsection{几个常用算法简介 Some Known Algorithms}
+\begin{center}
+\begin{tabular}{|l|l|p{8cm}|}
+\hline
+算法名称 & 时间复杂度 & 实现原理 \\ \hline
+Bellman-Ford & $O(|V||E|)$ & 如果最短路存在，则每个顶点最多经过一次，因此不超过$|V|-1$条边。由最优性原理，只需依次考虑经过边数为$1,2,\ldots,|V|-1$的最短路。对每条边松弛$|V|-1$次即可。\\ \hline
+SPFA & $O(k|E|)$ & 此算法为Bellman-Ford的改进。并不是每次松弛都是有价值的。只需每次将$f$值变化了的点加入队列，更新次数降低，实际运行效果非常好。\\ \hline
+Dijkstra & $O(|E| + |V| \log |V|)$ & 采用标记永久化技术（亦即贪心），保证每次加入点时已求出最短路。不适用于含负边权的图。\\ \hline
+DP(递推) & $O(|V| + |E|)$ & 按拓扑关系递推。只适用于DAG(有向无环)图。\\
+\hline
+\end{tabular}
+\end{center}
+\par 从上表可以看出，对于特殊性较高的图，往往可以利用性质，设计出非常高效的算法。
+
+\subsection{差分约束系统 System of Difference Constraints}
+差分约束系统是指许多形如$x_{a_k} - x_{b_k} \leq c_k$的不等式组。如果求出一个特解$\{x_i\}$，那么所有$\{x_i + k\}$都是一组解\footnote{但无法生成所有解}。所以关键就在于找到一组特解。\par
+如果给约束条件变变形，就成了$x_{a_k} \leq x_{b_k} + c_k$，这不就是\eqref{eq:tri}吗？
+\par 给每个$x_i$建立一个对应的顶点，每个约束条件建立一条边，求一遍SSSP，得到的$f = f^*$就是一组解。\par
+如果约束条件是$x_i - x_j \geq c_k$呢？其实只要两端同时乘以-1，就转化为了原问题。即便不转化，对比\eqref{eq:tri}，我们发现本质是在求最长路，最长路的对偶问题就是边权为负的最短路！\par
+还有一些特殊情况需要注意。比如对单个未知数的限制。设一附加源点$s$。由于$f[s] = 0$，所以对$x_i$的约束也可变形为$x_i - x_s \leq c_k$。从$s$直接连边即可解决。
+\par 如果边权全为正，可以采用效率更高的Dijkstra算法。
+\par 下面，看看差分约束系统在信息学中的应用吧。
+
+\input{candy}
+
+\subsection{一些思考 Some Thoughts}
+如果约束条件未知数的系数不再是0、1,而是任意非负实数呢？即求解不等式组$\{p_k x_{a_k} - q_k x_{b_k} \leq c_k \, | p_k,q_k \ge 0\}$。\par
+先做恒等变换，等价于求解$\{x_{a_k} \leq \frac{q_k}{p_k}x_{b_k} + \frac{c_k}{p_k}\}$，如果用SPFA动态更新，直到无法获得更优解，就和最短路没什么两样了。只是复杂度不好估计。\par
+如果两元关系不再是作差，而是之和，又如何在满足约束条件的情况下最小化变元之和？如果不再是两元，而是更多，又怎么办？最高次不再是1，单纯形法\footnote{一种解决线性规划的通法}也失效，图能辅助解决吗？这就是接下来所要探索的内容。

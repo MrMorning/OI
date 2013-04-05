@@ -1,0 +1,22 @@
+\section{第四题}
+首先证明：$S_n$发散(当$n$趋于正无穷时，$S_n$趋于正无穷) \par
+设$f(x) = \ln x - (x-1), f'(x) = \frac{1}{x} - 1 = \frac{1-x}{x}$.
+当$x \ge 1$时，$f'(x) \le 0$, $\because f(1) = 0, \therefore x > 1$时，$f(x) < 0$,
+$\therefore \ln x < x-1$.  令$x = \frac{n+1}{n}$, $\therefore \ln \frac{n+1}{n} < \frac{1}{n}$,
+$\therefore S_n=1+\frac{1}{2}+ \ldots + \frac{1}{n} > \ln \frac{2}{1} + \ldots + \ln \frac{n+1}{n} = \ln(n+1)$.
+$\because n$ 趋于正无穷时 $\ln (n+1)$趋于正无穷，$\therefore S_n$发散. \par
+下面用反证法证明命题. 
+即设存在$0 \le a < b \le 1$，使$\{ S_n - [S_n] \}$中只有有限项属于$(a, b)$,
+故存在$N$, 使$n > N$时，$S_n - [S_n]$无一项属于$(a, b)$. 设$N' = [\frac{1}{b-a}] + 1$,
+记$M = \max \{ N, N' \}$,则$n > M$时，$S_{n+1} - S_n < \frac{1}{M+1} < b-a$，即$S_n$"步长"小于$b-a$.
+设$k = [S_{M+1}]$, $\therefore S_{M+1} \in [k, k+1)$, $ \because S_{M+1}-[S_{M+1}] \not \in (a, b)$. \par
+\begin{enumerate}
+	\item $S_M < k+a$. $\therefore S_n < k+a$,否则存在$j \in N^*$, $S_j < k+a, S_{j+1} > k+b$, 
+		显然$j \ge M$. $\therefore S_{j+1} - S_j > b-a$, 与$S_{j+1} - S{j} < b-a$矛盾. $\therefore S_n < k+a$,
+		与$S_n$发散矛盾.
+	\item $S_M > k+b$. $\therefore S_n < k+1+a$,否则存在$j \in N^*$, $S_j < k+1+a, S_{j+1} > k+1+b$.
+		显然$j \ge M$. $\therefore S_{j+1}-S_j > b-a$与$S_{j+1}-S_j < b-a$矛盾. $\therefore S_n <k+1+a$,
+		与$S_n$发散矛盾.
+\end{enumerate}
+
+综上，矛盾，故命题成立. 即对$0 \le a < b \le 1$的实数$a,b$，数列$\{ S_n-[S_n] \}$中有无穷多项属于$(a,b)$

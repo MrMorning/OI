@@ -1,0 +1,57 @@
+\documentclass[cjk]{beamer}
+\usetheme{Boadilla}
+\usepackage[slantfont, boldfont, CJKtextspaces, CJKmathspaces]{xeCJK}
+\usepackage{fontspec,xunicode,xltxtra}
+%\usepackage[pagestyles]{titlesec}
+\usepackage{indentfirst}
+%\usepackage[top=1in,bottom=1in,left=1.25in,right=1.25in]{geometry}
+%\usepackage{amsmath}
+%\usepackage[usenames,dvipsnames]{color}
+%\usepackage[colorlinks,linkcolor=red,anchorcolor=Blue,citecolor=green]{hyperref}
+
+\setCJKmainfont[BoldFont={黑体}, ItalicFont={楷体_GB2312}]{宋体}
+%\setmainfont{Liberation Serif} 
+%\setsansfont{Liberation Sans} 
+\setmonofont{YaHei Consolas Hybrid}
+
+\punctstyle{kaiming} % 开明式标点格式  
+
+\title[FFT]{FFT}
+\author[csimstu,zcwwzdjn]{\small\itshape{李凌霄，王迪}}
+\institute[CDQZ]{
+	{\small\itshape 成都七中} \\[0.5ex]
+		\texttt{csimstu@gmail.com, zcwwzdjn@hotmail.com}
+}
+
+\begin{document}
+
+\begin{frame}[plain]
+\titlepage
+\end{frame}
+
+\begin{frame}{A sample slide}
+
+A displayed formula:
+
+\[
+\int_{-\infty}^\infty e^{-x^2} \, dx = \sqrt{\pi}
+\]
+
+An itemized list:
+
+\begin{itemize}
+\item itemized item 1
+\pause
+\item itemized item 2
+\item itemized item 3
+\end{itemize}
+
+\begin{theorem}
+In a right triangle, the square of hypotenuse equals
+the sum of squares of two other sides.
+\end{theorem}
+
+\end{frame}
+
+\end{document}
+

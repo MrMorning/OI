@@ -1,0 +1,87 @@
+\newproblem{10E. Greedy Change}
+\begin{prob}
+	给定一个货币系统，求最小的
+	$w$，使得贪心（从高价值货
+	币开始能选就选）使用的货币不是最优解（即个数不是最少的）。
+	$n \le 400$。
+\end{prob}
+
+\begin{sol}
+	专门有一篇论文针对这题
+	《A Polynomial-time Algorithm for the Change-Making Problem》，
+	下面仅是对该论文的简要重述。
+	大致思想是找到$O(n^2)$个可能出现反例的$w$，然后每个$O(n)$验证。\par
+	首先是几个定义。
+	\begin{definition}
+		定义一个\textbf{货币系统}为$n$维向量$C = (c_1, c_2, \cdots, c_n)$。
+		定义$x$在该货币系统下的\textbf{表达}为$V = (v_1, v_2, \cdots, v_n)$，
+		即$V \cdot C = x$。定义$|V|$为$V$用的货币个数。
+	\end{definition}
+	
+	\begin{definition}
+		$x$的\textbf{贪心表达}$G(x)$为$x$的表达中字典序最大的。
+	\end{definition}
+	显然，$x < y \Rightarrow G(x) < G(y)$。
+	
+	\begin{definition}
+		$x$的\textbf{最小表达}$M(x)$为最小大小的表达中字典序最大的。
+	\end{definition}
+	于是，目标变成了找到最小的$w$，使$M(w) \not = G(w)$。
+	
+	\begin{theorem}
+		称$U$是\textbf{贪心}的，当$U = G(U \cdot C)$；
+		是\textbf{最小}的，当$U = M(U \cdot C)$。那么：
+		\begin{enumerate}
+			\item 如果$U \subset V$，且$V$是贪心的，那么$U$是贪心的。
+			\item 如果$U \subset V$，且$V$是最小的，那么$U$是最小的。
+		\end{enumerate}
+	\end{theorem}
+	
+	\begin{proof}
+		注意到向量加法对字典序的保序性：
+		\begin{displaymath}
+			A \le B \Leftrightarrow A + D \le B + D
+		\end{displaymath}
+		设$U'$为$U \cdot C$的任意一个表达。于是
+		\begin{eqnarray}
+		U' \cdot C &=& U \cdot C \nonumber \\
+		(V - U + U') \cdot C &=& V \cdot C \nonumber \\
+		V - U + U' &\le& V \nonumber \\
+		U' &\le& U \nonumber
+		\end{eqnarray}
+		对于最小的证明，只需将$\le$替换成$\sqsubseteq$即可。
+	\end{proof}
+	
+	下面开始构造可能的反例集合。设$w$为最小的使$G(w) \not = M(w)$的
+	最小正整数。
+	一个重要的结论是$G(w)$和$M(w)$中非0项的交集为空。否则可以同时
+	减去某个$c_i$仍然满足$G(w) \not = M(w)$，故$w$不是最小的了。
+	\par
+	令$M(w) = (m_1, m_2, \cdots, m_n)$，$i,j$为第一个和最后一个
+	非0项的下标。由于$M(w) < G(w)$，因此$G(w)$第$i$项为0，前
+	$i-1$项中有一项非0。
+	\begin{theorem}
+		$M(w)$与$G(c_{i-1}-1)$相比，第$1$到$j-1$项相同，
+		第$j$项大$1$，其余项全为0。
+	\end{theorem}
+	\begin{proof}
+		因为$G(w)$前$i-1$项有一个非0，故$w \le c_{i-1}$。
+		另一方面，将$M(w)$第$j$项减1得到$w-c_j$的最小且贪心
+		表达。对比$M(w-c_j)=G(w-c_j)$与$M(w)$，可以发现前$i-1$项
+		都为0，故$w-c_j < c_{i-1}$。
+		\par
+		令$V = (v_1, v_2, \cdots, v_n) = G(c_{i-1}-1)$。由于
+		$c_{i-1} - 1 \ge c_i, v_i \not = 0$，可以将$v_i$和$m_i$
+		同时减1得到$G(c_{i-1}-1-c_i)$和$G(w-c_i)$。有前面的
+		不等式可知，$G(c_{i-1}-1-c_i) < G(w-c_i)$，将$i$位置
+		的1加回去不影响相对字典序。故$V < M(w)$。\par
+		另外，若将$m_j$减1，得到$G(w-c_j)$。因为$w-c_j \le c_{i-1}-1$，
+		有$G(w-c_j) \le V$。综合可得$G(w-c_j) \le V < M(w)$。
+		而$G(w-c_j)$与$M(w)$仅在$j$位置上差1，故$V$只能
+		在$j$位置之后与$M(w)$不同。又因为$m_{j+1},m_{j+2}, \cdots, m_n$
+		全为0，$V$只能在$j$位置比$M(w)$小。而$G(w-c_j) \le V$，
+		所以$m_j - 1 \le v_j$。因此，$m_j$只能取$v_j+1$。
+	\end{proof}
+	通过枚举$i,j$，就能算得$M(w)$，以及$w$。再$O(n)$求出$G(w)$。
+	总复杂度是$O(n^3)$。
+\end{sol}

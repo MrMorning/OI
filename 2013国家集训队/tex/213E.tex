@@ -1,0 +1,17 @@
+\newproblem{213E. Two Permutations}
+\begin{prob}
+	给出两个排列：一个是长度为$n$的$a$排列，
+	另一个是长度为$m$的$b$排列。问有多少
+	个$d$，使得$a$排列所有数加上$d$后是
+	$b$排列的子序列。$n \le m \le 2 \times 10^5$。
+\end{prob}
+
+\begin{sol}
+	从小到大枚举$d$。维护一个数组$c$。
+	一开始$c[b^{-1}[i]]=i$仅当$1 \le i \le d$。
+	每次枚举到$d$时，将$c[b^{-1}[d-n]]$设为0，
+	$c[b^{-1}[d]]$设为$d$。对$c$整个求hash，设
+	结果为$p$。设$a$的hash为$q$。那么当
+	$p = q + 11\cdots 1 \times d$时，$d$
+	满足要求。用线段树实现，复杂度是$O(m\log m)$。
+\end{sol}

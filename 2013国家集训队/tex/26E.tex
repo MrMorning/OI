@@ -1,0 +1,28 @@
+\newproblem{26E. Multithreading}
+\begin{prob}
+	有$N(N \le 100)$个子过程：
+	\begin{verbatim}
+	    repeat n_i times
+	       y_i := y
+	         y := y_i + 1
+	    end repeat
+	\end{verbatim}
+	\par
+	其中$y$为全局变量，而$y_i$相互独立
+	。每次可以命令一个子程序运行当
+	前行并跳到下一行。设计一个长度为$2N$的
+	操作序列，使得最后$y = W(|W|<=10^9)$。$n_i \le 1000$。
+\end{prob}
+
+\begin{sol}
+	构造题。首先，如果不满足$1 \le W \le \sum n_i$
+	一定无解。否则有以下三种有解情况：
+	\begin{enumerate}
+		\item $N=1, W=n_1$。这种情况很显然。
+		\item $N\ge 2,W\ge 2$。可以设计一个$W=2$
+			的序列：1,(3到$n$全部用掉),$(n_2-1)$次2,
+			1,2,4$(n_1-1)$次1,2。然后对于多出来的$W-2$
+			，将中间的循环移到最后即可。
+		\item $N\ge 2, W=1$且存在$n_i=1$: i, everything else, i.
+	\end{enumerate}
+\end{sol}

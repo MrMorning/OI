@@ -1,0 +1,38 @@
+\documentclass[a4paper]{article}
+\usepackage[slantfont, boldfont, CJKtextspaces, CJKmathspaces]{xeCJK}
+\usepackage{fontspec,xunicode,xltxtra}
+\usepackage[pagestyles]{titlesec}
+\usepackage{indentfirst}
+\usepackage[top=1in,bottom=1in,left=1.25in,right=1.25in]{geometry}
+\usepackage{amsmath}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[colorlinks,linkcolor=red,anchorcolor=Blue,citecolor=green]{hyperref}
+
+\setCJKmainfont[BoldFont={黑体}, ItalicFont={楷体_GB2312}]{宋体}
+%\setmainfont{Liberation Serif} 
+%\setsansfont{Liberation Sans} 
+\setmonofont{文泉驿等宽微米黑}
+
+\punctstyle{kaiming} % 开明式标点格式  
+
+\begin{document}
+
+\title{CDQZ OI Test for DP}
+\author{2013 OI Team}
+\maketitle
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+题目名称 & 文件名 & 时间限制 & 内存限制 \\ \hline
+子串与子序列 & substr.*\{in,out,cpp,pas,c\} & 2s & 256MB\\ \hline
+人品保卫战 & defence.*\{in,out,cpp,pas,c\} & 1s & 256MB \\ \hline
+怪盗与新一的乱步 & museum.*\{in,out,cpp,pas,c\} & 10s & 256MB \\ \hline
+\end{tabular}
+\end{center}
+\tableofcontents
+
+\include{substr}
+\include{defence}
+\input{museum}
+
+\end{document}

@@ -1,0 +1,19 @@
+\newproblem{185D. Visit of the Great}
+\begin{prob}
+	给出$l,r,p(l,r \le 10^{18}, p \le 10^9)$，计算$lcm(k^{2^l}+1, k^{2^{l+1}}, 
+	\cdots, k^{2^r}+1) \mod p$，$p$是质数。$10^5$组数据。
+\end{prob}
+
+\begin{sol}
+	首先尝试简化$lcm$。可以发现，$gcd(k^{2^i}+1, k^{2^{j}}+1)
+	= gcd(k^{2^i}+1, 2)$。于是若$k$是奇数，那么所有
+	数都含2这个质因子，且公共的质因子仅有2；若是偶数，那么
+	两两互质。考虑偶数情况：
+	\begin{eqnarray}
+		lcm & = & (k^{2^l}+1) \cdot (k^{2^{l+1}}+1) \cdots (k^{2^r}+1) \\
+			& = & \frac{k^{2^{r+1}}-1}{k^{2^{l}}-1} \\
+		   & = & (k^{2^l}+1) \cdot (k^{2^{l+1}}+1) \cdots (k^{2^r}+1)
+	\end{eqnarray}
+	如果$(2)$中分母模$p$为0，那么通过$(3)$式可以得到答案为$2^{r-l} \mod p$，
+	否则直接逆元。奇数情况类似，不再赘述。
+\end{sol}

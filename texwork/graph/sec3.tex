@@ -1,0 +1,20 @@
+\section{KM算法与二元规划 Kuhn–Munkres Algorithm and the System of Two Variables}
+\subsection{预备知识 Preliminary}
+KM算法用来解决最大权匹配问题： 在一个二分图内，左顶点集合为$X$，右顶点集合为$Y$，现对于每条边$(i, j)$有权$w(i,j)$，求一种匹配使得
+\begin{displaymath}
+\sum_{
+	\text{$(i,j)$在匹配中}
+	} w(i,j)
+\end{displaymath}
+最大。
+
+\par KM算法的核心思想是：给每一个顶点一个标号(顶标)将原问题转化为求完备匹配。
+设$X_i$的顶标为$A_i$，$Y_i$的顶标为$B_i$，那么在算法执行过程中的任意时刻，$A_i + B_j \ge w(i,j)$始终成立。
+\par KM的正确性基于以下定理：若由二分图中所有满足$A_i + B_j = w(i,j)$的边$(i,j)$构成的子图（称做相等子图）有完备匹配，那么这个完备匹配就是二分图的最大权匹配。
+\par KM算法的复杂度为$O(|V|^3)$，详见\cite{km}。
+
+\vspace{14pt}
+\par 在第一节中提出了一个问题：形如$x_{a_k} + x_{b_k} \ge c_k$的不等式组如何求解？
+仔细想想可以发现，求特解没有意义，因为每个解都相对独立，任意加上一个非负实数都不会破化不等式。\par
+那如何最小化$\sum{x_i}$？且看下面这个题。
+\input{king}

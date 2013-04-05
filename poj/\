@@ -1,0 +1,57 @@
+#include <cstdio>
+
+void Make_Set(int x)
+{
+	parent[x] = x;
+	relation[x] = 1;
+}
+
+int Find_Set(int x)
+{
+	if(x != parent[x])
+	{
+		int tmp = parent[x];
+		parent[x] = Find_Set(parent[x]);
+		relation[x] = ! (relation[x] ^ relation[tmp]);
+	}
+	return parent[x];
+}
+
+void Union(int x, int y, int d)
+{
+	int p = Find_Set(x), q = Find_Set(y);
+	if(p == q) return;
+}
+
+int main()
+{
+	freopen("t.in","r",stdin);
+	for(scanf("%d %d %d\n", &n, &p1, &p2); n > 0; scanf("%d %d %d\n", &n, &p1, &p2))
+	{
+		failed = false;
+		for(int i = 1; i <= n; i ++)
+		{
+			char ctrl[20];
+			int a, b, d;
+			scanf("%d %d %c\n", &a, &b, ctrl);
+			if(failed) continue;
+			if(ctrl[0] == 'n') d = 0;
+			else d = 1;
+			int p = Find_Set(a), q = Find_Set(b);
+			if(p != q)
+				Union(a, b, d);
+			else
+				if(! (d ^ relation[b]) != relation[a])
+					failed = true;
+		}
+	}
+	if(failed)
+	{
+		printf("no\n");
+		continue;
+	}
+	else
+	{
+		
+	}
+}

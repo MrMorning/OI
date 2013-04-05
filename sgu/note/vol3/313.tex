@@ -1,0 +1,7 @@
+\section{313. Circular Railway}
+首先可以发现必定有一条边是不会被经过的。
+那么从这条边断开后便能$O(n)$扫描出解。
+考虑每条边对答案的贡献，为长度乘上前面employee与office数量之差。
+而每次改变断边相当于是$|(n_{employee} + 1) - n_{office}|$
+或者$|n_{employee} - (n_{office}+1)|$。
+可以转化为带权中位数模型。十分巧妙。

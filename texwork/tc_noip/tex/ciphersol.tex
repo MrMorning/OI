@@ -1,0 +1,11 @@
+\section{Cipher Matrix}
+设G中所有元素和为$S$，第$i$行的和为$sr[i]$，第$i$列的和为$sc[i]$。\par
+可以发现，E中所有元素的和就是$(n+m+1)S$。于是可以求出$S$。\par
+进一步，E中第$i$列的和为$(n-1)sc[i] + S$，类似可得所有的$sr,sc$。\par
+于是问题就解决了？\par
+提醒几个特殊情况：
+\begin{itemize}
+\item $1 \times 1$的矩阵-->特判掉；
+\item 只有一行或者一列的矩阵-->dp求方案；
+\item G中所有元素范围都是0-9；
+\end{itemize}

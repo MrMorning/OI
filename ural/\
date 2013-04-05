@@ -1,0 +1,43 @@
+#include <cstdio>
+
+struct Node{
+	int g, l, r;
+} node[N_MAX * 4];
+
+void upd(int i){
+	int t1 = node[i * 2].g, t2 = node[i * 2 + 1].g;
+	if(t1 == -1 && t2 == -1)
+		node[i].g = -1;
+	else if(t1 == -1)
+		node[i].g = t2;
+	else if(t2 == -1)
+		node[i].g = t1;
+	else
+		node[i].g = gcd(t1, t2);
+}
+
+void build_tree(int i, int l, int r){
+	node[i].l = l, node[i].r = r;
+	node[i].g = -1;
+	build_tree(i * 2, l, (l + r) / 2);
+	build_tree(i * 2 + 1, (l + r) / 2 + 1, r);
+}
+
+int main(){
+	scanf("%d", &n);
+	build_tree(1, 1, n);
+	for(int i = 1; i <= n; i ++){
+		char str[5];
+		int x;
+		scanf("%s %d", str, &x);
+		if(str[0] == '+'){
+			change(1, i, x);
+			vec[x].push_back(i);
+		}
+		else{
+			int t = vec[x].back();
+			vec[x].pop_back();
+			change(1, t, -1);
+		}
+	}
+}

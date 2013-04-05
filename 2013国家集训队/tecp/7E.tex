@@ -1,0 +1,19 @@
+\newproblem{7E. Defining Macros}
+\begin{prob}
+	给定$n(n \le 100)$个\texttt{\#define name value}的
+	语句，其中\texttt{value}包括\texttt{+-*/()}，
+	判断另一个语句是否会产生歧义。
+\end{prob}
+
+\begin{sol}
+	每个变量设4种状态：有歧义(S)，多段相加
+	减(P)，多段相乘除(M)，一段(Q)。对于A \texttt{?} B，如果
+	A或B为S那么整个结果也为S。否则分情况讨论：
+	\begin{enumerate}
+		\item A\texttt{+}B：合法；
+		\item A\texttt{-}B：B不能是P；
+		\item A\texttt{*}B: A,B均不能是P;
+		\item A\texttt{/}B: A不能是P，B不能是P,Q；
+	\end{enumerate}
+	用递归可以简化编程复杂度。
+\end{sol}

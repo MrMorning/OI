@@ -1,0 +1,10 @@
+\section{307. Cipher}
+设$B_{i,j}=A_{i-1,j-1}+A_{i-1,j}+A_{i,j-1}+A_{i,j}$，
+于是可以得到
+\begin{displaymath}
+A_{i,j}=(-1)^{i+j+1} \cdot A_{1,1} + (-1)^{j+1} \cdot A_{i,1} + 
+\sum_{2 \le p \le i, 2 \le q \le j} B_{p,q} \cdot (-1)^{i+j-p-q}
+\end{displaymath}
+所以真正决定整个矩阵的只有第一行第一列的元素。
+枚举$A_{1,1}$的值，然后可以根据符号讨论转化为2-SAT问题。
+最后按逆拓扑序染色输出即可。

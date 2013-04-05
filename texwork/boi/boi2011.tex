@@ -1,0 +1,29 @@
+\section{BOI2011}
+\subsection{grow}
+我的做法是强行用Splay来完成整段右移的操作，常数压力巨大。标准解答十分巧妙，仅仅改变了修改的顺序就能维护序列的单调性了。
+\subsection{icecream}
+沙茶题。。。
+\subsection{lamp}
+建图，每一次切换相当于走一次权值为1的边，显然不会经过一个边两次，所以可以直接最短路。
+\subsection{vikings}
+viking是可以不移动的，所以相当于每一格在某一时刻之后就不能经过了。BFS两次就行了。需要收缩极长行、列来保证复杂度。
+\subsection{meetings}
+刚开始YY得到一个DP式子，但这样反而掩盖了问题的本质。\par
+显然，原问题可以由子问题构成：
+\begin{displaymath}
+T(n) = \min_{a \cdot b \geq n}\{ T(a) + T(b) \}
+\end{displaymath}
+\par 进一步地，设$T(n,k)$为分成$k$个的最小值有
+\begin{displaymath}
+T(n,k) = \min_{n_1 \cdot n_2 \cdot \ldots \cdot n_k \geq n}\{ \sum_{i=1}^{k} T(n_i) \} 
+\end{displaymath}
+\par 如果把每个$T(n)$展开：
+\begin{displaymath}
+T(n,k) = \min_{n_1 \cdot n_2 \cdot \ldots \cdot n_k \geq n}\{ \sum_{i=1}^{k} n_i\}\cdot P + k \cdot V  
+\end{displaymath}
+\par 因此可以枚举$k$，再使$\sum_{i=1}^{k} n_i$最小化。此时应使尽量多的$n_i = \lfloor \sqrt[k]{n} \rfloor$，剩下的$n_i = \lceil \sqrt[k]{n} \rceil$。于是问题便解决了。
+\subsection{plagiarism}
+沙茶题。。。
+\subsection{polygon}
+十分巧妙！梯形面积为（上底+下底）$\times$ 高 / 2，若高为1，则可看作是上下底的长 / 2，这不就是题目要求的东西吗？。。。
+\subsection{treemirroring}

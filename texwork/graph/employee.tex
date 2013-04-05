@@ -1,0 +1,49 @@
+\subsection{[例三]NOI2008 志愿者招募}
+\subsubsection{描述}
+{\itshape
+	申奥成功后,布布经过不懈努力,终于成为奥组委下属公司人力资源部门的
+		主管。布布刚上任就遇到了一个难题:为即将启动的奥运新项目招募一批短期志
+		愿者。经过估算,这个项目需要 N 天才能完成,其中第 i 天至少需要 $A_i$ 个人。
+		布布通过了解得知,一共有 M 类志愿者可以招募。其中第 i 类可以从第 $S_i$ 天工
+		作到第 $T_i$ 天,招募费用是每人 $C_i$ 元。新官上任三把火,为了出色地完成自己的
+		工作,布布希望用尽量少的费用招募足够的志愿者,但这并不是他的特长!于是
+		布布找到了你,希望你帮他设计一种最优的招募方案。
+}
+\subsubsection{输入格式}
+{\itshape
+	第一行包含两个整数 $N$, $M$,表示完成项目的天数和
+		可以招募的志愿者的种类。
+		\par 接下来的一行中包含 $N$ 个非负整数,表示每天至少需要的志愿者人数。
+		\par 接下来的 $M$ 行中每行包含三个整数 $S_i$, $T_i$, $C_i$,含义如上文所述。为了方便起见,我们可以认为每类志愿者的数量都是无限多的。
+}
+
+\subsubsection{输出格式}
+{\itshape
+	仅包含一个整数,表示你所设计的最优方案的总费
+		用。
+}
+\subsubsection{数据范围}
+$30\%$的数据中，$1 \le N, M \le 10$，$1 \le A_i \le 10$；
+\par $100\%$的数据中，$1 \le N \le 1000$，$1 \le M \le 10000$，题目中其他所涉及的数据均不超过$2^{31}-1$。
+\subsubsection{分析}
+设$X_i$为第$i$类志愿者招募的人数。则应满足
+\begin{equation} \label{eq:bs}
+\forall j \in \mathbf{Z} \cap [1, N], \, \sum_{S_i \le j \le T_i}{X_i} \ge A_i
+\end{equation}
+\par 添加辅助变量$Y_i$，使\eqref{eq:bs}变为等式
+\begin{displaymath}
+\sum_{S_i \le j \le T_i}{X_i} - Y_j = A_j
+\end{displaymath}
+\par 等价于
+\begin{displaymath} 
+\sum_{S_i \le j \le T_i}{X_i} - Y_j - A_j = 0
+\end{displaymath}
+\par 似乎又能利用流量守恒建图，但如何满足“左右各一次”，即在一个等式中符号为正，在另一个等式中符号为负？
+\par 题目有一个重要的性质没有用到：每类志愿者只管\textbf{连续的一段}时间。这能否为解题提供服务？
+\par \textbf{等式整体作差！}如果作差的话，许多变量就会两两相消，只有在连续的一段的两端会留下\textbf{两个}变量！
+\par 再看看目标函数
+\begin{displaymath}
+\text{最小化}\sum_{1 \le i \le M}{X_i \times C_i}
+\end{displaymath}
+\par 这不就是最小费用流吗？只要在$X_i$对应的边上加权，其余边权值为0，用最小费用最大流即可解决。
+\vspace{8pt} \par 本题还存在另一种直接建图的方法，但不如不等式来的清晰，在此就不作介绍。

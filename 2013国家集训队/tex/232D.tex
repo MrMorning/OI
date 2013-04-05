@@ -1,0 +1,20 @@
+\newproblem{232D. Fence}
+\begin{prob}
+	给定一个序列$a_1,a_2,\cdots,a_n$
+	以及$q$个询问$(l_1,r_1),(l_2,r_2),\cdots,(l_q,r_q)$。
+	对于每个询问$(l_i,r_i)$，回答$(l_j,r_j)$二元组的个数
+	，满足$r_j-l_j+1=r_i-l_i+1$，
+	且$[l_j,r_j] \cap [l_i,r_i] = \varnothing$，且
+	对于所有$0 \le k \le r_i-l_i$，
+	使$a[l_i+k]+a[l_j+k]=a[l_i]+a[l_j]$。
+	$n \le 10^5$。
+\end{prob}
+
+\begin{sol}
+	先将原序列相邻两项做差得到长度为
+	$n-1$的$b$序列，就变成了询问一段
+	取反后相同的且不交的段数。构造一
+	个$s$序列为$b\$-b$，然后就变成了
+	经典的后缀数组离线询问的问题了。
+	复杂度为$O(n \log n+q\log n)$。
+\end{sol}

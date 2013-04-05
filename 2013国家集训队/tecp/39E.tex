@@ -1,0 +1,16 @@
+\newproblem{39E. What Has Dirichlet Got to Do with That?}
+\begin{prob}
+	一个游戏，初始时$a=a_0,b=b_0$
+	。两人轮流操作，每次可以将$a$
+	或$b$加$1$。如果使$a^b \ge n$，则输。
+	问谁有必胜策略。$a \le 10^4, b \le 30,n \le 10^9$
+\end{prob}
+
+\begin{sol}
+	如果$a=1$，那么如果$b \ge \log_2n$则平局；
+	\par
+	如果$b=1$，那么当$a \ge \sqrt{b}$，
+	N，P状态交替出现；\par
+	否则递推就行了。表的大小只有
+	$O(\sqrt{n} \cdot \log n)$。
+\end{sol}

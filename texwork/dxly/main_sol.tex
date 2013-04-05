@@ -1,0 +1,405 @@
+\documentclass[allowframebreaks,10pt]{beamer}
+\usetheme{Madrid}
+\usefonttheme{serif}
+\usepackage{listings}
+\usepackage[slantfont, boldfont, CJKtextspaces, CJKmathspaces]{xeCJK}
+\usepackage{fontspec,xunicode,xltxtra}
+\usepackage{indentfirst}
+\usepackage{color}
+\usepackage{alltt}
+\usepackage{marvosym}
+\usepackage{amsmath}
+
+\setCJKmainfont[BoldFont={黑体}, ItalicFont={楷体_GB2312}]{宋体}
+%\setmainfont{Liberation Serif} 
+%\setsansfont{Liberation Sans} 
+\setmonofont{YaHei Consolas Hybrid}
+
+\punctstyle{kaiming} % 开明式标点格式  
+
+\title[FFT对某种特定DP的优化]{FFT对某种特定DP的优化}
+\author[csimstu,zcwwzdjn]{\small\itshape{李凌霄，王迪}}
+\institute[CDQZ]{
+	{\small\itshape 成都七中} \\[0.5ex]
+		\texttt{csimstu@gmail.com, zcwwzdjn@hotmail.com}
+}
+
+\begin{document}
+
+\begin{frame}[plain]
+\titlepage
+\end{frame}
+
+\begin{frame}[plain]
+\begin{center}
+\textbf{第一部分：多项式与FFT}
+\end{center}
+\end{frame}
+
+\begin{frame}{多项式}
+一个多项式(polynomial)$A(x)$是一个函数\footnote{假定多项式长度相等，均为$n$，且$n=2^t$}:
+\[
+A(x) = \sum_{j=0}^{n-1}a_j x^{j}
+\]
+\pause
+多项式的加法、乘法：
+\[
+C(x) = A(x) + B(x) \to c_j = a_j + b_j 
+\]
+\[
+C(x) = A(x)B(x) \to c_j = \sum_{k=0}^{j} a_k b_{j-k}
+\]
+\end{frame}
+
+\begin{frame}{多项式的表示}
+\begin{itemize}
+\pause
+\item 系数表示法(Coffecient representation)
+\[
+A(x) = \sum_{j=0}^{n-1}a_j x^{j}
+\]
+\pause
+\item 点值表示法(Point-value representation)
+	\\ 用$n$个二元组来表示一个多项式:
+	\[
+	\{ (x_0, y_0), (x_1, y_1), (x_2, y_2), \ldots, (x_{n-1}, y_{n-1})\}
+	\]
+	满足对所有的$k$，$x_k$互不相等且$y_k = A(x_k)$。
+	\pause
+	可以证明，点值表示法可以对应一个唯一的系数表示法。
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{对比两种表示方法}
+\begin{itemize}
+\pause
+\item 求值
+	\[ O(n) < O(?)\]
+\pause
+\item 多项式加法
+	\[O(n) = O(n)\]
+\pause
+\item 多项式乘法
+	\[ O(n^2) > O(n) \]
+\pause
+\item 多项式自乘$k$次
+	\[ O(kn^2) \gg O(n \log k) \]
+\end{itemize}
+\pause
+\textbf{点值表示法是多项式运算的核心。}
+\end{frame}
+
+\begin{frame}{两种表示方法相互转化}
+\begin{itemize}
+\pause
+\item 系数to点值 
+\pause
+	\\[1ex] 任取$n$个不同的数作为${x}$，$O(n^2)$
+\pause
+\item 点值to系数
+\pause
+	\\[1ex] 解方程 $O(n^3)$
+\pause
+	\\ Lagrange’s formula $O(n^2)$
+\end{itemize}
+\pause
+毫无疑问，以上方法都太慢了！
+\end{frame}
+
+\begin{frame}{引入FFT}
+快速傅里叶变化(Fast Fourier Transforms)是一种能在
+$O(n \log n)$时间内实现两种转化的技术。
+\pause
+\\ 我们注意到，$\{x\}$的选值是可以人为操控的，还有很大的利用余地。
+\pause
+一种比较好的方法是选用$\omega ^n = 1$的$n$个复数根。
+\end{frame}
+
+\begin{frame}{复数基础}
+\pause
+复单位：$i$，定义$i^2=-1$。 \\
+\pause
+复平面： \\
+		\begin{center}
+\includegraphics[width=0.3\textwidth]{300px-Complex_conjugate_picture.svg.png} \\
+					   \end{center}
+\pause
+复数的四则运算：直接推。 \\
+\pause
+如何实现？\pause \\
+重载运算(封装)。
+\end{frame}
+
+\begin{frame}{复数基础}
+欧拉公式:
+\[ e ^{i \theta } = \cos \theta + i \sin \theta \]
+单位根：
+\[ \omega_n = e ^ {2 \pi i / n}\]
+\pause
+$\omega ^ n = 1$的$n$个复数根可以表示为
+\[ \omega_n^0, \omega_n^1, \ldots, \omega_n^{n-1}\]
+
+\pause
+优秀性质：
+\begin{itemize}
+\pause
+\item 周期性：$\omega_n^{j+kn} = \omega_n^j$
+\pause
+\item 消除性：$\omega_{dn}^{dk} = \omega_n^k$
+\pause
+\item 和为零：$\sum_{j=0}^{n-1} (\omega_n^k)^j = 0$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{It's show time}
+约定系数to点值称为DFT，点值to系数称为IDFT。
+\pause
+对每个$k$，我们实际上是要计算$y_k = A(\omega_n^k) = \sum_{j=0}^{n-1}a_j \omega_n^{kj}$。
+\pause
+\\ 将多项式$A$按奇偶分解：
+\pause
+\[ A^{[0]}(x) = a_0 + a_2x + a_4x^2 + \ldots + 
+a_{n-2}x^{n/2-1}\]
+\pause
+\[ A^{[1]}(x) = a_1 + a_3x + a_5x^2 + \ldots + 
+a_{n-1}x^{n/2-1}\]
+\pause
+于是：
+\[ A(x) = A^{[0]}(x^2) + x A^{[1]}(x^2)\]。
+\pause
+将$x=\omega_n^k$代入:
+\[ A(\omega_n^k) = A^{[0]}(\omega_n^{2k}) + \omega_n^k A^{[1]}(\omega_n^{2k})\]。
+\pause
+由消除性，可得：
+\[ A(\omega_n^k) = A^{[0]}(\omega_{n/2}^{k}) + \omega_n^k A^{[1]}(\omega_{n/2}^{k})\]。
+\pause
+注意到多项式$A^{[0]}$与$A^{[1]}$都只有$n/2$项，若$k \ge n/2$有$\omega_{n/2}^k = \omega_{n/2}^{k-n/2}$。
+\pause
+问题被完美的转化为了子问题！系数到点值的转化就能在$O(n \log n)$时间内进行了。
+\end{frame}
+\begin{frame}{逆转化}
+\pause
+一个结论（证明略去）：
+\[ a_j = \frac{1}{n} \sum_{k=0}^{n-1} y_k \omega_n^{-kj}\]
+\pause
+跟刚才的形式如出一辙。我们只需要将$\omega_n$替换为$\omega_n^{-1}$，
+最后全部除以$n$就解决了。
+\end{frame}
+
+\begin{frame}{code}
+基本的FFT只需10行：\\[1ex]
+{\footnotesize
+\input{p2179_alter.cpp}
+}
+\end{frame}
+
+\begin{frame}[plain]
+\begin{center}
+\textbf{第二部分：例题*5}
+\end{center}
+\end{frame}
+
+\begin{frame}{eg0.高精度乘法}
+\begin{example}
+给两个50000位左右的正整数,算它们的乘积。
+\end{example}
+\pause
+\begin{solution}
+把正整数表示成多项式$f(x)$,使得代入$x=10$得到原来的数,于是原来整数的每一位都是多项式中它对应的那一项的系数，然后利用FFT做多项式乘法即可。
+\\ 大家可以到HDU1402验证自己的正确性。
+\end{solution}
+\pause
+ext:可以考虑压位来加速。\\
+\pause
+extext:FFT后得到的数组中实数的范围会不会超过int？ \\
+\pause
+extextext:有没有办法可以在一定程度上消除精度误差? 
+\end{frame}
+
+
+\begin{frame}{eg1.SPOJ TSUM}
+\begin{example}
+给定40000个绝对值不超过20000且互不相同的整数,考虑下标三元组$(a,b,c)$,其中$a,b,c$互不相同,其权值为对应3个数的和,
+	对每个可能的权值统计无序三元组(即$(a,b,c)=(b,a,c)=\ldots$)。
+\end{example}
+Hint: 若$a,b,c$有序且不必互不相同,有没有办法?
+\begin{solution}
+考虑一个DP,$f[i+1][j+k]=\sum f[i][j] \times g[k]$,$f[i][j]$表示选$i$个数,和为$j$的方案数,$g[k]$的值是0或1,表示$k$这个数是否存在。\\
+\pause
+不难发现,这就是一个多项式乘法,可以使用FFT优化。\\
+\pause
+接下来需要的就是剔除有一个数重复了的,还需要保证无序。\\
+\pause
+第一个问题:容斥一下就可以了。\\
+\pause
+第二个问题:第一个问题解决后,$a,b,c$就互不相同了,算无序的答案的话,除以$3! = 6$就可以了。
+\end{solution}
+\end{frame}
+
+\begin{frame}{eg2. CTSC2010 性能优化}
+\begin{example}
+定义一个算法,$f[i+1][(j+k)\%n]=\sum f[i][j] \times g[k] \% (n+1)$,保证$n+1$为质数,且$n$最大的质因子不超过7。
+给出$n,c,f[0]$数组和$g$数组,计算$f[c]$数组,其中$n \le 5 \times 10^5, c \le 10^9$。
+\end{example}
+Hint: 先不考虑答案要模$n+1$,如何计算$f[i+1][(j+k)\%n]=\sum f[i][j] \times g[k]$？
+\begin{solution}
+我们考虑长度为$n$的两个数组$a$和$b$,而变换后得到$c$。定义A，B，C为对应的多项式。我们在长度为$n$下操作。取$x^n=1$的某个根$w$。 \\
+$A(w)=\sum a_iw^i$ \vspace{3pt} 
+$B(w)=\sum b_iw^i$ \vspace{3pt} 
+$C(w)=\sum c_iw^i$ \vspace{3pt} \\
+我们考虑$c_i$,显然我们需要的是$c_i=\sum a_jb_k | (j+k)\% n=i$。\\
+\pause
+我们考虑把$A(w)$和$B(w)$两个多项式相乘,$a_j$和$b_k$得到的项本来是$a_jb_kw^{(j+k)}$。\\
+\pause
+需要证明:$w^{(j+k)}=w^{(j+k)\%n}$。其实就是周期性！！
+\end{solution}
+\end{frame}
+
+\begin{frame}{eg2. CTSC2010 性能优化}
+\begin{solution}
+case 1:若$j+k<n$,不用证明了。\\
+case 2:若$j+k\ge n$,设$j+k=tn+r,r<n$,则$w^{(j+k)}=w^{(tn+r)}=(w^n)^t w^r=1^t w^r=w^r=w^{(j+k)\%n}$。 \\
+然后就可以FFT了。
+\end{solution}
+\pause
+ext:这题的$n$不是2的幂，但满足最大的质因子不超过7，怎么破？ \\
+\pause
+extext:若前两个问题都解决了,可以考虑做今年集训队答辩中伍一鸣的Binomial。
+\end{frame}
+
+
+\begin{frame}{eg3. TopCoder SRM 518 DIV1 Nim}
+\begin{example}
+两人玩Nim游戏,桌上有不超过$10^9$堆石子,每堆石子的个数是质数且不超过$5 \times 10^4$。问有多少种情况使得后手必胜?
+\end{example}
+\pause
+Hint:能不能写出DP的方程? \newline
+\pause
+$f[i+1][j\oplus k]=\sum f[i][j] \times g[k]$,$g[k]$表示$k$是否为质数。\\
+\pause
+我们注意到这和多项式乘法很相似,只不过下标变化从$j+k$变成了$j\oplus k$,于是我们考虑转化。 \\
+\pause
+我们用$\star$符号来表示两个数组的某种运算,$\star$的两个参数是数组，返回的也是数组。上式可以描述为$f[i+1]=f[i]\star g$。
+\end{frame}
+\begin{frame}{eg3. TopCoder SRM 518 DIV1 Nim}
+我们考虑如何计算$A\star B$。\\
+回想FFT,我们找到了一种方式,在DFT变换后满足:$DFT(A \star B)=DFT(A)\times DFT(B)$,
+$IDFT(DFT(A))=A$。注意这里的$\star$含义不同。$(A\times B)[i]=A[i] \times B[i]$。\\
+\pause
+考虑现在的问题,我们能否找到一种转换方式使得$tf(A\star B)=tf(A) \times tf(B), utf(tf(A))=A$？猜测tf可能与utf类似,我们重点考虑tf。\\
+\pause
+用大写字母表示数组,用小写字母表示数字,$[\ldots]$表示数组,比如$A=[a,b]$。\\
+数组的含义：下标从0开始，$A[x]$表示xor起来为$x$的方案数。\\
+\pause
+那么可以说$tf([a])=[a]$。$tf([a,b])$是什么呢?\\
+\end{frame}
+
+\begin{frame}{eg3. TopCoder SRM 518 DIV1 Nim}
+Hint: 考虑$[a,b] \star [c,d]$。\\
+Hint: 猜测$tf([a,b])$的两项都是关于$a$和$b$的线性函数。
+\pause
+\begin{solution}
+利用异或本身的性质有$[a,b]\star[c,d]=[ac+bd,ad+bc]$。
+\pause
+设$tf([a,b])=[pa+qb,ma+nb]$。
+那么：
+\pause
+\begin{equation*}
+\begin{aligned}
+tf([a,b] \star [c,d]) &= tf([ac+bd,ad+bc]) \\
+	&= [pac+pbd+qad+qbc,mac+mbd+nad+nbc] \\
+\pause
+tf([a,b]) & = [pa+qb,ma+nb] \\
+tf([c,d]) & = [pc+qd,mc+nd] 
+\end{aligned}
+\end{equation*}
+\pause
+于是我们的$p$和$q$需要满足$(pa+qb)(pc+qd)=pac+pbd+qad+qbc$。\\
+由于$p$和$q$不可能都是0,我们可以找到一个解,$p=1,q=1$或$-1$，\\
+\pause
+所以我们得到$tf([a,b])=[a+b,a-b]$。
+\end{solution}
+\end{frame}
+\begin{frame}{eg3. TopCoder SRM 518 DIV1 Nim}
+进一步猜测:$tf([A,B])=[tf(A)+tf(B),tf(A)-tf(B)]$, \\ 
+其中$(A+B)[i]=A[i]+B[i]$。 \\
+\pause
+可以进行归纳证明,大家可以自行证明,放在后面了。\\
+ext:这题是异或、逻辑与、逻辑或等运算是不是也可以做呢?
+\end{frame}
+
+\begin{frame}{eg4. TopCoder TCO12 Round2A EvenPaths}
+\begin{example}
+给一个点数不超过50的DAG,有一些点是空地有一些是障碍,还有一些是未探明的区域。设未探明的区域有$k$个,$k$不会超过32,那么DAG就有$2^k$种可能。我们考虑这$2^k$种情况中,有多少使得从0到1的路径数是偶数?
+\end{example}
+\pause
+Hint:对一个确定的图,如何计算0到1的路径数的奇偶性? \\
+\pause
+Hint:枚举$2^{32}$次方是不可能的,能否通过折半,枚举$2^{16}$再将两边合并?
+\pause
+\begin{solution}
+把32个点分为两个集合$A$和$B$,一边16个。\\
+考虑点集$S$,它由$B$和终点1组成,即17个点。考虑$f[mask]$,$mask$共有17位,第$i$位表示从0到1第一个遇到的是$S$中的第$i$个点,该位为0表示路径数为偶,$f[mask]$记录满足$mask$条件的情况数,那么当$mask$中1个个数为偶数时,所有的路径数才是偶数,这样就可以累加答案了。\\
+\pause
+现在考虑如何计算$f$。
+	\end{solution}
+	\end{frame}
+\begin{frame}{eg4. TopCoder TCO12 Round2A EvenPaths}
+\begin{solution}
+我们枚举$A$中点的情况,统计不从$B$中的点出发的路径数。同样记$a[mask]$,$mask$有17位,跟上面的含义相同,只是$mask$表示从0走到这17个点路径数的奇偶性,$a[mask]$记录这样的情况数。\\
+\pause
+同理枚举$B$中点的情况,记$b[mask]$,$mask$每一位表示倒过来从1走到这17个点路径数的奇偶性,同样不从$A$中的任何一点出发。\\
+\pause
+Hint:能否用$a$和$b$合并得到$f$呢??\\
+\pause
+考虑17个点中的某个点$u$,$a[i]$中记录0到$u$路径数为$x$,$b[j]$中记录$u$到1路径数为$y$,我们看f对应下标位置应该是什么。\\
+\pause
+是$x \times y$。由于$x$和$y$的取值非0即1,那么相当于$x\&y$。\\
+\pause
+所以我们有$f[i\&j]=\sum a[i] \times b[j]$。\\
+\pause
+这个式子和上一题的不同之处仅是异或变成了逻辑与,可以用同样的方式做。\\
+\pause
+如何求$a$和$b$?\\
+\pause
+枚举$2^{16}$的状态,在DAG上做DP即可。
+\end{solution}
+\end{frame}
+\begin{frame}{Summary}
+以上几道题向我们展示了FFT可以优化某种特定的DP，它们都具有以下共性：
+\pause
+\begin{enumerate}
+\item 状态本质为一维。 
+\pause
+\item 具有$C[i \star j] = A[i] \times B[j]$的形式。
+$\star$可以为加法、带模加法、按位异或、按位与，等等。
+\pause
+\item 优化的过程都是转化成类点值表示法\textbf{解耦合}，然后每对点值\textbf{独立运算}，再转化回去。
+\pause
+\item 转化与逆转化都借用了分而治之的思想。
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{More Exercises}
+CDOJ1714 Graph Game，CDOJ是UESTC的OJ。
+\end{frame}
+
+\begin{frame}{CDOJ1714 Graph Game}
+\begin{example}
+A与B在一个无向图上做一个游戏。A与B轮流操作，A先手。
+每次删掉一条边，满足该边连接的两个点度和为偶数。
+谁不能找到这样合法的边谁就输。
+\\ 现在，他们得到了一个包含$n$个点$m$条边的无向图。
+A想知道，有多少子图使得他能获胜？（两人都以最优策略删边）
+\\ $2 \le n \le 40, 1 \le m \le 400$
+\end{example}
+
+\pause
+先手必胜的条件？
+\pause
+如何利用FFT优化？
+
+\end{frame}
+
+\end{document}

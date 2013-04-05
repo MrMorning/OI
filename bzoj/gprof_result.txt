@@ -1,0 +1,612 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 28.41      0.25     0.25 24687516     0.00     0.00  __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::operator+(int const&) const
+ 15.91      0.39     0.14 26973145     0.00     0.00  __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::operator*() const
+ 11.36      0.49     0.10   636943     0.00     0.00  void std::_Construct<std::pair<int, int>, std::pair<int, int> >(std::pair<int, int>*, std::pair<int, int> const&)
+  9.09      0.57     0.08  6568530     0.00     0.00  cmp::operator()(std::pair<int, int> const&, std::pair<int, int> const&)
+  7.95      0.64     0.07 27686032     0.00     0.00  __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::__normal_iterator(std::pair<int, int>* const&)
+  6.82      0.70     0.06        1    60.00   880.00  dijkstra()
+  4.55      0.74     0.04   374800     0.00     0.00  void std::__adjust_heap<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, int, std::pair<int, int>, cmp>(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, int, int, std::pair<int, int>, cmp)
+  2.27      0.76     0.02  2547964     0.00     0.00  __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::base() const
+  2.27      0.78     0.02  1124444     0.00     0.00  __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::__normal_iterator(std::pair<int, int> const* const&)
+  2.27      0.80     0.02   749600     0.00     0.00  void std::__push_heap<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, int, std::pair<int, int>, cmp>(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, int, int, std::pair<int, int>, cmp)
+  2.27      0.82     0.02   374822     0.00     0.00  std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::end() const
+  2.27      0.84     0.02   374800     0.00     0.00  std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >, cmp>::top() const
+  1.14      0.85     0.01   749639     0.00     0.00  std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::end()
+  1.14      0.86     0.01   749601     0.00     0.00  __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::difference_type __gnu_cxx::operator-<std::pair<int, int>*, std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&)
+  1.14      0.87     0.01   374801     0.00     0.00  std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::empty() const
+  1.14      0.88     0.01   374800     0.00     0.00  std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >, cmp>::pop()
+  0.00      0.88     0.00  1499200     0.00     0.00  __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::operator-(int const&) const
+  0.00      0.88     0.00   786448     0.00     0.00  __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::operator++()
+  0.00      0.88     0.00   749644     0.00     0.00  __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::base() const
+  0.00      0.88     0.00   749622     0.00     0.00  std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::begin() const
+  0.00      0.88     0.00   749620     0.00     0.00  std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::begin()
+  0.00      0.88     0.00   636943     0.00     0.00  void std::_Destroy<std::pair<int, int> >(std::pair<int, int>*)
+  0.00      0.88     0.00   636943     0.00     0.00  operator new(unsigned int, void*)
+  0.00      0.88     0.00   524343     0.00     0.00  bool __gnu_cxx::operator!=<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&)
+  0.00      0.88     0.00   374801     0.00     0.00  bool __gnu_cxx::operator==<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >(__gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&, __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&)
+  0.00      0.88     0.00   374801     0.00     0.00  std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >, cmp>::empty() const
+  0.00      0.88     0.00   374800     0.00     0.00  __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::operator*() const
+  0.00      0.88     0.00   374800     0.00     0.00  std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::front() const
+  0.00      0.88     0.00   374800     0.00     0.00  std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >, cmp>::push(std::pair<int, int> const&)
+  0.00      0.88     0.00   374800     0.00     0.00  std::pair<int, int>::pair(int const&, int const&)
+  0.00      0.88     0.00   374800     0.00     0.00  std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::pop_back()
+  0.00      0.88     0.00   374800     0.00     0.00  std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::push_back(std::pair<int, int> const&)
+  0.00      0.88     0.00   374800     0.00     0.00  void std::__pop_heap<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int>, cmp>(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int>, cmp)
+  0.00      0.88     0.00   374800     0.00     0.00  void std::pop_heap<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, cmp>(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, cmp)
+  0.00      0.88     0.00   374800     0.00     0.00  std::pair<int, int> std::make_pair<int, int>(int, int)
+  0.00      0.88     0.00   374800     0.00     0.00  void std::push_heap<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, cmp>(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, cmp)
+  0.00      0.88     0.00       38     0.00     1.26  __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > std::uninitialized_copy<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > >(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >)
+  0.00      0.88     0.00       38     0.00     1.26  __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > std::__uninitialized_copy_aux<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > >(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __false_type)
+  0.00      0.88     0.00       21     0.00     0.00  std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_deallocate(std::pair<int, int>*, unsigned int)
+  0.00      0.88     0.00       20     0.00     0.00  __gnu_cxx::new_allocator<std::pair<int, int> >::deallocate(std::pair<int, int>*, unsigned int)
+  0.00      0.88     0.00       20     0.00     0.00  __gnu_cxx::new_allocator<std::pair<int, int> >::allocate(unsigned int, void const*)
+  0.00      0.88     0.00       20     0.00     0.00  __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::difference_type __gnu_cxx::operator-<std::pair<int, int> const*, std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >(__gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&, __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&)
+  0.00      0.88     0.00       20     0.00     0.00  std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::size() const
+  0.00      0.88     0.00       20     0.00     0.00  std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_allocate(unsigned int)
+  0.00      0.88     0.00       19     0.00     2.81  std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int> const&)
+  0.00      0.88     0.00       19     0.00     0.29  void std::__destroy_aux<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > >(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __false_type)
+  0.00      0.88     0.00       19     0.00     0.29  void std::_Destroy<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > >(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >)
+  0.00      0.88     0.00        4     0.00     0.00  __gnu_cxx::new_allocator<std::pair<int, int> >::~new_allocator()
+  0.00      0.88     0.00        3     0.00     0.00  __gnu_cxx::new_allocator<std::pair<int, int> >::new_allocator(__gnu_cxx::new_allocator<std::pair<int, int> > const&)
+  0.00      0.88     0.00        2     0.00     0.00  calc(long long)
+  0.00      0.88     0.00        2     0.00     0.00  std::allocator<std::pair<int, int> >::allocator(std::allocator<std::pair<int, int> > const&)
+  0.00      0.88     0.00        2     0.00     0.00  std::allocator<std::pair<int, int> >::~allocator()
+  0.00      0.88     0.00        2     0.00     0.00  std::allocator<std::pair<int, int> >::~allocator()
+  0.00      0.88     0.00        2     0.00     0.00  std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_Vector_impl::_Vector_impl(std::allocator<std::pair<int, int> > const&)
+  0.00      0.88     0.00        2     0.00     0.00  std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_Vector_impl::~_Vector_impl()
+  0.00      0.88     0.00        2     0.00     0.00  std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::~_Vector_base()
+  0.00      0.88     0.00        2     0.00     0.00  std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::~vector()
+  0.00      0.88     0.00        2     0.00     0.00  void std::__destroy_aux<std::pair<int, int>*>(std::pair<int, int>*, std::pair<int, int>*, __false_type)
+  0.00      0.88     0.00        2     0.00     0.00  void std::_Destroy<std::pair<int, int>*>(std::pair<int, int>*, std::pair<int, int>*)
+  0.00      0.88     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<std::pair<int, int> >::new_allocator()
+  0.00      0.88     0.00        1     0.00     0.00  bool __gnu_cxx::operator!=<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >(__gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&, __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&)
+  0.00      0.88     0.00        1     0.00     0.00  std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::get_allocator() const
+  0.00      0.88     0.00        1     0.00     0.00  std::allocator<std::pair<int, int> >::allocator(std::allocator<std::pair<int, int> > const&)
+  0.00      0.88     0.00        1     0.00     0.00  std::allocator<std::pair<int, int> >::allocator()
+  0.00      0.88     0.00        1     0.00     0.00  std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_Vector_base(std::allocator<std::pair<int, int> > const&)
+  0.00      0.88     0.00        1     0.00     0.00  std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_Vector_base(unsigned int, std::allocator<std::pair<int, int> > const&)
+  0.00      0.88     0.00        1     0.00     0.00  std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >, cmp>::priority_queue(cmp const&, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > const&)
+  0.00      0.88     0.00        1     0.00     0.00  std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >, cmp>::~priority_queue()
+  0.00      0.88     0.00        1     0.00     0.00  std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::vector(std::allocator<std::pair<int, int> > const&)
+  0.00      0.88     0.00        1     0.00     0.00  std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::vector(std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > const&)
+  0.00      0.88     0.00        1     0.00     0.00  std::pair<int, int>* std::uninitialized_copy<__gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int>*>(__gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int>*)
+  0.00      0.88     0.00        1     0.00     0.00  std::pair<int, int>* std::__uninitialized_copy_aux<__gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int>*>(__gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int>*, __false_type)
+  0.00      0.88     0.00        1     0.00     0.00  void std::make_heap<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, cmp>(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, cmp)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 4 byte(s) for 1.14% of 0.88 seconds
+
+index % time    self  children    called     name
+                0.06    0.82       1/1           main [2]
+[1]    100.0    0.06    0.82       1         dijkstra() [1]
+                0.01    0.58  374800/374800      std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >, cmp>::pop() [3]
+                0.00    0.16  374800/374800      std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >, cmp>::push(std::pair<int, int> const&) [8]
+                0.00    0.04  374801/374801      std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >, cmp>::empty() const [19]
+                0.02    0.01  374800/374800      std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >, cmp>::top() const [22]
+                0.00    0.00       1/1           std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >, cmp>::priority_queue(cmp const&, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > const&) [35]
+                0.00    0.00  374800/374800      std::pair<int, int> std::make_pair<int, int>(int, int) [49]
+                0.00    0.00       1/1           std::allocator<std::pair<int, int> >::allocator() [71]
+                0.00    0.00       1/1           std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::vector(std::allocator<std::pair<int, int> > const&) [75]
+                0.00    0.00       1/2           std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::~vector() [64]
+                0.00    0.00       1/2           std::allocator<std::pair<int, int> >::~allocator() [59]
+                0.00    0.00       1/1           std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >, cmp>::~priority_queue() [74]
+-----------------------------------------------
+                                                 <spontaneous>
+[2]    100.0    0.00    0.88                 main [2]
+                0.06    0.82       1/1           dijkstra() [1]
+                0.00    0.00       2/2           calc(long long) [57]
+-----------------------------------------------
+                0.01    0.58  374800/374800      dijkstra() [1]
+[3]     66.6    0.01    0.58  374800         std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >, cmp>::pop() [3]
+                0.00    0.57  374800/374800      void std::pop_heap<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, cmp>(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, cmp) [4]
+                0.00    0.00  374800/749639      std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::end() [27]
+                0.00    0.00  374800/749620      std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::begin() [33]
+                0.00    0.00  374800/374800      std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::pop_back() [48]
+-----------------------------------------------
+                0.00    0.57  374800/374800      std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >, cmp>::pop() [3]
+[4]     64.7    0.00    0.57  374800         void std::pop_heap<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, cmp>(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, cmp) [4]
+                0.00    0.56  374800/374800      void std::__pop_heap<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int>, cmp>(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int>, cmp) [5]
+                0.00    0.00 1124400/1499200     __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::operator-(int const&) const [32]
+                0.00    0.00  374800/26973145     __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::operator*() const [9]
+-----------------------------------------------
+                0.00    0.56  374800/374800      void std::pop_heap<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, cmp>(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, cmp) [4]
+[5]     64.1    0.00    0.56  374800         void std::__pop_heap<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int>, cmp>(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int>, cmp) [5]
+                0.04    0.51  374800/374800      void std::__adjust_heap<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, int, std::pair<int, int>, cmp>(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, int, int, std::pair<int, int>, cmp) [6]
+                0.00    0.01  374800/749601      __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::difference_type __gnu_cxx::operator-<std::pair<int, int>*, std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&) [23]
+                0.00    0.00  749600/26973145     __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::operator*() const [9]
+-----------------------------------------------
+                0.04    0.51  374800/374800      void std::__pop_heap<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int>, cmp>(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int>, cmp) [5]
+[6]     62.5    0.04    0.51  374800         void std::__adjust_heap<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, int, std::pair<int, int>, cmp>(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, int, int, std::pair<int, int>, cmp) [6]
+                0.23    0.06 22925898/24687516     __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::operator+(int const&) const [7]
+                0.12    0.00 22925898/26973145     __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::operator*() const [9]
+                0.07    0.00 5731464/6568530     cmp::operator()(std::pair<int, int> const&, std::pair<int, int> const&) [12]
+                0.01    0.02  374800/749600      void std::__push_heap<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, int, std::pair<int, int>, cmp>(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, int, int, std::pair<int, int>, cmp) [14]
+-----------------------------------------------
+                0.02    0.00 1761618/24687516     void std::__push_heap<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, int, std::pair<int, int>, cmp>(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, int, int, std::pair<int, int>, cmp) [14]
+                0.23    0.06 22925898/24687516     void std::__adjust_heap<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, int, std::pair<int, int>, cmp>(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, int, int, std::pair<int, int>, cmp) [6]
+[7]     35.5    0.25    0.06 24687516         __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::operator+(int const&) const [7]
+                0.06    0.00 24687516/27686032     __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::__normal_iterator(std::pair<int, int>* const&) [13]
+-----------------------------------------------
+                0.00    0.16  374800/374800      dijkstra() [1]
+[8]     18.6    0.00    0.16  374800         std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >, cmp>::push(std::pair<int, int> const&) [8]
+                0.00    0.11  374800/374800      std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::push_back(std::pair<int, int> const&) [10]
+                0.00    0.04  374800/374800      void std::push_heap<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, cmp>(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, cmp) [18]
+                0.00    0.00  374800/749639      std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::end() [27]
+                0.00    0.00  374800/749620      std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::begin() [33]
+-----------------------------------------------
+                0.00    0.00  262143/26973145     void std::__destroy_aux<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > >(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __false_type) [30]
+                0.00    0.00  374800/26973145     void std::pop_heap<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, cmp>(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, cmp) [4]
+                0.00    0.00  374800/26973145     void std::push_heap<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, cmp>(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, cmp) [18]
+                0.00    0.00  524286/26973145     __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > std::__uninitialized_copy_aux<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > >(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __false_type) [17]
+                0.00    0.00  749600/26973145     void std::__pop_heap<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int>, cmp>(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int>, cmp) [5]
+                0.01    0.00 1761618/26973145     void std::__push_heap<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, int, std::pair<int, int>, cmp>(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, int, int, std::pair<int, int>, cmp) [14]
+                0.12    0.00 22925898/26973145     void std::__adjust_heap<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, int, std::pair<int, int>, cmp>(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, int, int, std::pair<int, int>, cmp) [6]
+[9]     15.9    0.14    0.00 26973145         __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::operator*() const [9]
+-----------------------------------------------
+                0.00    0.11  374800/374800      std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >, cmp>::push(std::pair<int, int> const&) [8]
+[10]    12.8    0.00    0.11  374800         std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::push_back(std::pair<int, int> const&) [10]
+                0.06    0.00  374781/636943      void std::_Construct<std::pair<int, int>, std::pair<int, int> >(std::pair<int, int>*, std::pair<int, int> const&) [11]
+                0.00    0.05      19/19          std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int> const&) [15]
+                0.00    0.00      19/749639      std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::end() [27]
+-----------------------------------------------
+                0.00    0.00      19/636943      std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int> const&) [15]
+                0.04    0.00  262143/636943      __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > std::__uninitialized_copy_aux<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > >(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __false_type) [17]
+                0.06    0.00  374781/636943      std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::push_back(std::pair<int, int> const&) [10]
+[11]    11.4    0.10    0.00  636943         void std::_Construct<std::pair<int, int>, std::pair<int, int> >(std::pair<int, int>*, std::pair<int, int> const&) [11]
+                0.00    0.00  636943/636943      operator new(unsigned int, void*) [44]
+-----------------------------------------------
+                0.01    0.00  837066/6568530     void std::__push_heap<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, int, std::pair<int, int>, cmp>(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, int, int, std::pair<int, int>, cmp) [14]
+                0.07    0.00 5731464/6568530     void std::__adjust_heap<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, int, std::pair<int, int>, cmp>(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, int, int, std::pair<int, int>, cmp) [6]
+[12]     9.1    0.08    0.00 6568530         cmp::operator()(std::pair<int, int> const&, std::pair<int, int> const&) [12]
+-----------------------------------------------
+                0.00    0.00      57/27686032     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int> const&) [15]
+                0.00    0.00  749620/27686032     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::begin() [33]
+                0.00    0.00  749639/27686032     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::end() [27]
+                0.00    0.00 1499200/27686032     __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::operator-(int const&) const [32]
+                0.06    0.00 24687516/27686032     __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::operator+(int const&) const [7]
+[13]     8.0    0.07    0.00 27686032         __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::__normal_iterator(std::pair<int, int>* const&) [13]
+-----------------------------------------------
+                0.01    0.02  374800/749600      void std::__adjust_heap<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, int, std::pair<int, int>, cmp>(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, int, int, std::pair<int, int>, cmp) [6]
+                0.01    0.02  374800/749600      void std::push_heap<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, cmp>(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, cmp) [18]
+[14]     7.0    0.02    0.04  749600         void std::__push_heap<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, int, std::pair<int, int>, cmp>(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, int, int, std::pair<int, int>, cmp) [14]
+                0.02    0.00 1761618/24687516     __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::operator+(int const&) const [7]
+                0.01    0.00  837066/6568530     cmp::operator()(std::pair<int, int> const&, std::pair<int, int> const&) [12]
+                0.01    0.00 1761618/26973145     __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::operator*() const [9]
+-----------------------------------------------
+                0.00    0.05      19/19          std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::push_back(std::pair<int, int> const&) [10]
+[15]     6.1    0.00    0.05      19         std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int> const&) [15]
+                0.00    0.05      38/38          __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > std::uninitialized_copy<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > >(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >) [16]
+                0.00    0.01      19/19          void std::_Destroy<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > >(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >) [31]
+                0.00    0.00      19/636943      void std::_Construct<std::pair<int, int>, std::pair<int, int> >(std::pair<int, int>*, std::pair<int, int> const&) [11]
+                0.00    0.00      19/20          std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::size() const [34]
+                0.00    0.00      76/2547964     __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::base() const [24]
+                0.00    0.00      19/749639      std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::end() [27]
+                0.00    0.00      57/27686032     __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::__normal_iterator(std::pair<int, int>* const&) [13]
+                0.00    0.00      19/749620      std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::begin() [33]
+                0.00    0.00      19/20          std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_allocate(unsigned int) [54]
+                0.00    0.00      19/786448      __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::operator++() [41]
+                0.00    0.00      19/21          std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_deallocate(std::pair<int, int>*, unsigned int) [50]
+-----------------------------------------------
+                0.00    0.05      38/38          std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int> const&) [15]
+[16]     5.5    0.00    0.05      38         __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > std::uninitialized_copy<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > >(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >) [16]
+                0.00    0.05      38/38          __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > std::__uninitialized_copy_aux<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > >(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __false_type) [17]
+-----------------------------------------------
+                0.00    0.05      38/38          __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > std::uninitialized_copy<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > >(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >) [16]
+[17]     5.5    0.00    0.05      38         __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > std::__uninitialized_copy_aux<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > >(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __false_type) [17]
+                0.04    0.00  262143/636943      void std::_Construct<std::pair<int, int>, std::pair<int, int> >(std::pair<int, int>*, std::pair<int, int> const&) [11]
+                0.00    0.00  262181/524343      bool __gnu_cxx::operator!=<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&) [28]
+                0.00    0.00  524286/26973145     __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::operator*() const [9]
+                0.00    0.00  524286/786448      __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::operator++() [41]
+-----------------------------------------------
+                0.00    0.04  374800/374800      std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >, cmp>::push(std::pair<int, int> const&) [8]
+[18]     5.1    0.00    0.04  374800         void std::push_heap<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, cmp>(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, cmp) [18]
+                0.01    0.02  374800/749600      void std::__push_heap<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, int, std::pair<int, int>, cmp>(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, int, int, std::pair<int, int>, cmp) [14]
+                0.00    0.01  374800/749601      __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::difference_type __gnu_cxx::operator-<std::pair<int, int>*, std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&) [23]
+                0.00    0.00  374800/26973145     __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::operator*() const [9]
+                0.00    0.00  374800/1499200     __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::operator-(int const&) const [32]
+-----------------------------------------------
+                0.00    0.04  374801/374801      dijkstra() [1]
+[19]     4.9    0.00    0.04  374801         std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >, cmp>::empty() const [19]
+                0.01    0.03  374801/374801      std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::empty() const [20]
+-----------------------------------------------
+                0.01    0.03  374801/374801      std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >, cmp>::empty() const [19]
+[20]     4.9    0.01    0.03  374801         std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::empty() const [20]
+                0.02    0.01  374801/374822      std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::end() const [21]
+                0.00    0.01  374801/749622      std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::begin() const [26]
+                0.00    0.00  374801/374801      bool __gnu_cxx::operator==<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >(__gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&, __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&) [45]
+-----------------------------------------------
+                0.00    0.00       1/374822      std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::vector(std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > const&) [36]
+                0.00    0.00      20/374822      std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::size() const [34]
+                0.02    0.01  374801/374822      std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::empty() const [20]
+[21]     3.0    0.02    0.01  374822         std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::end() const [21]
+                0.01    0.00  374822/1124444     __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::__normal_iterator(std::pair<int, int> const* const&) [25]
+-----------------------------------------------
+                0.02    0.01  374800/374800      dijkstra() [1]
+[22]     3.0    0.02    0.01  374800         std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >, cmp>::top() const [22]
+                0.00    0.01  374800/374800      std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::front() const [29]
+-----------------------------------------------
+                0.00    0.00       1/749601      void std::make_heap<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, cmp>(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, cmp) [37]
+                0.00    0.01  374800/749601      void std::__pop_heap<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int>, cmp>(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int>, cmp) [5]
+                0.00    0.01  374800/749601      void std::push_heap<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, cmp>(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, cmp) [18]
+[23]     2.5    0.01    0.01  749601         __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::difference_type __gnu_cxx::operator-<std::pair<int, int>*, std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&) [23]
+                0.01    0.00 1499202/2547964     __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::base() const [24]
+-----------------------------------------------
+                0.00    0.00      76/2547964     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int> const&) [15]
+                0.01    0.00 1048686/2547964     bool __gnu_cxx::operator!=<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&) [28]
+                0.01    0.00 1499202/2547964     __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::difference_type __gnu_cxx::operator-<std::pair<int, int>*, std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&) [23]
+[24]     2.3    0.02    0.00 2547964         __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::base() const [24]
+-----------------------------------------------
+                0.01    0.00  374822/1124444     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::end() const [21]
+                0.01    0.00  749622/1124444     std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::begin() const [26]
+[25]     2.3    0.02    0.00 1124444         __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::__normal_iterator(std::pair<int, int> const* const&) [25]
+-----------------------------------------------
+                0.00    0.00       1/749622      std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::vector(std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > const&) [36]
+                0.00    0.00      20/749622      std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::size() const [34]
+                0.00    0.01  374800/749622      std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::front() const [29]
+                0.00    0.01  374801/749622      std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::empty() const [20]
+[26]     1.5    0.00    0.01  749622         std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::begin() const [26]
+                0.01    0.00  749622/1124444     __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::__normal_iterator(std::pair<int, int> const* const&) [25]
+-----------------------------------------------
+                0.00    0.00       1/749639      std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >, cmp>::priority_queue(cmp const&, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > const&) [35]
+                0.00    0.00      19/749639      std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int> const&) [15]
+                0.00    0.00      19/749639      std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::push_back(std::pair<int, int> const&) [10]
+                0.00    0.00  374800/749639      std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >, cmp>::pop() [3]
+                0.00    0.00  374800/749639      std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >, cmp>::push(std::pair<int, int> const&) [8]
+[27]     1.4    0.01    0.00  749639         std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::end() [27]
+                0.00    0.00  749639/27686032     __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::__normal_iterator(std::pair<int, int>* const&) [13]
+-----------------------------------------------
+                0.00    0.00  262162/524343      void std::__destroy_aux<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > >(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __false_type) [30]
+                0.00    0.00  262181/524343      __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > std::__uninitialized_copy_aux<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > >(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __false_type) [17]
+[28]     0.9    0.00    0.01  524343         bool __gnu_cxx::operator!=<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&) [28]
+                0.01    0.00 1048686/2547964     __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::base() const [24]
+-----------------------------------------------
+                0.00    0.01  374800/374800      std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >, cmp>::top() const [22]
+[29]     0.8    0.00    0.01  374800         std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::front() const [29]
+                0.00    0.01  374800/749622      std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::begin() const [26]
+                0.00    0.00  374800/374800      __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::operator*() const [46]
+-----------------------------------------------
+                0.00    0.01      19/19          void std::_Destroy<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > >(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >) [31]
+[30]     0.6    0.00    0.01      19         void std::__destroy_aux<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > >(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __false_type) [30]
+                0.00    0.00  262162/524343      bool __gnu_cxx::operator!=<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&) [28]
+                0.00    0.00  262143/26973145     __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::operator*() const [9]
+                0.00    0.00  262143/636943      void std::_Destroy<std::pair<int, int> >(std::pair<int, int>*) [43]
+                0.00    0.00  262143/786448      __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::operator++() [41]
+-----------------------------------------------
+                0.00    0.01      19/19          std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int> const&) [15]
+[31]     0.6    0.00    0.01      19         void std::_Destroy<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > >(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >) [31]
+                0.00    0.01      19/19          void std::__destroy_aux<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > >(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __false_type) [30]
+-----------------------------------------------
+                0.00    0.00  374800/1499200     void std::push_heap<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, cmp>(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, cmp) [18]
+                0.00    0.00 1124400/1499200     void std::pop_heap<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, cmp>(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, cmp) [4]
+[32]     0.4    0.00    0.00 1499200         __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::operator-(int const&) const [32]
+                0.00    0.00 1499200/27686032     __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::__normal_iterator(std::pair<int, int>* const&) [13]
+-----------------------------------------------
+                0.00    0.00       1/749620      std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >, cmp>::priority_queue(cmp const&, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > const&) [35]
+                0.00    0.00      19/749620      std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int> const&) [15]
+                0.00    0.00  374800/749620      std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >, cmp>::pop() [3]
+                0.00    0.00  374800/749620      std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >, cmp>::push(std::pair<int, int> const&) [8]
+[33]     0.2    0.00    0.00  749620         std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::begin() [33]
+                0.00    0.00  749620/27686032     __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::__normal_iterator(std::pair<int, int>* const&) [13]
+-----------------------------------------------
+                0.00    0.00       1/20          std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::vector(std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > const&) [36]
+                0.00    0.00      19/20          std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int> const&) [15]
+[34]     0.0    0.00    0.00      20         std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::size() const [34]
+                0.00    0.00      20/374822      std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::end() const [21]
+                0.00    0.00      20/749622      std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::begin() const [26]
+                0.00    0.00      20/20          __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::difference_type __gnu_cxx::operator-<std::pair<int, int> const*, std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >(__gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&, __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&) [53]
+-----------------------------------------------
+                0.00    0.00       1/1           dijkstra() [1]
+[35]     0.0    0.00    0.00       1         std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >, cmp>::priority_queue(cmp const&, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > const&) [35]
+                0.00    0.00       1/1           std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::vector(std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > const&) [36]
+                0.00    0.00       1/1           void std::make_heap<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, cmp>(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, cmp) [37]
+                0.00    0.00       1/749639      std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::end() [27]
+                0.00    0.00       1/749620      std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::begin() [33]
+-----------------------------------------------
+                0.00    0.00       1/1           std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >, cmp>::priority_queue(cmp const&, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > const&) [35]
+[36]     0.0    0.00    0.00       1         std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::vector(std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > const&) [36]
+                0.00    0.00       1/20          std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::size() const [34]
+                0.00    0.00       1/374822      std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::end() const [21]
+                0.00    0.00       1/749622      std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::begin() const [26]
+                0.00    0.00       1/1           std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::get_allocator() const [69]
+                0.00    0.00       1/1           std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_Vector_base(unsigned int, std::allocator<std::pair<int, int> > const&) [73]
+                0.00    0.00       1/2           std::allocator<std::pair<int, int> >::~allocator() [59]
+                0.00    0.00       1/1           std::pair<int, int>* std::uninitialized_copy<__gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int>*>(__gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int>*) [76]
+-----------------------------------------------
+                0.00    0.00       1/1           std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >, cmp>::priority_queue(cmp const&, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > const&) [35]
+[37]     0.0    0.00    0.00       1         void std::make_heap<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, cmp>(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, cmp) [37]
+                0.00    0.00       1/749601      __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::difference_type __gnu_cxx::operator-<std::pair<int, int>*, std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&) [23]
+-----------------------------------------------
+                0.00    0.00      19/786448      std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int> const&) [15]
+                0.00    0.00  262143/786448      void std::__destroy_aux<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > >(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __false_type) [30]
+                0.00    0.00  524286/786448      __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > std::__uninitialized_copy_aux<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > >(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __false_type) [17]
+[41]     0.0    0.00    0.00  786448         __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::operator++() [41]
+-----------------------------------------------
+                0.00    0.00       2/749644      bool __gnu_cxx::operator!=<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >(__gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&, __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&) [68]
+                0.00    0.00      40/749644      __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::difference_type __gnu_cxx::operator-<std::pair<int, int> const*, std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >(__gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&, __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&) [53]
+                0.00    0.00  749602/749644      bool __gnu_cxx::operator==<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >(__gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&, __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&) [45]
+[42]     0.0    0.00    0.00  749644         __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::base() const [42]
+-----------------------------------------------
+                0.00    0.00  262143/636943      void std::__destroy_aux<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > >(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __false_type) [30]
+                0.00    0.00  374800/636943      std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::pop_back() [48]
+[43]     0.0    0.00    0.00  636943         void std::_Destroy<std::pair<int, int> >(std::pair<int, int>*) [43]
+-----------------------------------------------
+                0.00    0.00  636943/636943      void std::_Construct<std::pair<int, int>, std::pair<int, int> >(std::pair<int, int>*, std::pair<int, int> const&) [11]
+[44]     0.0    0.00    0.00  636943         operator new(unsigned int, void*) [44]
+-----------------------------------------------
+                0.00    0.00  374801/374801      std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::empty() const [20]
+[45]     0.0    0.00    0.00  374801         bool __gnu_cxx::operator==<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >(__gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&, __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&) [45]
+                0.00    0.00  749602/749644      __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::base() const [42]
+-----------------------------------------------
+                0.00    0.00  374800/374800      std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::front() const [29]
+[46]     0.0    0.00    0.00  374800         __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::operator*() const [46]
+-----------------------------------------------
+                0.00    0.00  374800/374800      std::pair<int, int> std::make_pair<int, int>(int, int) [49]
+[47]     0.0    0.00    0.00  374800         std::pair<int, int>::pair(int const&, int const&) [47]
+-----------------------------------------------
+                0.00    0.00  374800/374800      std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >, cmp>::pop() [3]
+[48]     0.0    0.00    0.00  374800         std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::pop_back() [48]
+                0.00    0.00  374800/636943      void std::_Destroy<std::pair<int, int> >(std::pair<int, int>*) [43]
+-----------------------------------------------
+                0.00    0.00  374800/374800      dijkstra() [1]
+[49]     0.0    0.00    0.00  374800         std::pair<int, int> std::make_pair<int, int>(int, int) [49]
+                0.00    0.00  374800/374800      std::pair<int, int>::pair(int const&, int const&) [47]
+-----------------------------------------------
+                0.00    0.00       2/21          std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::~_Vector_base() [63]
+                0.00    0.00      19/21          std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int> const&) [15]
+[50]     0.0    0.00    0.00      21         std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_deallocate(std::pair<int, int>*, unsigned int) [50]
+                0.00    0.00      20/20          __gnu_cxx::new_allocator<std::pair<int, int> >::deallocate(std::pair<int, int>*, unsigned int) [51]
+-----------------------------------------------
+                0.00    0.00      20/20          std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_deallocate(std::pair<int, int>*, unsigned int) [50]
+[51]     0.0    0.00    0.00      20         __gnu_cxx::new_allocator<std::pair<int, int> >::deallocate(std::pair<int, int>*, unsigned int) [51]
+-----------------------------------------------
+                0.00    0.00      20/20          std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_allocate(unsigned int) [54]
+[52]     0.0    0.00    0.00      20         __gnu_cxx::new_allocator<std::pair<int, int> >::allocate(unsigned int, void const*) [52]
+-----------------------------------------------
+                0.00    0.00      20/20          std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::size() const [34]
+[53]     0.0    0.00    0.00      20         __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::difference_type __gnu_cxx::operator-<std::pair<int, int> const*, std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >(__gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&, __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&) [53]
+                0.00    0.00      40/749644      __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::base() const [42]
+-----------------------------------------------
+                0.00    0.00       1/20          std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_Vector_base(unsigned int, std::allocator<std::pair<int, int> > const&) [73]
+                0.00    0.00      19/20          std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int> const&) [15]
+[54]     0.0    0.00    0.00      20         std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_allocate(unsigned int) [54]
+                0.00    0.00      20/20          __gnu_cxx::new_allocator<std::pair<int, int> >::allocate(unsigned int, void const*) [52]
+-----------------------------------------------
+                0.00    0.00       2/4           std::allocator<std::pair<int, int> >::~allocator() [59]
+                0.00    0.00       2/4           std::allocator<std::pair<int, int> >::~allocator() [60]
+[55]     0.0    0.00    0.00       4         __gnu_cxx::new_allocator<std::pair<int, int> >::~new_allocator() [55]
+-----------------------------------------------
+                0.00    0.00       1/3           std::allocator<std::pair<int, int> >::allocator(std::allocator<std::pair<int, int> > const&) [70]
+                0.00    0.00       2/3           std::allocator<std::pair<int, int> >::allocator(std::allocator<std::pair<int, int> > const&) [58]
+[56]     0.0    0.00    0.00       3         __gnu_cxx::new_allocator<std::pair<int, int> >::new_allocator(__gnu_cxx::new_allocator<std::pair<int, int> > const&) [56]
+-----------------------------------------------
+                0.00    0.00       2/2           main [2]
+[57]     0.0    0.00    0.00       2         calc(long long) [57]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_Vector_impl::_Vector_impl(std::allocator<std::pair<int, int> > const&) [61]
+[58]     0.0    0.00    0.00       2         std::allocator<std::pair<int, int> >::allocator(std::allocator<std::pair<int, int> > const&) [58]
+                0.00    0.00       2/3           __gnu_cxx::new_allocator<std::pair<int, int> >::new_allocator(__gnu_cxx::new_allocator<std::pair<int, int> > const&) [56]
+-----------------------------------------------
+                0.00    0.00       1/2           dijkstra() [1]
+                0.00    0.00       1/2           std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::vector(std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > const&) [36]
+[59]     0.0    0.00    0.00       2         std::allocator<std::pair<int, int> >::~allocator() [59]
+                0.00    0.00       2/4           __gnu_cxx::new_allocator<std::pair<int, int> >::~new_allocator() [55]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_Vector_impl::~_Vector_impl() [62]
+[60]     0.0    0.00    0.00       2         std::allocator<std::pair<int, int> >::~allocator() [60]
+                0.00    0.00       2/4           __gnu_cxx::new_allocator<std::pair<int, int> >::~new_allocator() [55]
+-----------------------------------------------
+                0.00    0.00       1/2           std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_Vector_base(std::allocator<std::pair<int, int> > const&) [72]
+                0.00    0.00       1/2           std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_Vector_base(unsigned int, std::allocator<std::pair<int, int> > const&) [73]
+[61]     0.0    0.00    0.00       2         std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_Vector_impl::_Vector_impl(std::allocator<std::pair<int, int> > const&) [61]
+                0.00    0.00       2/2           std::allocator<std::pair<int, int> >::allocator(std::allocator<std::pair<int, int> > const&) [58]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::~_Vector_base() [63]
+[62]     0.0    0.00    0.00       2         std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_Vector_impl::~_Vector_impl() [62]
+                0.00    0.00       2/2           std::allocator<std::pair<int, int> >::~allocator() [60]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::~vector() [64]
+[63]     0.0    0.00    0.00       2         std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::~_Vector_base() [63]
+                0.00    0.00       2/21          std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_deallocate(std::pair<int, int>*, unsigned int) [50]
+                0.00    0.00       2/2           std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_Vector_impl::~_Vector_impl() [62]
+-----------------------------------------------
+                0.00    0.00       1/2           dijkstra() [1]
+                0.00    0.00       1/2           std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >, cmp>::~priority_queue() [74]
+[64]     0.0    0.00    0.00       2         std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::~vector() [64]
+                0.00    0.00       2/2           void std::_Destroy<std::pair<int, int>*>(std::pair<int, int>*, std::pair<int, int>*) [66]
+                0.00    0.00       2/2           std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::~_Vector_base() [63]
+-----------------------------------------------
+                0.00    0.00       2/2           void std::_Destroy<std::pair<int, int>*>(std::pair<int, int>*, std::pair<int, int>*) [66]
+[65]     0.0    0.00    0.00       2         void std::__destroy_aux<std::pair<int, int>*>(std::pair<int, int>*, std::pair<int, int>*, __false_type) [65]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::~vector() [64]
+[66]     0.0    0.00    0.00       2         void std::_Destroy<std::pair<int, int>*>(std::pair<int, int>*, std::pair<int, int>*) [66]
+                0.00    0.00       2/2           void std::__destroy_aux<std::pair<int, int>*>(std::pair<int, int>*, std::pair<int, int>*, __false_type) [65]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator<std::pair<int, int> >::allocator() [71]
+[67]     0.0    0.00    0.00       1         __gnu_cxx::new_allocator<std::pair<int, int> >::new_allocator() [67]
+-----------------------------------------------
+                0.00    0.00       1/1           std::pair<int, int>* std::__uninitialized_copy_aux<__gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int>*>(__gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int>*, __false_type) [77]
+[68]     0.0    0.00    0.00       1         bool __gnu_cxx::operator!=<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >(__gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&, __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&) [68]
+                0.00    0.00       2/749644      __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::base() const [42]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::vector(std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > const&) [36]
+[69]     0.0    0.00    0.00       1         std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::get_allocator() const [69]
+                0.00    0.00       1/1           std::allocator<std::pair<int, int> >::allocator(std::allocator<std::pair<int, int> > const&) [70]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::get_allocator() const [69]
+[70]     0.0    0.00    0.00       1         std::allocator<std::pair<int, int> >::allocator(std::allocator<std::pair<int, int> > const&) [70]
+                0.00    0.00       1/3           __gnu_cxx::new_allocator<std::pair<int, int> >::new_allocator(__gnu_cxx::new_allocator<std::pair<int, int> > const&) [56]
+-----------------------------------------------
+                0.00    0.00       1/1           dijkstra() [1]
+[71]     0.0    0.00    0.00       1         std::allocator<std::pair<int, int> >::allocator() [71]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<std::pair<int, int> >::new_allocator() [67]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::vector(std::allocator<std::pair<int, int> > const&) [75]
+[72]     0.0    0.00    0.00       1         std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_Vector_base(std::allocator<std::pair<int, int> > const&) [72]
+                0.00    0.00       1/2           std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_Vector_impl::_Vector_impl(std::allocator<std::pair<int, int> > const&) [61]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::vector(std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > const&) [36]
+[73]     0.0    0.00    0.00       1         std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_Vector_base(unsigned int, std::allocator<std::pair<int, int> > const&) [73]
+                0.00    0.00       1/2           std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_Vector_impl::_Vector_impl(std::allocator<std::pair<int, int> > const&) [61]
+                0.00    0.00       1/20          std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_allocate(unsigned int) [54]
+-----------------------------------------------
+                0.00    0.00       1/1           dijkstra() [1]
+[74]     0.0    0.00    0.00       1         std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >, cmp>::~priority_queue() [74]
+                0.00    0.00       1/2           std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::~vector() [64]
+-----------------------------------------------
+                0.00    0.00       1/1           dijkstra() [1]
+[75]     0.0    0.00    0.00       1         std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::vector(std::allocator<std::pair<int, int> > const&) [75]
+                0.00    0.00       1/1           std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_Vector_base(std::allocator<std::pair<int, int> > const&) [72]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::vector(std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > const&) [36]
+[76]     0.0    0.00    0.00       1         std::pair<int, int>* std::uninitialized_copy<__gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int>*>(__gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int>*) [76]
+                0.00    0.00       1/1           std::pair<int, int>* std::__uninitialized_copy_aux<__gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int>*>(__gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int>*, __false_type) [77]
+-----------------------------------------------
+                0.00    0.00       1/1           std::pair<int, int>* std::uninitialized_copy<__gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int>*>(__gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int>*) [76]
+[77]     0.0    0.00    0.00       1         std::pair<int, int>* std::__uninitialized_copy_aux<__gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int>*>(__gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int>*, __false_type) [77]
+                0.00    0.00       1/1           bool __gnu_cxx::operator!=<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >(__gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&, __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&) [68]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+
+Index by function name
+
+  [57] calc(long long)        [21] std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::end() const [48] std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::pop_back()
+   [1] dijkstra()             [34] std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::size() const [10] std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::push_back(std::pair<int, int> const&)
+  [12] cmp::operator()(std::pair<int, int> const&, std::pair<int, int> const&) [26] std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::begin() const [75] std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::vector(std::allocator<std::pair<int, int> > const&)
+  [51] __gnu_cxx::new_allocator<std::pair<int, int> >::deallocate(std::pair<int, int>*, unsigned int) [20] std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::empty() const [36] std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::vector(std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > const&)
+  [52] __gnu_cxx::new_allocator<std::pair<int, int> >::allocate(unsigned int, void const*) [29] std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::front() const [64] std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::~vector()
+  [56] __gnu_cxx::new_allocator<std::pair<int, int> >::new_allocator(__gnu_cxx::new_allocator<std::pair<int, int> > const&) [70] std::allocator<std::pair<int, int> >::allocator(std::allocator<std::pair<int, int> > const&) [11] void std::_Construct<std::pair<int, int>, std::pair<int, int> >(std::pair<int, int>*, std::pair<int, int> const&)
+  [67] __gnu_cxx::new_allocator<std::pair<int, int> >::new_allocator() [71] std::allocator<std::pair<int, int> >::allocator() [5] void std::__pop_heap<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int>, cmp>(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int>, cmp)
+  [55] __gnu_cxx::new_allocator<std::pair<int, int> >::~new_allocator() [58] std::allocator<std::pair<int, int> >::allocator(std::allocator<std::pair<int, int> > const&) [14] void std::__push_heap<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, int, std::pair<int, int>, cmp>(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, int, int, std::pair<int, int>, cmp)
+  [25] __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::__normal_iterator(std::pair<int, int> const* const&) [59] std::allocator<std::pair<int, int> >::~allocator() [6] void std::__adjust_heap<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, int, std::pair<int, int>, cmp>(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, int, int, std::pair<int, int>, cmp)
+  [13] __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::__normal_iterator(std::pair<int, int>* const&) [60] std::allocator<std::pair<int, int> >::~allocator() [30] void std::__destroy_aux<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > >(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __false_type)
+  [41] __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::operator++() [54] std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_allocate(unsigned int) [65] void std::__destroy_aux<std::pair<int, int>*>(std::pair<int, int>*, std::pair<int, int>*, __false_type)
+  [45] bool __gnu_cxx::operator==<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >(__gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&, __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&) [61] std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_Vector_impl::_Vector_impl(std::allocator<std::pair<int, int> > const&) [76] std::pair<int, int>* std::uninitialized_copy<__gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int>*>(__gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int>*)
+  [53] __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::difference_type __gnu_cxx::operator-<std::pair<int, int> const*, std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >(__gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&, __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&) [62] std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_Vector_impl::~_Vector_impl() [16] __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > std::uninitialized_copy<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > >(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >)
+  [23] __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::difference_type __gnu_cxx::operator-<std::pair<int, int>*, std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&) [50] std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_deallocate(std::pair<int, int>*, unsigned int) [77] std::pair<int, int>* std::__uninitialized_copy_aux<__gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int>*>(__gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int>*, __false_type)
+  [68] bool __gnu_cxx::operator!=<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >(__gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&, __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&) [72] std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_Vector_base(std::allocator<std::pair<int, int> > const&) [17] __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > std::__uninitialized_copy_aux<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > >(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __false_type)
+  [28] bool __gnu_cxx::operator!=<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > const&) [73] std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_Vector_base(unsigned int, std::allocator<std::pair<int, int> > const&) [31] void std::_Destroy<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > > >(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >)
+  [42] __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::base() const [63] std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::~_Vector_base() [66] void std::_Destroy<std::pair<int, int>*>(std::pair<int, int>*, std::pair<int, int>*)
+  [46] __gnu_cxx::__normal_iterator<std::pair<int, int> const*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::operator*() const [3] std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >, cmp>::pop() [43] void std::_Destroy<std::pair<int, int> >(std::pair<int, int>*)
+  [24] __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::base() const [8] std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >, cmp>::push(std::pair<int, int> const&) [4] void std::pop_heap<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, cmp>(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, cmp)
+   [9] __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::operator*() const [35] std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >, cmp>::priority_queue(cmp const&, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > const&) [37] void std::make_heap<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, cmp>(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, cmp)
+  [32] __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::operator-(int const&) const [74] std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >, cmp>::~priority_queue() [49] std::pair<int, int> std::make_pair<int, int>(int, int)
+   [7] __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::operator+(int const&) const [47] std::pair<int, int>::pair(int const&, int const&) [18] void std::push_heap<__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, cmp>(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, cmp)
+  [69] std::_Vector_base<std::pair<int, int>, std::allocator<std::pair<int, int> > >::get_allocator() const [15] std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int> const&) [44] operator new(unsigned int, void*)
+  [22] std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >, cmp>::top() const [27] std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::end()
+  [19] std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >, cmp>::empty() const [33] std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::begin()

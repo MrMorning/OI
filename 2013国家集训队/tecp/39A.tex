@@ -1,0 +1,19 @@
+\newproblem{39A. C*++ Calculations}
+\begin{prob}
+	定义一种如下的语言：
+	\begin{itemize}
+		\item expression::=summand|expression+summand|expression-summand
+		\item summand::=increment|coefficient*increment
+		\item increment::=a++|++a
+		\item coefficient::=0|1|2|...|1000
+	\end{itemize}
+	其中，$a$的初始值已知。求一种运算顺序，使给定表达式的值最大。
+\end{prob}
+
+\begin{sol}
+	将表达式解析成很多
+	\texttt{k*(++a)}或\texttt{k*(a++)}
+	的形式。显然，因按$k$升序来操作。
+	而$ka+k(a+2)=2k(a+1)$
+	，故\texttt{++a}和\texttt{a++}的顺序不影响。
+\end{sol}

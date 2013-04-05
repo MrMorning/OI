@@ -1,0 +1,43 @@
+\documentclass{article}
+\usepackage{fontspec}
+\usepackage{indentfirst}
+\usepackage{listings}
+\usepackage[colorlinks,linkcolor=blue,anchorcolor=blue,citecolor=green]{hyperref}
+
+\setmainfont{文泉驿微米黑}
+\XeTeXlinebreaklocale &quot;zh&quot;
+\XeTeXlinebreakskip = 0pt plus 1pt minus 0.1pt
+\title{求解$x^a \equiv b(mod\ m)$}
+\author{CDQZ OI Team\footnote{发现者：before\_rain，探索者：ymfoi，执笔者：csimstu}}
+\begin{document}
+\maketitle
+\tableofcontents
+
+\section{题目描述}
+求方程$x^a \equiv b(mod\ m)$的所有解，其中$m$是素数。
+\section{理论支持}
+\subsection{定义} $r$对模$m$的指数$Ord_m(r)$为使$r^d \equiv 1\ (mod\ m)$成立的最小正整数，若$Ord_m(r) = \varphi(m)$，则称$r$是$m$的原根。
+\subsection{性质} 令$\delta = Ord_m(r)$，则$r^0,r^1,r^2 \ldots ,r^{\delta-1}$模$m$两两不同余。假设同余，就可以得到一个更小的$\delta$，于假设不符。
+\subsection{用途} 由于$m$是素数，由费马小定理知，$r^{m-1} \equiv 1 \ (mod\ m)$，故$\delta = \varphi(m) = m - 1$。于是，$r^0,r^1,r^2 \ldots ,r^{m-2}$恰好组成了一个$1$到$m-1$的排列\footnote{只考虑$r > 0$的情况，$r = 0$可以特判。}。反过来，每一个$1$到$m-1$的的数（即这个同余系中的每一个数）都可以表成$r^k$。不妨设$x = r^i$，$b = r^j$，于是有
+\begin{center}
+$r^{ia} \equiv r^j\ (mod\ m)$
+\end{center}
+因为$r^0,r^1,r^2 \ldots ,r^{m-2}$恰好组成了一个$1$到$m-1$的排列，所以上式可写成$ia \equiv j\ (mod\ m - 1)$。如果求得了$j$，就能解出$i$，从而得到$x=r^i$的值。
+\section{Stage I: 求$m$的原根}
+目前还没有快速求原根的方法。幸运的是，解决本问题只需求出一个原根，且经过科学验证，在小于$10^9$的数中，每个数最小的原根最多只有几十。枚举原根$r$即可。验证也可以做得很快：可以证明，只需验证$\frac{m-1}{p}$，其中$p$是能整除$m-1$的素数。可以暴力分解质因数。
+\section{Stage II: 求离散对数$j$}
+因为$j \leq m-1$，可以设$p = \lfloor \sqrt{m-1} \rfloor$，这样一来，$j$可以写成$j = pk + s$，只需要枚举$k$于$s$中的一个，利用乘法逆元，看另一个是否能满足。如果套上map，复杂度为$O(\sqrt{m} \log m)$;
+\section{Stage III: 解线性同余方程}
+直接上扩展欧几里得算法。在算每一个解的时候，可以暴力枚举，直到出现重复，因为答案肯定不会太多。
+\section{注意事项}
+\begin{enumerate}
+\item 不管是乘法还是加法都要记得转long long并取模。特别注意加法以及负数。
+\item 用扩展欧几里得算法时要注意答案是否完整。
+\end{enumerate}
+
+\section{代码}
+\begin{enumerate}
+\item \href{http://www.tedyin.com/blog/archive/567/}{ymfoi的代码}，特点：形状优美，结构匀称。
+\item \href{https://ideone.com/5Uuhi}{csimstu的代码}，特点：耦合度低，易于阅读，STL使用较多，pascaler慎入。
+\end{enumerate}
+\end{document}

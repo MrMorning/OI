@@ -1,0 +1,13 @@
+\newproblem{45E. Director}
+\begin{prob}
+	有$n(n\le 100)$个name，$n$个surname。
+	现在要将name和surname配成$n$对，然
+	后排成一排。要求首字母相同的对数尽量多。
+	其次，最后排成一排的字典序最小。
+\end{prob}
+
+\begin{sol}
+	将name和surname单独排序。从小到大枚
+	举每个name，考虑跟surname匹配。如果匹配
+	后不会影响首字母相同的总对数，就贪心匹配最小的surname。
+\end{sol}

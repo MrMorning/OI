@@ -1,0 +1,6 @@
+\section{Five Powers}
+简单的动态规划。预处理出$w[l,r]$表示$str[l..r]$是否可以独立成一段。
+用$f[i]$表示前$i$个字符的最小可行分割数。dp方程如下:
+\begin{displaymath}
+f[i] = \min_{1 \le j < i}\{ f[j] + 1 | \text{if $w[j+1,i]$ is true} \}
+\end{displaymath}

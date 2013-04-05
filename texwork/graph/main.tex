@@ -1,0 +1,71 @@
+\documentclass[a4paper]{article}
+\usepackage[slantfont, boldfont, CJKtextspaces, CJKmathspaces]{xeCJK}
+\usepackage{fontspec,xunicode,xltxtra}
+\usepackage[pagestyles]{titlesec}
+\usepackage{indentfirst}
+\usepackage[top=1in,bottom=1in,left=1.25in,right=1.25in]{geometry}
+\usepackage{amsmath}
+\usepackage[usenames,dvipsnames]{color}
+%\usepackage[colorlinks,linkcolor=red,anchorcolor=Blue,citecolor=green]{hyperref}
+
+\setCJKmainfont[BoldFont={黑体}, ItalicFont={楷体_GB2312}]{宋体}
+\setmainfont{Liberation Serif} 
+\setsansfont{Liberation Sans} 
+\setmonofont{文泉驿等宽微米黑}
+
+\punctstyle{kaiming} % 开明式标点格式  
+
+\titleformat{\section}{\Large\bfseries}{\S\,\thesection}{1em}{}
+\titleformat{\subsection}{\large\bfseries}{\S\,\thesubsection}{1em}{}
+\newpagestyle{main}{
+	\sethead{\small\S\,\thesection\quad\sectiontitle}{}{$\cdot$~\thepage~$\cdot$}
+	\setfoot{}{}{}\headrule
+}
+\renewcommand{\contentsname}{目录Content}
+\renewcommand{\abstractname}{摘要Abstract}
+%\renewcommand{\today}{\number\year 年 \number\month 月}
+\renewcommand\refname{参考文献References}
+
+\pagestyle{main}
+\date{2011-08-30}
+
+\begin{document}
+
+\title{利用图论模型解决几类特殊的线性规划问题 \\
+METHODS BASED ON GRAPH MODELS TO SOLVE SPECIAL KINDS OF LINEAR PROGRAMMING}
+\author{高2013级13班 李凌霄 \\
+Class 13, Grade 2013, Lingxiao Li}
+\maketitle
+\begin{abstract}
+	线性规划(Linear Programming，简称LP)是最优化问题中的重要领域之一，
+	研究线性约束下线性目标函数的最值问题，
+	广泛应用于军事作战、经济分析、经营管理和工程技术等方面。\par
+	本文提出了几类特殊的线性规划问题，通过与图论模型相联结，
+	得到了较好的解决。
+	\par
+	\vspace{0.6cm}
+	Linear Programming is a mathematical method for determining a way
+	to achieve the best outcome in a given mathematical model for some 
+	list of requirements represented as linear relationships, 
+	which has proved useful in modeling diverse types of problems in 
+	planning, routing, scheduling, assignment, and design.\par
+	This thesis suggests several kinds of LP problems with speciality
+	which can be solved with analogy to classic graph models, 
+	such as shortest path, weighted perfect matching, and network flow.
+\end{abstract}
+\tableofcontents
+
+
+\input{sec1}
+\input{sec2}
+\input{sec3}
+
+\section{总结}
+一些看似与图论无关的问题，在合理的数学抽象之后，通过类比，
+成功地转化为了可解决的图论模型。整个过程看似天马行空，
+实际上只不过是几个简单问题的组合。在这其中，
+起着串联作用的就是类比思想。这如同一位大牛所说：“养成主动类比的习惯是非常有效的，尤其在山穷水尽之时，其往往能够让我们柳暗花明！当然，类比思维建立在\textbf{非常扎实的基础算法功底}之上。”
+
+\input{bib}
+
+\end{document}

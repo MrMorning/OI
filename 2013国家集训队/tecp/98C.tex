@@ -1,0 +1,16 @@
+\newproblem{98C. Help Greg the Dwarf}
+\begin{prob}
+	{\centering
+	\includegraphics[scale=0.75]{98C.png} } 
+	\par
+	矮人Greg想要将一个长为$l$宽为$w$的矩形棺材（棺材表面绝对光滑，所以棺材可以任意的滑动）拖过一个L型墓道。如图所示，L型墓道两个走廊的宽度分别是$a$和$b$，呈$90^\circ$，并且走廊的长度远大于$l$。现在矮人Greg想知道对于给定的$a$、$b$、$l$，最大的$w$是多少，或者无论如何也不能通过。
+
+\end{prob}
+
+\begin{sol}
+	\begin{center}
+		\includegraphics[width=5cm]{98C.eps} 
+	\end{center}
+	\par
+		如图所示，矩形一边沿墙角滑下，可以发现，内拐点到这边的距离是关于时间的单峰函数。三分得到其最小值就是答案。
+\end{sol}

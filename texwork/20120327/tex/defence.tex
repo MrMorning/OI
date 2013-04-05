@@ -1,0 +1,42 @@
+\section{人品保卫战}
+\subsection{题目描述}
+\par { \itshape 
+	设想你去参加noip2012，你的座位是在
+		第一行的末端（即第$N+1$个）。第一行$N + 1$个座位，
+		你必须从第一个座位走到第$N+1$个座位。
+		初始时，经过每个座位的时间为$T$秒。
+		不幸的是，前$N$个位置上都坐满了杀气冲天的神牛。
+		这里假设神牛只有三种：
+		\begin{enumerate}
+	\item TedYin 经过Ted所在位置时每秒钟rp会减少$R$点。
+		\item TheodoreYou 当你{\textbf{走过}}Theo所在位置
+		，之后的每一秒都会因为Theo强大的气场被吸走$G$点rp。
+		\item BeforeRain 当你{\textbf{走过}}BeforeRain所在位置，
+		你会因见到珍惜的OImei而放缓前进的步伐。
+		即经过之后每个人的时间会增加$B$秒。
+	\end{enumerate}
+	\par 其中，Theo和BeforeRain的效果可以叠加。
+		也就是说，在经过$m$个Theo后，每秒会被吸走$mG$点rp。
+		在经过$m$个BeforeRain后，
+		经过每个座位的时间会变为$T + mB$。
+}
+\newline
+\par 现在，离noip2012还有一段时间。假设你已经知道你的位置，
+你必须预测到最坏情况下会被吸走多少rp。写个程序输出这个最大值。\par
+注意：所有神牛的影响在进入你的位置时就消失了。
+
+\subsection{输入格式}
+一行，五个空格隔开的整数$N$、$R$、$G$、$B$、$T$。 
+\subsection{输出格式}
+只需输出一行一个整数，即最坏情况下会被吸走多少rp。
+\subsection{样例输入}
+5 4 3 2 1
+\subsection{样例输出}
+82
+\subsection{Hint}
+\par
+$20\%$的数据满足$N \le 12$；
+\par
+$50\%$的数据满足$N \le 100$；
+\par
+$100\%$的数据满足$N \le 1024$，$0 \le R, G, B \le 65536$， $0 \le T \le 3$。

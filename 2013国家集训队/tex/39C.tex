@@ -1,0 +1,16 @@
+\newproblem{39C. Moon Craters}
+\begin{prob}
+	有$n(n \le 2000)$条x轴上的线段
+	$\{(l_i,r_i)|1\le i\le n\}$，
+	要求选出一个集合，使不存在两条线
+	段相交（可以互相包含），求使集合最大的方案。
+\end{prob}
+
+\begin{sol}
+	先离散化坐标，设计状态$f[i][j]$
+	表示$[i,j]$区间的答案。枚举以$j$为
+	尾的线段$seg$，
+	那么$f[i][j] \gets \max(f[i][j-1],f[i][seg.l]+f[seg.l][r])$
+	。如果$[i,j]$本身是一条线段，那么$f[i][j]+=1$
+	。转移时记录方案，最后递归输出答案。
+\end{sol}

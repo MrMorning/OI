@@ -1,0 +1,22 @@
+\newproblem{19E. Fairy}
+\begin{prob}
+	对于一个$n$个点$m$条边的无向图
+	$(n,m\le 10^4)$，问删除哪条边后变成二分图。
+\end{prob}
+
+\begin{sol}
+	首先建一个生成树森林，然后进行染色。对于每
+	条非树边，如果两端点的颜色不同，则称为$errEdge$
+	。在树上连接$errEdge$两端点的路径称为$errPath$。
+	\par
+	首先考虑删除非树边：如果$n(errEdge)=0$那么都可以删
+	除；如果$n(errEdge)=1$则必须删除这条$errEdge$；
+	如果$n(errEdge)>1$那么都不能删除。
+	\par
+	然后考虑树边。
+	对每条树边记$a_i,b_i$分别表示经过这条边的$errPath$
+	数目，非$errPath$数目。于是可以发现，第$i$条
+	树边是答案的充要条件是$n(errEdge)=0\ or
+	\ (a_i=n(errEdge)\ and\ b_i=0)$。用各种数据结构都可以维护
+	每个边$a_i, b_i$的值。
+\end{sol}

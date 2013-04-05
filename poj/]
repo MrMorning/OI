@@ -1,0 +1,53 @@
+#include <cstdio>
+#include <iostream>
+#include <string>
+
+using std::string;
+using std::cin;
+
+const int SCORE[5][5] = {{5, -1, -2, -1, -3},
+						{-1, 5, -3, -2, -4},
+						{-2, -3, 5, -2, -2},
+						{-1, -2, -2, 5, -1},
+						{-3, -4, -2, -1, 0}};
+const int MAXN = 101;
+string s1, s2;
+int a[MAXN], b[MAXN];
+
+
+int Map(char ch)
+{
+	switch(ch)
+	{
+		case 'A': return 0;
+		case 'C': return 1;
+		case 'G': return 2;
+		case 'T': return 3;
+	}
+	return -inf;
+}
+
+int main()
+{
+	freopen("t.in", "r", stdin);
+	int testNum;
+	scanf("%d\n", &testNum);
+	while(testNum --)
+	{
+		cin >> s1 >> s2;
+		for(int i = 0; i < s1.length(); i ++)
+			a[i+1] = Map(s1[i]);
+		for(int i = 0; i < s2.length(); i ++)
+			b[i+1] = Map(s2[i]);
+		f[0][0] = 0;
+		int len1 = s1.length(), len2 = s2.length();
+		for(int i = 1; i <= len1; i ++)
+			for(int j = 1; j <= len2; j ++)
+			{
+				Update(f[i][j], f[i-1][j-1] + SCORE[a[i]][b[j]]);
+				Update(f[i][j], f[i-1][j] + SCORE[a[i]][4]);
+				Update(f[i][j], f[i][j-1] + SCORE[4][b[j]]);
+			}
+		printf("%d\n", f[len1][len2]);
+	}
+}

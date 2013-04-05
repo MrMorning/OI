@@ -1,0 +1,108 @@
+#include <cstdio>
+const int L_MAT_ELE[5][5] = {
+	{0, 1, 0, 0, 0},
+	{0, 0, 0, 1, 1},
+	{0, 0, 1, 0, 0},
+	{1, 0, 0, 0, 0},
+	{0, 0, 0, 0, 1}
+};
+const int R_MAT_ELE[5][5] = {
+	{0, 0, 1, 0, 0},
+	{0, 1, 0, 0, 0},
+	{0, 0, 0, 1, 1},
+	{1, 0, 0, 0, 0},
+	{0, 0, 0, 0, 1}
+};
+const int B_MAT_ELE[5][5] = {
+	{0, 0, 0, 1, 0},
+	{0, 0, 1, 0, 0},
+	{0, 1, 0, 0, 0},
+	{1, 0, 0, 0, 1},
+	{0, 0, 0, 0, 1}
+};
+
+struct Matrix {
+	int ele[5][5];
+	Matrix() {
+		memset(ele, 0, sizeof(ele));
+	}
+} B_mat, L_mat, R_mat, I_mat;
+
+struct Node {
+	int l, r;
+	Matrix mat;
+} node[N_MAX << 2];
+
+Matrix mat_mul(const Matrix &a, const Matrix &b) {
+	Matrix res;
+	for (int i = 0; i < 5; i ++)
+		for (int j = 0; j < 5; j ++)
+			for (int k = 0; k < 5; k ++)
+				res.ele[i][j] += a.ele[i][k] * b.ele[k][j];
+	return res;
+}
+
+void update(int i) {
+	node[i].mat = mat_mul(node[LCH(i)].mat, node[RCH(i)].mat);
+}
+
+void build(int i, int l, int r) {
+	node[i].l = l, node[i].r = r;
+	if (l == r) {
+		if (init_cmd[l] == 'L')
+			node[i].mat = L_mat;
+		if (init_cmd[l] == 'R')
+			node[i].mat = R_mat;
+		if (init_cmd[l] == 'B')
+			node[i].mat = B_mat;
+		return;
+	}
+	update(i);
+}
+
+Matrix ask(int i, int l, int r) {
+	if (node[i].l > r || node[i].r < l)
+		return I_mat;
+	if (l <= node[i].l && node[i].r <= r)
+		return node[i].mat;
+	return mat_mul(ask(LCH(i), l, r), ask(RCH(i), l, r));
+}
+
+void change(int i, int p, char ch) {
+	if (node[i].l > p || node[i].r < p)
+		return;
+	if (p <= node[i].l && node[i].r <= p) {
+		if (ch == 'L')
+			node[i].mat = L_mat;
+		if (ch == 'R')
+			node[i].mat = R_mat;
+		if (ch == 'B')
+			node[i].mat = B_mat;
+		return;
+	}
+	change(LCH(i), p, ch);
+	change(RCH(i), p, ch);
+	update(i);
+}
+
+int main() {
+	freopen("t.in", "r", stdin);
+	for (int i = 0; i < 5; i ++)
+		I_mat[i][i] = 1;
+	memcpy(L_mat.ele, L_MAT_ELE, sizeof(L_MAT_ELE));
+	memcpy(R_mat.ele, R_MAT_ELE, sizeof(R_MAT_ELE));
+	memcpy(B_mat.ele, B_MAT_ELE, sizeof(B_MAT_ELE));
+	scanf("%d", &n);
+	scanf("%s", init_cmd + 1);
+	build(1, 1, n);
+	scanf("%d", &m);
+	while (m --) {
+		int t;
+		scanf("%d", &t);
+		if (t == 0) {
+			int p;
+			char ch[3];
+			scanf("%d%s", &p, ch);
+		}
+	}
+}

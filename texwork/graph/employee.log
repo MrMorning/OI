@@ -1,0 +1,778 @@
+This is XeTeX, Version 3.1415926-2.2-0.9995.2 (TeX Live 2009/Debian) (format=xelatex 2011.7.16)  18 AUG 2011 19:18
+entering extended mode
+ %&-line parsing enabled.
+**employee.tex
+(./employee.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, pinyin, loaded.
+! Undefined control sequence.
+l.1 \subsection
+               {[例三]NOI2008 志愿者招募}
+? q
+OK, entering \batchmode...
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \subsection{[
+                 例三]NOI2008 志愿者招募}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no 例 in font nullfont!
+Missing character: There is no 三 in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no O in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 8 in font nullfont!
+Missing character: There is no 志 in font nullfont!
+Missing character: There is no 愿 in font nullfont!
+Missing character: There is no 者 in font nullfont!
+Missing character: There is no 招 in font nullfont!
+Missing character: There is no 募 in font nullfont!
+! Undefined control sequence.
+l.2 \subsubsection
+                  {描述}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 描 in font nullfont!
+Missing character: There is no 述 in font nullfont!
+Missing character: There is no 申 in font cmti10!
+Missing character: There is no 奥 in font cmti10!
+Missing character: There is no 成 in font cmti10!
+Missing character: There is no 功 in font cmti10!
+Missing character: There is no 后 in font cmti10!
+Missing character: There is no 布 in font cmti10!
+Missing character: There is no 布 in font cmti10!
+Missing character: There is no 经 in font cmti10!
+Missing character: There is no 过 in font cmti10!
+Missing character: There is no 不 in font cmti10!
+Missing character: There is no 懈 in font cmti10!
+Missing character: There is no 努 in font cmti10!
+Missing character: There is no 力 in font cmti10!
+Missing character: There is no 终 in font cmti10!
+Missing character: There is no 于 in font cmti10!
+Missing character: There is no 成 in font cmti10!
+Missing character: There is no 为 in font cmti10!
+Missing character: There is no 奥 in font cmti10!
+Missing character: There is no 组 in font cmti10!
+Missing character: There is no 委 in font cmti10!
+Missing character: There is no 下 in font cmti10!
+Missing character: There is no 属 in font cmti10!
+Missing character: There is no 公 in font cmti10!
+Missing character: There is no 司 in font cmti10!
+Missing character: There is no 人 in font cmti10!
+Missing character: There is no 力 in font cmti10!
+Missing character: There is no 资 in font cmti10!
+Missing character: There is no 源 in font cmti10!
+Missing character: There is no 部 in font cmti10!
+Missing character: There is no 门 in font cmti10!
+Missing character: There is no 的 in font cmti10!
+Missing character: There is no 主 in font cmti10!
+Missing character: There is no 管 in font cmti10!
+Missing character: There is no 。 in font cmti10!
+Missing character: There is no 布 in font cmti10!
+Missing character: There is no 布 in font cmti10!
+Missing character: There is no 刚 in font cmti10!
+Missing character: There is no 上 in font cmti10!
+Missing character: There is no 任 in font cmti10!
+Missing character: There is no 就 in font cmti10!
+Missing character: There is no 遇 in font cmti10!
+Missing character: There is no 到 in font cmti10!
+Missing character: There is no 了 in font cmti10!
+Missing character: There is no 一 in font cmti10!
+Missing character: There is no 个 in font cmti10!
+Missing character: There is no 难 in font cmti10!
+Missing character: There is no 题 in font cmti10!
+Missing character: There is no 为 in font cmti10!
+Missing character: There is no 即 in font cmti10!
+Missing character: There is no 将 in font cmti10!
+Missing character: There is no 启 in font cmti10!
+Missing character: There is no 动 in font cmti10!
+Missing character: There is no 的 in font cmti10!
+Missing character: There is no 奥 in font cmti10!
+Missing character: There is no 运 in font cmti10!
+Missing character: There is no 新 in font cmti10!
+Missing character: There is no 项 in font cmti10!
+Missing character: There is no 目 in font cmti10!
+Missing character: There is no 招 in font cmti10!
+Missing character: There is no 募 in font cmti10!
+Missing character: There is no 一 in font cmti10!
+Missing character: There is no 批 in font cmti10!
+Missing character: There is no 短 in font cmti10!
+Missing character: There is no 期 in font cmti10!
+Missing character: There is no 志 in font cmti10!
+Missing character: There is no 愿 in font cmti10!
+Missing character: There is no 者 in font cmti10!
+Missing character: There is no 。 in font cmti10!
+Missing character: There is no 经 in font cmti10!
+Missing character: There is no 过 in font cmti10!
+Missing character: There is no 估 in font cmti10!
+Missing character: There is no 算 in font cmti10!
+Missing character: There is no 这 in font cmti10!
+Missing character: There is no 个 in font cmti10!
+Missing character: There is no 项 in font cmti10!
+Missing character: There is no 目 in font cmti10!
+Missing character: There is no 需 in font cmti10!
+Missing character: There is no 要 in font cmti10!
+Missing character: There is no 天 in font cmti10!
+Missing character: There is no 才 in font cmti10!
+Missing character: There is no 能 in font cmti10!
+Missing character: There is no 完 in font cmti10!
+Missing character: There is no 成 in font cmti10!
+Missing character: There is no 其 in font cmti10!
+Missing character: There is no 中 in font cmti10!
+Missing character: There is no 第 in font cmti10!
+Missing character: There is no 天 in font cmti10!
+Missing character: There is no 至 in font cmti10!
+Missing character: There is no 少 in font cmti10!
+Missing character: There is no 需 in font cmti10!
+Missing character: There is no 要 in font cmti10!
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 6.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 6.
+Missing character: There is no 个 in font cmti10!
+Missing character: There is no 人 in font cmti10!
+Missing character: There is no 。 in font cmti10!
+Missing character: There is no 布 in font cmti10!
+Missing character: There is no 布 in font cmti10!
+Missing character: There is no 通 in font cmti10!
+Missing character: There is no 过 in font cmti10!
+Missing character: There is no 了 in font cmti10!
+Missing character: There is no 解 in font cmti10!
+Missing character: There is no 得 in font cmti10!
+Missing character: There is no 知 in font cmti10!
+Missing character: There is no 一 in font cmti10!
+Missing character: There is no 共 in font cmti10!
+Missing character: There is no 有 in font cmti10!
+Missing character: There is no 类 in font cmti10!
+Missing character: There is no 志 in font cmti10!
+Missing character: There is no 愿 in font cmti10!
+Missing character: There is no 者 in font cmti10!
+Missing character: There is no 可 in font cmti10!
+Missing character: There is no 以 in font cmti10!
+Missing character: There is no 招 in font cmti10!
+Missing character: There is no 募 in font cmti10!
+Missing character: There is no 。 in font cmti10!
+Missing character: There is no 其 in font cmti10!
+Missing character: There is no 中 in font cmti10!
+Missing character: There is no 第 in font cmti10!
+Missing character: There is no 类 in font cmti10!
+Missing character: There is no 可 in font cmti10!
+Missing character: There is no 以 in font cmti10!
+Missing character: There is no 从 in font cmti10!
+Missing character: There is no 第 in font cmti10!
+Missing character: There is no 天 in font cmti10!
+Missing character: There is no 工 in font cmti10!
+Missing character: There is no 作 in font cmti10!
+Missing character: There is no 到 in font cmti10!
+Missing character: There is no 第 in font cmti10!
+Missing character: There is no 天 in font cmti10!
+Missing character: There is no 招 in font cmti10!
+Missing character: There is no 募 in font cmti10!
+Missing character: There is no 费 in font cmti10!
+Missing character: There is no 用 in font cmti10!
+Missing character: There is no 是 in font cmti10!
+Missing character: There is no 每 in font cmti10!
+Missing character: There is no 人 in font cmti10!
+Missing character: There is no 元 in font cmti10!
+Missing character: There is no 。 in font cmti10!
+Missing character: There is no 新 in font cmti10!
+Missing character: There is no 官 in font cmti10!
+Missing character: There is no 上 in font cmti10!
+Missing character: There is no 任 in font cmti10!
+Missing character: There is no 三 in font cmti10!
+Missing character: There is no 把 in font cmti10!
+Missing character: There is no 火 in font cmti10!
+Missing character: There is no 为 in font cmti10!
+Missing character: There is no 了 in font cmti10!
+Missing character: There is no 出 in font cmti10!
+Missing character: There is no 色 in font cmti10!
+Missing character: There is no 地 in font cmti10!
+Missing character: There is no 完 in font cmti10!
+Missing character: There is no 成 in font cmti10!
+Missing character: There is no 自 in font cmti10!
+Missing character: There is no 己 in font cmti10!
+Missing character: There is no 的 in font cmti10!
+Missing character: There is no 工 in font cmti10!
+Missing character: There is no 作 in font cmti10!
+Missing character: There is no 布 in font cmti10!
+Missing character: There is no 布 in font cmti10!
+Missing character: There is no 希 in font cmti10!
+Missing character: There is no 望 in font cmti10!
+Missing character: There is no 用 in font cmti10!
+Missing character: There is no 尽 in font cmti10!
+Missing character: There is no 量 in font cmti10!
+Missing character: There is no 少 in font cmti10!
+Missing character: There is no 的 in font cmti10!
+Missing character: There is no 费 in font cmti10!
+Missing character: There is no 用 in font cmti10!
+Missing character: There is no 招 in font cmti10!
+Missing character: There is no 募 in font cmti10!
+Missing character: There is no 足 in font cmti10!
+Missing character: There is no 够 in font cmti10!
+Missing character: There is no 的 in font cmti10!
+Missing character: There is no 志 in font cmti10!
+Missing character: There is no 愿 in font cmti10!
+Missing character: There is no 者 in font cmti10!
+Missing character: There is no 但 in font cmti10!
+Missing character: There is no 这 in font cmti10!
+Missing character: There is no 并 in font cmti10!
+Missing character: There is no 不 in font cmti10!
+Missing character: There is no 是 in font cmti10!
+Missing character: There is no 他 in font cmti10!
+Missing character: There is no 的 in font cmti10!
+Missing character: There is no 特 in font cmti10!
+Missing character: There is no 长 in font cmti10!
+Missing character: There is no 于 in font cmti10!
+Missing character: There is no 是 in font cmti10!
+Missing character: There is no 布 in font cmti10!
+Missing character: There is no 布 in font cmti10!
+Missing character: There is no 找 in font cmti10!
+Missing character: There is no 到 in font cmti10!
+Missing character: There is no 了 in font cmti10!
+Missing character: There is no 你 in font cmti10!
+Missing character: There is no 希 in font cmti10!
+Missing character: There is no 望 in font cmti10!
+Missing character: There is no 你 in font cmti10!
+Missing character: There is no 帮 in font cmti10!
+Missing character: There is no 他 in font cmti10!
+Missing character: There is no 设 in font cmti10!
+Missing character: There is no 计 in font cmti10!
+Missing character: There is no 一 in font cmti10!
+Missing character: There is no 种 in font cmti10!
+Missing character: There is no 最 in font cmti10!
+Missing character: There is no 优 in font cmti10!
+Missing character: There is no 的 in font cmti10!
+Missing character: There is no 招 in font cmti10!
+Missing character: There is no 募 in font cmti10!
+Missing character: There is no 方 in font cmti10!
+Missing character: There is no 案 in font cmti10!
+Missing character: There is no 。 in font cmti10!
+! Undefined control sequence.
+l.12 \subsubsection
+                   {输入格式}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 输 in font nullfont!
+Missing character: There is no 入 in font nullfont!
+Missing character: There is no 格 in font nullfont!
+Missing character: There is no 式 in font nullfont!
+Missing character: There is no 第 in font cmti10!
+Missing character: There is no 一 in font cmti10!
+Missing character: There is no 行 in font cmti10!
+Missing character: There is no 包 in font cmti10!
+Missing character: There is no 含 in font cmti10!
+Missing character: There is no 两 in font cmti10!
+Missing character: There is no 个 in font cmti10!
+Missing character: There is no 整 in font cmti10!
+Missing character: There is no 数 in font cmti10!
+Missing character: There is no 表 in font cmti10!
+Missing character: There is no 示 in font cmti10!
+Missing character: There is no 完 in font cmti10!
+Missing character: There is no 成 in font cmti10!
+Missing character: There is no 项 in font cmti10!
+Missing character: There is no 目 in font cmti10!
+Missing character: There is no 的 in font cmti10!
+Missing character: There is no 天 in font cmti10!
+Missing character: There is no 数 in font cmti10!
+Missing character: There is no 和 in font cmti10!
+Missing character: There is no 可 in font cmti10!
+Missing character: There is no 以 in font cmti10!
+Missing character: There is no 招 in font cmti10!
+Missing character: There is no 募 in font cmti10!
+Missing character: There is no 的 in font cmti10!
+Missing character: There is no 志 in font cmti10!
+Missing character: There is no 愿 in font cmti10!
+Missing character: There is no 者 in font cmti10!
+Missing character: There is no 的 in font cmti10!
+Missing character: There is no 种 in font cmti10!
+Missing character: There is no 类 in font cmti10!
+Missing character: There is no 。 in font cmti10!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--16
+[]
+ []
+
+
+Overfull \hbox (6.1333pt too wide) in paragraph at lines 1--16
+\OT1/cmr/m/it/10 ,,
+ []
+
+
+Overfull \hbox (3.06665pt too wide) in paragraph at lines 1--16
+\OT1/cmr/m/it/10 :
+ []
+
+
+Overfull \hbox (3.06665pt too wide) in paragraph at lines 1--16
+\OT1/cmr/m/it/10 ,
+ []
+
+
+Overfull \hbox (7.43329pt too wide) in paragraph at lines 1--16
+\OT1/cmr/m/it/10 N
+ []
+
+
+Overfull \hbox (3.06665pt too wide) in paragraph at lines 1--16
+\OT1/cmr/m/it/10 ,
+ []
+
+
+Overfull \hbox (3.06665pt too wide) in paragraph at lines 1--16
+\OT1/cmr/m/it/10 i
+ []
+
+
+Overfull \hbox (10.8293pt too wide) in paragraph at lines 1--16
+\OML/cmm/m/it/10 A[]$
+ []
+
+
+Overfull \hbox (3.06665pt too wide) in paragraph at lines 1--16
+\OT1/cmr/m/it/10 ,
+ []
+
+
+Overfull \hbox (8.96661pt too wide) in paragraph at lines 1--16
+\OT1/cmr/m/it/10 M
+ []
+
+
+Overfull \hbox (3.06665pt too wide) in paragraph at lines 1--16
+\OT1/cmr/m/it/10 i
+ []
+
+
+Overfull \hbox (9.46123pt too wide) in paragraph at lines 1--16
+\OML/cmm/m/it/10 S[]$
+ []
+
+
+Overfull \hbox (9.17303pt too wide) in paragraph at lines 1--16
+\OML/cmm/m/it/10 T[]$
+ []
+
+
+Overfull \hbox (3.06665pt too wide) in paragraph at lines 1--16
+\OT1/cmr/m/it/10 ,
+ []
+
+
+Overfull \hbox (10.4765pt too wide) in paragraph at lines 1--16
+\OML/cmm/m/it/10 C[]$
+ []
+
+
+Overfull \hbox (3.06665pt too wide) in paragraph at lines 1--16
+\OT1/cmr/m/it/10 ,
+ []
+
+
+Overfull \hbox (9.19995pt too wide) in paragraph at lines 1--16
+\OT1/cmr/m/it/10 ,,!
+ []
+
+
+Overfull \hbox (3.06665pt too wide) in paragraph at lines 1--16
+\OT1/cmr/m/it/10 ,
+ []
+
+
+Overfull \hbox (12.19162pt too wide) in paragraph at lines 1--16
+\OML/cmm/m/it/10 N$\OT1/cmr/m/it/10 ,
+ []
+
+
+Overfull \hbox (13.8583pt too wide) in paragraph at lines 1--16
+\OML/cmm/m/it/10 M$\OT1/cmr/m/it/10 ,
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ^^I^^I\par 接
+                   下来的一行中包含 $N$ 个非负整数,表示每天...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 接 in font cmti10!
+Missing character: There is no 下 in font cmti10!
+Missing character: There is no 来 in font cmti10!
+Missing character: There is no 的 in font cmti10!
+Missing character: There is no 一 in font cmti10!
+Missing character: There is no 行 in font cmti10!
+Missing character: There is no 中 in font cmti10!
+Missing character: There is no 包 in font cmti10!
+Missing character: There is no 含 in font cmti10!
+Missing character: There is no 个 in font cmti10!
+Missing character: There is no 非 in font cmti10!
+Missing character: There is no 负 in font cmti10!
+Missing character: There is no 整 in font cmti10!
+Missing character: There is no 数 in font cmti10!
+Missing character: There is no 表 in font cmti10!
+Missing character: There is no 示 in font cmti10!
+Missing character: There is no 每 in font cmti10!
+Missing character: There is no 天 in font cmti10!
+Missing character: There is no 至 in font cmti10!
+Missing character: There is no 少 in font cmti10!
+Missing character: There is no 需 in font cmti10!
+Missing character: There is no 要 in font cmti10!
+Missing character: There is no 的 in font cmti10!
+Missing character: There is no 志 in font cmti10!
+Missing character: There is no 愿 in font cmti10!
+Missing character: There is no 者 in font cmti10!
+Missing character: There is no 人 in font cmti10!
+Missing character: There is no 数 in font cmti10!
+Missing character: There is no 。 in font cmti10!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 16--17
+[]
+ []
+
+
+Overfull \hbox (9.12497pt too wide) in paragraph at lines 16--17
+\OML/cmm/m/it/10 N$
+ []
+
+
+Overfull \hbox (3.06665pt too wide) in paragraph at lines 16--17
+\OT1/cmr/m/it/10 , 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 ^^I^^I\par 接
+                   下来的 $M$ 行中每行包含三个整数 $S_i$, $T_i$...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 接 in font cmti10!
+Missing character: There is no 下 in font cmti10!
+Missing character: There is no 来 in font cmti10!
+Missing character: There is no 的 in font cmti10!
+Missing character: There is no 行 in font cmti10!
+Missing character: There is no 中 in font cmti10!
+Missing character: There is no 每 in font cmti10!
+Missing character: There is no 行 in font cmti10!
+Missing character: There is no 包 in font cmti10!
+Missing character: There is no 含 in font cmti10!
+Missing character: There is no 三 in font cmti10!
+Missing character: There is no 个 in font cmti10!
+Missing character: There is no 整 in font cmti10!
+Missing character: There is no 数 in font cmti10!
+Missing character: There is no 含 in font cmti10!
+Missing character: There is no 义 in font cmti10!
+Missing character: There is no 如 in font cmti10!
+Missing character: There is no 上 in font cmti10!
+Missing character: There is no 文 in font cmti10!
+Missing character: There is no 所 in font cmti10!
+Missing character: There is no 述 in font cmti10!
+Missing character: There is no 。 in font cmti10!
+Missing character: There is no 为 in font cmti10!
+Missing character: There is no 了 in font cmti10!
+Missing character: There is no 方 in font cmti10!
+Missing character: There is no 便 in font cmti10!
+Missing character: There is no 起 in font cmti10!
+Missing character: There is no 见 in font cmti10!
+Missing character: There is no 我 in font cmti10!
+Missing character: There is no 们 in font cmti10!
+Missing character: There is no 可 in font cmti10!
+Missing character: There is no 以 in font cmti10!
+Missing character: There is no 认 in font cmti10!
+Missing character: There is no 为 in font cmti10!
+Missing character: There is no 每 in font cmti10!
+Missing character: There is no 类 in font cmti10!
+Missing character: There is no 志 in font cmti10!
+Missing character: There is no 愿 in font cmti10!
+Missing character: There is no 者 in font cmti10!
+Missing character: There is no 的 in font cmti10!
+Missing character: There is no 数 in font cmti10!
+Missing character: There is no 量 in font cmti10!
+Missing character: There is no 都 in font cmti10!
+Missing character: There is no 是 in font cmti10!
+Missing character: There is no 无 in font cmti10!
+Missing character: There is no 限 in font cmti10!
+Missing character: There is no 多 in font cmti10!
+Missing character: There is no 的 in font cmti10!
+Missing character: There is no 。 in font cmti10!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 17--19
+[]
+ []
+
+
+Overfull \hbox (10.79166pt too wide) in paragraph at lines 17--19
+\OML/cmm/m/it/10 M$
+ []
+
+
+Overfull \hbox (12.52788pt too wide) in paragraph at lines 17--19
+\OML/cmm/m/it/10 S[]$\OT1/cmr/m/it/10 ,
+ []
+
+
+Overfull \hbox (12.23969pt too wide) in paragraph at lines 17--19
+\OML/cmm/m/it/10 T[]$\OT1/cmr/m/it/10 ,
+ []
+
+
+Overfull \hbox (16.6098pt too wide) in paragraph at lines 17--19
+\OML/cmm/m/it/10 C[]$\OT1/cmr/m/it/10 ,,
+ []
+
+! Undefined control sequence.
+l.20 \subsubsection
+                   {输出格式}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \subsubsection{输
+                       出格式}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 输 in font nullfont!
+Missing character: There is no 出 in font nullfont!
+Missing character: There is no 格 in font nullfont!
+Missing character: There is no 式 in font nullfont!
+Missing character: There is no 仅 in font cmti10!
+Missing character: There is no 包 in font cmti10!
+Missing character: There is no 含 in font cmti10!
+Missing character: There is no 一 in font cmti10!
+Missing character: There is no 个 in font cmti10!
+Missing character: There is no 整 in font cmti10!
+Missing character: There is no 数 in font cmti10!
+Missing character: There is no 表 in font cmti10!
+Missing character: There is no 示 in font cmti10!
+Missing character: There is no 你 in font cmti10!
+Missing character: There is no 所 in font cmti10!
+Missing character: There is no 设 in font cmti10!
+Missing character: There is no 计 in font cmti10!
+Missing character: There is no 的 in font cmti10!
+Missing character: There is no 最 in font cmti10!
+Missing character: There is no 优 in font cmti10!
+Missing character: There is no 方 in font cmti10!
+Missing character: There is no 案 in font cmti10!
+Missing character: There is no 的 in font cmti10!
+Missing character: There is no 总 in font cmti10!
+Missing character: There is no 费 in font cmti10!
+Missing character: There is no 用 in font cmti10!
+Missing character: There is no 。 in font cmti10!
+! Undefined control sequence.
+l.25 \subsubsection
+                   {数据范围}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 数 in font nullfont!
+Missing character: There is no 据 in font nullfont!
+Missing character: There is no 范 in font nullfont!
+Missing character: There is no 围 in font nullfont!
+Missing character: There is no 的 in font nullfont!
+Missing character: There is no 数 in font nullfont!
+Missing character: There is no 据 in font nullfont!
+Missing character: There is no 中 in font nullfont!
+Missing character: There is no ， in font nullfont!
+Missing character: There is no ， in font nullfont!
+Missing character: There is no ； in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 20--27
+[]
+ []
+
+
+Overfull \hbox (3.06665pt too wide) in paragraph at lines 20--27
+\OT1/cmr/m/it/10 ,
+ []
+
+
+Overfull \hbox (33.88892pt too wide) in paragraph at lines 20--27
+\OT1/cmr/m/n/10 30%$$1 \OMS/cmsy/m/n/10 ^^T
+ []
+
+
+Overfull \hbox (34.361pt too wide) in paragraph at lines 20--27
+\OML/cmm/m/it/10 N; M \OMS/cmsy/m/n/10 ^^T
+ []
+
+
+Overfull \hbox (25.55556pt too wide) in paragraph at lines 20--27
+\OT1/cmr/m/n/10 10$$1 \OMS/cmsy/m/n/10 ^^T
+ []
+
+
+Overfull \hbox (21.38481pt too wide) in paragraph at lines 20--27
+\OML/cmm/m/it/10 A[] \OMS/cmsy/m/n/10 ^^T
+ []
+
+
+Overfull \hbox (10.00003pt too wide) in paragraph at lines 20--27
+\OT1/cmr/m/n/10 10$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 \par $
+           100\%$的数据中，$1 \le N \le 1000$，$1 \le M \le 10000$，�...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 的 in font nullfont!
+Missing character: There is no 数 in font nullfont!
+Missing character: There is no 据 in font nullfont!
+Missing character: There is no 中 in font nullfont!
+Missing character: There is no ， in font nullfont!
+Missing character: There is no ， in font nullfont!
+Missing character: There is no ， in font nullfont!
+Missing character: There is no 题 in font nullfont!
+Missing character: There is no 目 in font nullfont!
+Missing character: There is no 中 in font nullfont!
+Missing character: There is no 其 in font nullfont!
+Missing character: There is no 他 in font nullfont!
+Missing character: There is no 所 in font nullfont!
+Missing character: There is no 涉 in font nullfont!
+Missing character: There is no 及 in font nullfont!
+Missing character: There is no 的 in font nullfont!
+Missing character: There is no 数 in font nullfont!
+Missing character: There is no 据 in font nullfont!
+Missing character: There is no 均 in font nullfont!
+Missing character: There is no 不 in font nullfont!
+Missing character: There is no 超 in font nullfont!
+Missing character: There is no 过 in font nullfont!
+Missing character: There is no 。 in font nullfont!
+! Undefined control sequence.
+l.28 \subsubsection
+                   {分析}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 分 in font nullfont!
+Missing character: There is no 析 in font nullfont!
+Missing character: There is no 设 in font nullfont!
+Missing character: There is no 为 in font nullfont!
+Missing character: There is no 第 in font nullfont!
+Missing character: There is no 类 in font nullfont!
+Missing character: There is no 志 in font nullfont!
+Missing character: There is no 愿 in font nullfont!
+Missing character: There is no 者 in font nullfont!
+Missing character: There is no 招 in font nullfont!
+Missing character: There is no 募 in font nullfont!
+Missing character: There is no 的 in font nullfont!
+Missing character: There is no 人 in font nullfont!
+Missing character: There is no 数 in font nullfont!
+Missing character: There is no 。 in font nullfont!
+Missing character: There is no 则 in font nullfont!
+Missing character: There is no 应 in font nullfont!
+Missing character: There is no 满 in font nullfont!
+Missing character: There is no 足 in font nullfont!
+
+Overfull \hbox (58.88893pt too wide) in paragraph at lines 27--30
+[]$\OT1/cmr/m/n/10 100%$$1 \OMS/cmsy/m/n/10 ^^T
+ []
+
+
+Overfull \hbox (19.68048pt too wide) in paragraph at lines 27--30
+\OML/cmm/m/it/10 N \OMS/cmsy/m/n/10 ^^T
+ []
+
+
+Overfull \hbox (35.55559pt too wide) in paragraph at lines 27--30
+\OT1/cmr/m/n/10 1000$$1 \OMS/cmsy/m/n/10 ^^T
+ []
+
+
+Overfull \hbox (21.34717pt too wide) in paragraph at lines 27--30
+\OML/cmm/m/it/10 M \OMS/cmsy/m/n/10 ^^T
+ []
+
+
+Overfull \hbox (46.25015pt too wide) in paragraph at lines 27--30
+\OT1/cmr/m/n/10 10000$$2[] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 27--30
+\OT1/cmr/m/n/10 1$
+ []
+
+
+Overfull \hbox (15.05914pt too wide) in paragraph at lines 27--30
+\OML/cmm/m/it/10 X[]$$i$ 
+ []
+
+
+Overfull \hbox (136.02477pt too wide) detected at line 32
+\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 j \OMS/cmsy/m/n/10 2 \OT1/cmr/bx/n/10 Z \OMS
+/cmsy/m/n/10 \ \OT1/cmr/m/n/10 [1\OML/cmm/m/it/10 ; N\OT1/cmr/m/n/10 ]\OML/cmm/
+m/it/10 ;  [] [] \OMS/cmsy/m/n/10 ^^U \OML/cmm/m/it/10 A[]
+ []
+
+)
+! Emergency stop.
+<*> employee.tex
+                
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 15 strings out of 495713
+ 158 string characters out of 1188883
+ 46203 words of memory out of 3000000
+ 3247 multiletter control sequences out of 15000+50000
+ 4913 words of font info for 18 fonts, out of 3000000 for 9000
+ 28 hyphenation exceptions out of 8191
+ 18i,3n,16p,109b,96s stack positions out of 5000i,500n,10000p,200000b,50000s
+No pages of output.

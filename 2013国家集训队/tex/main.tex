@@ -1,0 +1,65 @@
+\documentclass[a4paper]{article}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[slantfont, boldfont, CJKtextspaces, CJKmathspaces]{xeCJK}
+\usepackage{fontspec,xunicode,xltxtra}
+\usepackage[pagestyles]{titlesec}
+\usepackage[top=1in,bottom=1in,left=1.25in,right=1.25in]{geometry}
+\usepackage{amsmath}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[colorlinks,linkcolor=Blue,anchorcolor=Blue,citecolor=green]{hyperref}
+\usepackage{boxedminipage}
+\usepackage{titlesec}
+
+\titleformat{\paragraph}[block]{\normalsize\bfseries}{\theparagraph}{2em}{}
+
+\setCJKmainfont[BoldFont={黑体}, ItalicFont={楷体_GB2312}]{宋体}
+\setmonofont{文泉驿等宽微米黑}
+
+\punctstyle{kaiming} % 开明式标点格式  
+
+\newenvironment{prob}{
+	\paragraph{题目大意}
+	\itshape
+	\begin{center}
+		\begin{boxedminipage}{12cm}
+			\qquad
+		}{
+		\end{boxedminipage}
+	\end{center}
+}
+\newenvironment{sol}{
+	\paragraph{算法简述}
+	\par \par
+	}{
+}
+
+\newcommand{\newproblem}[1]{
+	\subsection{#1}
+}
+\newtheorem{theorem}{\hspace{2em}定理}[subsection] 
+\newtheorem{proof}{\hspace{2em}证明}[subsection]
+\newtheorem{definition}{\hspace{2em}定义}[subsection]
+
+\begin{document}
+
+\title{IOI2013中国国家集训队作业 \\ Codeforces题目泛做}
+\author{成都七中\ 李凌霄}
+\maketitle
+\begin{center}
+	Codeforces ID: csimstu
+\end{center}
+\tableofcontents
+\include{vol1}
+\include{vol2}
+\include{vol3}
+\include{vol4}
+\include{vol5}
+\include{vol6}
+\include{vol7}
+\include{vol8}
+\include{vol9}
+\include{vol10}
+\include{vol11}
+
+\end{document}

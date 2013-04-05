@@ -1,0 +1,25 @@
+\newproblem{97C. Winning Strategy}
+\begin{prob}
+	给出$n+1$个概率$p_0,p_1,\ldots,p_n$，满足$p_i \le p_{i+1}$。
+	求一个长度无限的$\{a_k | 0 \le a_k \le n\}$序列，满足：
+	\begin{displaymath}
+		(\forall k) a_k \le \sum_{i=1}^{k-1} (n-2a_i)
+	\end{displaymath}
+	，且最大化：
+	\begin{displaymath}
+		\lim_{m \to \infty} \frac{\sum_{i-1}^m p_{a_i}}{m}
+	\end{displaymath}
+	。只需输出最大值。$n \le 100$。
+\end{prob}
+
+\begin{sol}
+	先撇开无限不讲，设计一个dp来计算答案。
+	用$f[i][j]$表示当前在构造$a_i$项，第$a_i$项大小不超过$j$。那么转移就是:
+	\begin{displaymath}
+		\forall k, 0 \le k \le min(n, j), f[i][j] + p_k \to f[i+1][j+n-2k]
+	\end{displaymath}
+	。注意到第二维状态如果大于$2n$就没有用了，否则可以交换它和之后的元素来强行限制。
+	如果把每个第二维的状态对应到一个有向图中的点，那么问题转化成了从某个点出发，
+	走无数步，使得平均每步的权值最大。不难发现，经过有限步后一定是在一个环上走。\par
+	于是问题变成了经典的求最小平均权环，用分数规划+spfa判负环解决。
+\end{sol}

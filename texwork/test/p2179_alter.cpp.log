@@ -1,0 +1,113 @@
+This is XeTeX, Version 3.1415926-2.2-0.9995.2 (TeX Live 2009/Debian) (format=xelatex 2012.5.19)  21 JUN 2012 11:20
+entering extended mode
+ %&-line parsing enabled.
+**p2179_alter.cpp.tex
+(./p2179_alter.cpp.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, pinyin, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/etc/texmf/tex/latex/config/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: xetex.def on input line 130.
+
+(/usr/share/texmf-texlive/tex/xelatex/xetex-def/xetex.def
+File: xetex.def 2009/11/22 v0.94 LaTeX color/graphics driver for XeTeX (RRM/JK)
+
+))
+(/usr/share/texmf-texlive/tex/latex/base/alltt.sty
+Package: alltt 1997/06/16 v2.0g defines alltt environment
+)
+(/usr/share/texmf-texlive/tex/latex/marvosym/marvosym.sty
+Package: marvosym 2006/05/11 v2.1 Martin Vogel's Symbols font definitions
+) (./highlight.sty)
+(./p2179_alter.cpp.aux)
+\openout1 = `p2179_alter.cpp.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+\hlboxopenbrace=\box26
+\hlboxclosebrace=\box27
+\hlboxlessthan=\box28
+\hlboxgreaterthan=\box29
+\hlboxdollar=\box30
+\hlboxunderscore=\box31
+\hlboxand=\box32
+\hlboxhash=\box33
+\hlboxat=\box34
+\hlboxbackslash=\box35
+\hlboxpercent=\box36
+\hlboxhat=\box37
+
+Overfull \hbox (8.64569pt too wide) in paragraph at lines 36--52
+[][][]    [][]\OT1/cmtt/m/n/10 Complex [][]\OT1/cmr/bx/n/10 acc[][][][]\OT1/cmt
+t/m/n/10 ([][][][]1[][][][], [][][][]0[][][][]), [][][][]\OT1/cmr/bx/n/10 pri[]
+[][][]\OT1/cmtt/m/n/10 ([][][][]\OT1/cmr/bx/n/10 cos[][][][]\OT1/cmtt/m/n/10 ([
+][]flag [][]* [][][][]2 [][][][]* [][]PI [][]/ [][]size[][]), [][][][]\OT1/cmr/
+bx/n/10 sin[][][][]\OT1/cmtt/m/n/10 ([][]flag [][]* [][][][]2 [][][][]*
+ []
+
+
+Overfull \hbox (48.74657pt too wide) in paragraph at lines 36--52
+[][][]        [][]\OT1/cmtt/m/n/10 tmp[][][[][]delta [][]+ [][]i [][]* [][]step
+[][]] = [][]res[][][[][]delta [][]+ [][]i [][]* [][]step [][]* [][][][]2[][][][
+]] + [][]acc [][]* [][]res[][][[][]delta
+ []
+
+
+Overfull \hbox (6.74693pt too wide) in paragraph at lines 36--52
+[][][]        [][]\OT1/cmtt/m/n/10 tmp[][][[][]delta [][]+ [][]i [][]* [][]step
+[][]] = [][]res[][][[][]delta [][]+ ([][]i [][]- [][]size [][]/ [][][][]2[][][]
+[]) * [][]step [][]*
+ []
+
+
+Overfull \hbox (27.74675pt too wide) in paragraph at lines 36--52
+[][][]    [][][][]\OT1/cmtt/m/n/10 for [][][][]( [][][][]int [][]i [][]= [][][]
+[]0[][][][]; [][]i [][][] [][]size[][]; [][]i [][]++ ) [][]res[][][[][]delta []
+[]+ [][]i [][]* [][]step[][]] = [][]tmp[][][[][]delta
+ []
+
+[1
+
+] (./p2179_alter.cpp.aux) ) 
+Here is how much of TeX's memory you used:
+ 626 strings out of 495713
+ 6757 string characters out of 1188883
+ 55078 words of memory out of 3000000
+ 3825 multiletter control sequences out of 15000+50000
+ 4116 words of font info for 16 fonts, out of 3000000 for 9000
+ 28 hyphenation exceptions out of 8191
+ 23i,5n,17p,642b,116s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on p2179_alter.cpp.pdf (1 page).

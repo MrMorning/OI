@@ -1,0 +1,26 @@
+\newproblem{200E. Tractor College}
+\begin{prob}
+	给出4个常数$c_3, c_4, c_5, W$，求$w_3, w_4, w_5$满足
+	$w_3+w_4+w_5 = W, 0 \le w_3 \le w_4 \le w_5$
+	，且使下式最小化：
+	\begin{displaymath}
+		|w_3 c_3 - w_4c_4| + |w_4 c_4 - w_5 c_5|
+	\end{displaymath}
+	保证$c_3,c_4,c_5 \le 1$且$c_3 + c_4 + c_5 \le 300$,
+	以及$w_3 + w_4 + w_5 \le 3 \cdot 10^5$。
+\end{prob}
+
+\begin{sol}
+	为了减轻思维负担，可以先枚举一个$w$。
+	由于$w_4$在式子里出现了两处，可以枚举它。
+	之后，$w_5$可以写成$W - w_4 - w_3$，于是
+	只有一个未知量了。\par
+	用$x$代替$w_3$，目标式可以简化成下列函数：
+	\begin{displaymath}
+		y = |k_1 x + b_1| + |k_2 x + b_2|
+	\end{displaymath}
+	可以看成是$y_1 = |k_1 x + b_1|$与$y_2 = |k_2 x + b_2|$
+	的叠加。不难发现，$y_1 + y_2$是个单峰函数，
+	峰值即为最小值。故可以在整数上三分这个最小值。
+	整个算法复杂度为$O(M \log M)$。
+\end{sol}

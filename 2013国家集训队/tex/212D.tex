@@ -1,0 +1,28 @@
+\newproblem{212D. Cutting a Fence}
+\begin{prob}
+	有一条护栏，由$n(n \le 10^6)$个木板组成。第$i$个木板的高
+	度是$a[i]$。现在要给护栏画矩形。若要在区间
+	$[x,x+k-1]$画一个宽度为$k$的矩形
+	$(1\le x\le n-k+1)$,为了美观，高度
+	一定是这个区间里高度最低的木板。对于每个
+	$k(1 \le k \le n)$，求矩形高度的期望。
+\end{prob}
+
+\begin{sol}
+	反方向考虑，对于一个木板$i$，对
+	答案的贡献是多少。首先可以算出$i$
+	往左能扩展的最远距离$l$，往右
+	能扩展的最远距离$r$。令$m_1 = max(l, r)$，
+	$m_2 = min(l, r)$。则:
+	\begin{enumerate}
+		\item 若$1 \le k \le m_2 + 1$,
+			则贡献为$k \cdot a[i]$;
+		\item 若$m_2+2 \le k \le m_1+1$,
+			则贡献为$(m_2+1) \cdot a[i]$;
+		\item 若$m_1+2 \le k \le m_1 + m_2 + 1$，
+			则贡献为$(m_1+m_2+2-k) \cdot a[i]$。
+	\end{enumerate}
+	对于每个$k$，贡献可以写成$tk + b$。
+	维护两个树状数组，分别记录$t$和$b$，
+	可以在$O(n \log n)$的时间复杂度内解决本题。
+\end{sol}

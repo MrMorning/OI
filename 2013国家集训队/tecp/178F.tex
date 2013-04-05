@@ -1,0 +1,32 @@
+\newproblem{178F. Representative Sampling}
+\begin{prob}
+	有$n(n \le 2000)$个由26个小写字母组成的字符串，要求从中
+	选出$k$个，使该集合的权值最大。设$S$为
+	选择的集合，则权值定义如下：
+	\begin{displaymath}
+		\sum_{i,j \in S} \text{$i$,$j$最长公共前缀的长度}
+	\end{displaymath}
+\end{prob}
+
+\begin{sol}
+	初一看，很容易想到用trie这种前缀处理工具。
+	将所有字符串插入trie中后，变成了标记$k$个点，
+	每个点的权值定义为$m(m-1)$，$m$是子树中标记点
+	的数目。于是可以设计一个状态$O(n^2)$，转移$O(n)$
+	的树型dp，总复杂度为$O(n^3)$。走到这里就难以
+	继续走下去。只好另辟蹊径。\par
+	联想到后缀数组求lcp的方法，可以
+	将所有字符串按字典序排序。设计状态$f[l][r][k]$
+	表示区间$[l,r]$选$k$个的答案。于是：
+	\begin{displaymath}
+		f[l][r][k] = \max_{l \le  t \le k}\{ f[l][p][t] + f[p+1][r][k-t] + \text{something}\}
+	\end{displaymath}
+	注意到$p$取值的随意性，不妨取相邻两字符串LCP最小的那个位置。于是：
+	\begin{displaymath}
+	f[l][r][k] = \max_{l \le  t \le k}\{ f[l][p][t] + f[p+1][r][k-t] + t(k-t) \cdot lcp[p]\}
+\end{displaymath}
+有用的区间只有$O(n)$个。复杂度比较难算，考虑两类极端情况:
+$p=l+1$，转移是$O(1)$的，总共是$O(n^2)$；
+$p=(l+r)/2$，$T(n) = (n/2)^2 + 2T(n/2) = O(n^2 \log n)$。
+是一个十分优秀的算法。
+\end{sol}

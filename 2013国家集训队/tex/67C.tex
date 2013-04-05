@@ -1,0 +1,25 @@
+\newproblem{67C. Sequence of Balls}
+\begin{prob}
+	给定两个序列$A$,$B$（长度$\le 4000$）
+	，通过以下四种代价不同的操作将$A$变成$B$：
+	\begin{enumerate}
+		\item 删除任意一个字符
+		\item 添加任意一个字符
+		\item 交换相邻两个字符
+		\item 将任意一个字符修改为另一个字符。
+	\end{enumerate}
+	其中，保证两倍3操作的代价$\ge$1,2操作的代价。
+\end{prob}
+
+\begin{sol}
+	对于“保证两倍3操作的代价$\ge$1,2操作的代价”，
+	意味着一个字符不可能交换多次。设计状
+	态$f[i][j]$表示$A$的前$i$个跟$B$的前$j$
+	个字符匹配下的答案。1,2,4都比较方便实现。交换比较麻烦：
+	\begin{verbatim}
+	        A:a****b
+	        B:b......a
+	\end{verbatim}
+	除了直接交换外，还可以
+	将\texttt{*}全部删除，再插入\texttt{.}。
+\end{sol}

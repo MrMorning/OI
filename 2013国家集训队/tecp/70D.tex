@@ -1,0 +1,12 @@
+\newproblem{70D. Professors task}
+\begin{prob}
+	动态凸包，支持插点和询问一个点是否在凸包内。
+	点数$\le 10^5$。
+\end{prob}
+
+\begin{sol}
+	建立循环的极角序，用set维护。
+	唯一麻烦的地方在于循环的收尾处，
+	需要仔细处理。另外，前3个点
+	也需要特殊处理。
+\end{sol}

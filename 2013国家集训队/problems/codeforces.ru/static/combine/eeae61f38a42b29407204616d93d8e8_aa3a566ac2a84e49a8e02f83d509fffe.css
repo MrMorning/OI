@@ -1,0 +1,18 @@
+.sidebar-menu ul{font-size:13px;margin:1em;list-style:disc inside;}
+.sidebar-menu ul li{margin:.25em 0;padding:.25em .25em .25em .5em;}
+.sidebar-menu ul a{text-decoration:none;color:black;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;}
+.sidebar-menu ul li{border:1px solid white;}
+.sidebar-menu ul li:hover,.sidebar-menu ul li.active{border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;border:1px solid #eaeaea;background-color:#eaeaea;}
+.sidebar-menu ul li.active{border:1px solid #def;background-color:#def;}
+.recent-actions{margin:1em;font-size:.9em;}
+.rated-user{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;text-decoration:none!important;font-weight:bold;}
+.user-black{color:black!important;font-weight:normal!important;}
+.user-red{color:red!important;}
+.user-fire{color:red!important;}
+.user-yellow{color:#bb0!important;}
+.user-violet{color:#a0a!important;}
+.user-orange{color:#FF8C00!important;}
+.user-blue{color:blue!important;}
+.user-green{color:green!important;}
+.user-gray{color:gray!important;}
+.user-admin{color:black!important;}

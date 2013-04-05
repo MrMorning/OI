@@ -1,0 +1,10 @@
+\BOOKMARK [1][-]{section.1}{题目描述}{}
+\BOOKMARK [1][-]{section.2}{理论支持}{}
+\BOOKMARK [2][-]{subsection.2.1}{定义}{section.2}
+\BOOKMARK [2][-]{subsection.2.2}{性质}{section.2}
+\BOOKMARK [2][-]{subsection.2.3}{用途}{section.2}
+\BOOKMARK [1][-]{section.3}{Stage I: 求m的原根}{}
+\BOOKMARK [1][-]{section.4}{Stage II: 求离散对数j}{}
+\BOOKMARK [1][-]{section.5}{Stage III: 解线性同余方程}{}
+\BOOKMARK [1][-]{section.6}{注意事项}{}
+\BOOKMARK [1][-]{section.7}{代码}{}

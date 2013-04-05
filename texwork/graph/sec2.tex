@@ -1,0 +1,26 @@
+\section{网络流的守恒思想 The Conservation of Network Flow}
+\subsection{预备知识 Preliminary}
+\textbf{流网络(flow network)}是一个有向图$G = (V, E)$，其中每条$(u, v) \in E$有一个非负容量上界$c(u, v) \ge 0$。规定：若$(u, v) \notin E, \, c(u, v) = 0$。在有下界的网络流中还存在容量下界$b(u, v)$，与容量上界类似。网络中有两个特殊点：源$s$与汇$t$。
+\subsubsection{流的性质 Properties of Flow}
+\par 流网络$G$的\textbf{流(flow)}是一个函数$f : V \times V \to \mathbf{R}$，且满足下列三个性质：
+\begin{enumerate}
+\item 容量限制 \quad $\forall u, v \in V$，$f(u, v) \leq c(u, v)$。在有上下界的网络流中，还满足$\forall u, v \in V$，$b(u, v) \le f(u, v) \leq c(u, v)$
+\item 反对称性 \quad $\forall u, v \in V$，$f(u, v) = -f(v, u)$。
+\item 流守恒性 \quad $\forall u \in V - \{s, t\}$，$\sum_{v \in V}{f(u, v)} = 0$。
+\end{enumerate}
+\par 称$f(u, v)$为从$u$到$v$的流。
+\par 流$f$定义为$f = \sum_{u \in V} f(s, u)$。
+最大流$f_{\text{max}}$定义为$\max\{f\}$。
+\subsubsection{求最大流的算法 Algorithms for Maximum Flow Problem}
+\par 求无下界最大流常用连续最短增广路算法(Dinic's Algorithm)，复杂度为$O(|V|^2|E|)$，实际效果良好，特别地，在二分图中复杂度更低，为$O(\sqrt{|V|}|E|)$。详见\cite{wxs2007}。
+\par 若存在下界，往往采用参数搜索，即二分答案后，转化为无源汇的网络流，再结合最大流算法求解。具体参见\cite{zy2004}。
+\subsubsection{费用流 Minimum Cost Flow}
+若给每条边加上一个权值$w(u, v)$，定义流的费用为$g = \sum_{u, v \in V}{f(u, v) \times w(u, v)}$，其中$f(u, v) > 0$。
+\par 类似定义最小费用流的费用$g_{\text{min}}$，最大费用流的费用$g_{\text{max}}$。
+\par 求最小费用流简单快速的办法就是最短路增广，这样可以保证每次增广的都是最小费用的路径。由于含负权，采用SPFA。复杂度的界比较高，但实际上远小于复杂度上界。
+
+\input{toy}
+
+\vspace{10pt} \par 根据等式联想到流量平衡，由上下界网络流强制限流的特点来判可行性，实在是巧妙。即便是不等式，也能通过添加辅助变量，来变成等式。“左右两边最多各出现一次”也是不可或缺的条件，通过简单的变形，往往也能转化成这个条件，比如说下面这道题。
+
+\input{employee}

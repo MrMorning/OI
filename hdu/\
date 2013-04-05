@@ -1,0 +1,77 @@
+#include <cstdio>
+
+int mincost(){
+	static int dist[V_MAX];
+	static int Q[V_MAX];
+	memset(dist, 0x3f, sizeof(dist));
+	dist[ssv] = 0;
+	int qh = 0, qt = 0;
+	Q[qt ++] = ssv;
+
+	while(qh < qt){
+		int u = Q[qh];
+		qh = (qh + 1) % V_MAX;
+		for(Edge *e = begin[u]; e; e = e->next)
+			if(e->cap){
+				int v = e->to;
+				if(dist[v] > dist[u] + e->cost){
+					dist[v] = dist[u] + e->cost;
+					prev[v] = e;
+					if(!inQ[v]){
+						inQ[v] = true;
+						Q[qt] = v;
+						qt = (qt + 1) % nv;
+					}
+				}
+			}
+	}
+}
+
+void init(){
+	memset(begin, 0, sizeof(begin));
+	memset(ind, 0, sizeof(ind));
+	memset(outd, 0, sizeof(outd));
+	edgeCnt = 0;
+}
+
+void solve(){
+	scanf("%d%d%d%d", &nv, &ne, &sv, &tv);
+	ssv = nv + 1, stv = nv + 2;
+	nv += 2;
+	int suma = 0;
+	for(int i = 1; i <= ne; i ++){
+		int u, v, a, b;
+		scanf("%d%d%d%d", &u, &v, &a, &b);
+		suma += a;
+		addEdge(v, u, 1, b - a);
+		ind[v] ++, outd[u] ++;
+	}
+	addEdge(sv, tv, 1, INF >> 1);
+	ind[sv] ++, outd[tv] ++;
+
+	for(int i = 1; i <= n; i ++){
+		int delta = ind[i] - outd[i];
+		if(delta > 0){
+			addEdge(ssv, i, delta, 0);
+		}
+		else if(delta < 0)
+			addEdge(i, stv, -delta, 0);
+	}
+
+	for(Edge *e = begin[ssv]; e; e = e->next)
+		if(e->cap){
+			printf("impossible\n");
+			return;
+		}
+	printf("%d\n", suma + mincost());
+}
+
+int main(){
+	freopen("t.in", "r", stdin);
+	int TST;
+	scanf("%d", &TST);
+	while(TST --){
+		init();
+		solve();
+	}
+}

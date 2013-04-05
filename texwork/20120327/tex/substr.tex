@@ -1,0 +1,28 @@
+\section{子串与子序列}
+\subsection{题目描述}
+\par 给你两个字符串$s$与$t$，你需要统计不同二元组$(x,y)$的个数，
+满足$x$是$s$的子串，$y$是$t$的子序列，且$x = y$。
+两个二元组$(x_1, y_1)$，$(x_2, y_2)$不同，当且仅当
+$x_1$和$x_2$是$s$中不同子串或$y_1$与$y_2$是$t$中不同子序列。
+\par 关于子串与子序列的解释：
+\par { \itshape 
+	$s$的一个子串$x$是一个非空的字符串，满足$x = s[a..b] = s_as_{a+1} \ldots s_b$，$1 \le a \le b \le |s|$。
+		\par
+	$s$的一个子序列$x$是一个非空的字符串，满足$x = s[p_1p_2 \ldots  p_{|y|}] = s_{p_1}s_{p_2} \ldots s_{p_y}$，$1 \le p_1 < p_2 < \ldots < p_y \le |s|$。
+}
+\subsection{输入格式}
+两行，分别表示$s$与$t$。均只包含小写英文字母。
+\subsection{输出格式}
+输出不同二元组的组数模$1000000007(10^9+7)$。
+\subsection{样例输入}
+aa \par
+aa
+\subsection{样例输出}
+5
+\subsection{Hint}
+\par
+$50\%$的数据满足$N \le 250$；
+\par
+$100\%$的数据满足$N \le 5000$。
+\par
+最好用long long。

@@ -1,0 +1,300 @@
+This is XeTeX, Version 3.1415926-2.2-0.9995.2 (TeX Live 2009/Debian) (format=xelatex 2011.7.16)  16 AUG 2011 20:53
+entering extended mode
+ %&-line parsing enabled.
+**showoff.tex
+(./showoff.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, pinyin, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf-texlive/tex/xelatex/fontspec/fontspec.sty
+Package: fontspec 2008/08/09 v1.18 Advanced font selection for XeLaTeX
+
+(/usr/share/texmf-texlive/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2009/01/23 v0.5 Provides ifxetex conditional
+)
+\c@zf@newff=\count88
+\c@zf@index=\count89
+\c@zf@script=\count90
+\c@zf@language=\count91
+
+(/usr/share/texmf-texlive/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count92
+\calc@Bcount=\count93
+\calc@Adimen=\dimen103
+\calc@Bdimen=\dimen104
+\calc@Askip=\skip43
+\calc@Bskip=\skip44
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count94
+\calc@Cskip=\skip45
+)
+(/usr/share/texmf-texlive/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2008/08/13 v2.6a package option processing (HA)
+
+(/usr/share/texmf-texlive/tex/generic/xkeyval/xkeyval.tex
+\XKV@toks=\toks14
+\XKV@tempa@toks=\toks15
+\XKV@depth=\count95
+File: xkeyval.tex 2008/08/13 v2.6a key=value parser (HA)
+
+(/usr/share/texmf-texlive/tex/generic/xkeyval/keyval.tex)))
+(/usr/share/texmf-texlive/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texmf-texlive/tex/xelatex/euenc/eu1enc.def
+File: eu1enc.def 2008/03/08 v0.1d Experimental unicode font encoding
+)
+LaTeX Font Info:    Try loading font information for EU1+lmr on input line 100.
+
+
+(/usr/share/texmf-texlive/tex/xelatex/euenc/eu1lmr.fd
+File: eu1lmr.fd 2007/01/14 v1.3 Font defs for Latin Modern
+))
+LaTeX Info: Redefining \itshape on input line 1163.
+LaTeX Info: Redefining \slshape on input line 1166.
+LaTeX Info: Redefining \scshape on input line 1169.
+LaTeX Info: Redefining \upshape on input line 1172.
+
+fontspec.cfg loaded.
+(/usr/share/texmf-texlive/tex/xelatex/fontspec/fontspec.cfg))
+(/usr/share/texmf-texlive/tex/xelatex/xunicode/xunicode.sty
+File: xunicode.sty 2008/02/08 v0.91 provides access to latin accents and many o
+ther characters in Unicode lower plane
+)
+(/usr/share/texmf-texlive/tex/xelatex/xltxtra/xltxtra.sty
+Package: xltxtra 2009/09/02 v0.5 Improvements for the "XeLaTeX" format
+
+(/usr/share/texmf-texlive/tex/latex/metalogo/metalogo.sty
+Package: metalogo 2009/09/04 v0.11 Extended TeX logo macros
+
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: xetex.def on input line 91.
+
+(/usr/share/texmf-texlive/tex/xelatex/xetex-def/xetex.def
+File: xetex.def 2009/11/22 v0.94 LaTeX color/graphics driver for XeTeX (RRM/JK)
+
+))
+\Gin@req@height=\dimen105
+\Gin@req@width=\dimen106
+)
+\xl@everylogo=\toks16
+\xl@@everylogo=\toks17
+LaTeX Info: Redefining \TeX on input line 193.
+LaTeX Info: Redefining \LaTeX on input line 202.
+LaTeX Info: Redefining \LaTeXe on input line 219.
+)
+(/usr/share/texmf-texlive/tex/latex/etex-pkg/etex.sty
+Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
+\et@xins=\count96
+)
+(/usr/share/texmf-texlive/tex/latex/base/fixltx2e.sty
+Package: fixltx2e 2006/09/13 v1.1m fixes to LaTeX
+LaTeX Info: Redefining \em on input line 420.
+)
+LaTeX Info: Redefining \em on input line 72.
+LaTeX Info: Redefining \emph on input line 81.
+LaTeX Info: Redefining \- on input line 86.
+LaTeX Info: Redefining \textsubscript on input line 105.
+LaTeX Info: Redefining \textsuperscript on input line 107.
+\xxt@tempbox=\box26
+)
+(/usr/share/texmf-texlive/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2007/08/12 v2.8 Sectioning titles
+\ttl@box=\box27
+\beforetitleunit=\skip46
+\aftertitleunit=\skip47
+\ttl@plus=\dimen107
+\ttl@minus=\dimen108
+\ttl@toksa=\toks18
+\titlewidth=\dimen109
+\titlewidthlast=\dimen110
+\titlewidthfirst=\dimen111
+)
+(/usr/share/texmf-texlive/tex/latex/geometry/geometry.sty
+Package: geometry 2008/12/21 v4.2 Page Geometry
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode not detected.
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+\Gm@cnth=\count97
+\Gm@cntv=\count98
+\c@Gm@tempcnt=\count99
+\Gm@bindingoffset=\dimen112
+\Gm@wd@mp=\dimen113
+\Gm@odd@mp=\dimen114
+\Gm@even@mp=\dimen115
+\Gm@dimlist=\toks19
+
+(/usr/share/texmf-texlive/tex/xelatex/xetexconfig/geometry.cfg))
+! Font \zf@basefont="Simsun (Founder Extended)" at 10.0pt not loadable: Metric 
+(TFM) file or installed font not found.
+\zf@fontspec ...ntname \zf@suffix " at \f@size pt 
+                                                  \unless \ifzf@icu \zf@set@...
+l.11 ...fontfamily\song{Simsun (Founder Extended)}
+                                                  
+? 
+! Interruption.
+<to be read again> 
+                   \let 
+l.11 ...fontfamily\song{Simsun (Founder Extended)}
+                                                  
+? q
+OK, entering \batchmode...
+! Undefined control sequence.
+\zf@set@font@type ...onttype \zf@basefont \zf@tfm 
+                                                  \or \zf@atsuitrue \ifnum \...
+l.11 ...fontfamily\song{Simsun (Founder Extended)}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Font \zf@basefont="Simsun (Founder Extended)" at 10.0pt not loadable: Metric 
+(TFM) file or installed font not found.
+\zf@fontspec ...ntname \zf@suffix " at \f@size pt 
+                                                  \fi \zf@firsttimetrue \zf@...
+l.11 ...fontfamily\song{Simsun (Founder Extended)}
+                                                  
+I wasn't able to read the size data for this font,
+so I will ignore the font specification.
+[Wizards can fix TFM files using TFtoPL/PLtoTF.]
+You might try inserting a different font spec;
+e.g., type `I\font<same font id>=<substitute font name>'.
+
+\c@zf@famc@Simsun (Founder Extended)=\count100
+Package fontspec Info: Defining font family for 'Simsun (Founder Extended)' wit
+h options [] on input line 11.
+! Font \@tempfontb="Simsun (Founder Extended)" at 10.0pt not loadable: Metric (
+TFM) file or installed font not found.
+\\zf@make@font@shapes ...f@suffix " at \f@size pt 
+                                                  \edef \@tempb {\fontname \...
+l.11 ...fontfamily\song{Simsun (Founder Extended)}
+                                                  
+I wasn't able to read the size data for this font,
+so I will ignore the font specification.
+[Wizards can fix TFM files using TFtoPL/PLtoTF.]
+You might try inserting a different font spec;
+e.g., type `I\font<same font id>=<substitute font name>'.
+
+! Font \@tempfonta="Simsun (Founder Extended)" at 10.0pt not loadable: Metric (
+TFM) file or installed font not found.
+\\zf@make@font@shapes ...f@suffix " at \f@size pt 
+                                                  \edef \@tempa {\fontname \...
+l.11 ...fontfamily\song{Simsun (Founder Extended)}
+                                                  
+I wasn't able to read the size data for this font,
+so I will ignore the font specification.
+[Wizards can fix TFM files using TFtoPL/PLtoTF.]
+You might try inserting a different font spec;
+e.g., type `I\font<same font id>=<substitute font name>'.
+
+! Font \@tempfontb="Simsun (Founder Extended)/B" at 10.0pt not loadable: Metric
+ (TFM) file or installed font not found.
+\\zf@make@font@shapes ...f@suffix " at \f@size pt 
+                                                  \edef \@tempb {\fontname \...
+l.11 ...fontfamily\song{Simsun (Founder Extended)}
+                                                  
+I wasn't able to read the size data for this font,
+so I will ignore the font specification.
+[Wizards can fix TFM files using TFtoPL/PLtoTF.]
+You might try inserting a different font spec;
+e.g., type `I\font<same font id>=<substitute font name>'.
+
+Package fontspec Info: Could not resolve font Simsun (Founder Extended)/B (it m
+ight not exist) on input line 11.
+! Font \@tempfonta="Simsun (Founder Extended)" at 10.0pt not loadable: Metric (
+TFM) file or installed font not found.
+\\zf@make@font@shapes ...f@suffix " at \f@size pt 
+                                                  \edef \@tempa {\fontname \...
+l.11 ...fontfamily\song{Simsun (Founder Extended)}
+                                                  
+I wasn't able to read the size data for this font,
+so I will ignore the font specification.
+[Wizards can fix TFM files using TFtoPL/PLtoTF.]
+You might try inserting a different font spec;
+e.g., type `I\font<same font id>=<substitute font name>'.
+
+! Font \@tempfontb="Simsun (Founder Extended)/I" at 10.0pt not loadable: Metric
+ (TFM) file or installed font not found.
+\\zf@make@font@shapes ...f@suffix " at \f@size pt 
+                                                  \edef \@tempb {\fontname \...
+l.11 ...fontfamily\song{Simsun (Founder Extended)}
+                                                  
+I wasn't able to read the size data for this font,
+so I will ignore the font specification.
+[Wizards can fix TFM files using TFtoPL/PLtoTF.]
+You might try inserting a different font spec;
+e.g., type `I\font<same font id>=<substitute font name>'.
+
+Package fontspec Info: Could not resolve font Simsun (Founder Extended)/I (it m
+ight not exist) on input line 11.
+! Font \@tempfonta="Simsun (Founder Extended)" at 10.0pt not loadable: Metric (
+TFM) file or installed font not found.
+\\zf@make@font@shapes ...f@suffix " at \f@size pt 
+                                                  \edef \@tempa {\fontname \...
+l.11 ...fontfamily\song{Simsun (Founder Extended)}
+                                                  
+I wasn't able to read the size data for this font,
+so I will ignore the font specification.
+[Wizards can fix TFM files using TFtoPL/PLtoTF.]
+You might try inserting a different font spec;
+e.g., type `I\font<same font id>=<substitute font name>'.
+
+! Font \@tempfontb="Simsun (Founder Extended)/BI" at 10.0pt not loadable: Metri
+c (TFM) file or installed font not found.
+\\zf@make@font@shapes ...f@suffix " at \f@size pt 
+                                                  \edef \@tempb {\fontname \...
+l.11 ...fontfamily\song{Simsun (Founder Extended)}
+                                                  
+I wasn't able to read the size data for this font,
+so I will ignore the font specification.
+[Wizards can fix TFM files using TFtoPL/PLtoTF.]
+You might try inserting a different font spec;
+e.g., type `I\font<same font id>=<substitute font name>'.
+
+Package fontspec Info: Could not resolve font Simsun (Founder Extended)/BI (it 
+might not exist) on input line 11.
+! Font \zf@basefont=FZBeiWeiKaiShu-S19S at 10.0pt not loadable: Metric (TFM) fi
+le or installed font not found.
+\zf@fontspec ...ntname \zf@suffix " at \f@size pt 
+                                                  \unless \ifzf@icu \zf@set@...
+l.12 \newfontfamily\bwei{FZBeiWeiKaiShu-S19S}
+                                             
+I wasn't able to r

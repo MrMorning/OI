@@ -1,0 +1,24 @@
+\newproblem{115D. Unambiguous Arithmetic Expression}
+\begin{prob}
+	定义UAE为：
+	\begin{enumerate}
+		\item 单独一个非负整数是UAE。
+		\item 如果$X$和$Y$是两个UAE，那么
+			$(X)+(Y)$，$(X)-(Y)$，$(X)*(Y)$，$(X)/(Y)$都是UAE。
+		\item 如果$X$是UAE，那么$-(X)$和$+(X)$也是。
+	\end{enumerate}
+	给定一个仅包含数字和+-*/的字符串，求添加任意对括号后能形成的合法UAE数目。
+	长度不超过2000。
+\end{prob}
+
+\begin{sol}
+	因为第三个限制，可以考虑从右到左进行构造。\par
+	令$f[i][j]$表示进行到了第$i$个字符，第$i$个字符之后
+	是$j$个块相加的形式（因为一旦套上括号后就跟数字无异了）。
+	为了方便处理，将所有数字替换为a。
+	如果$i-1$是a，那么显然$i-1$和$i$要按第二个规则构造。
+	转移到$f[i-2][k], \forall 1 \le k \le j+1$。
+	否则，如果$i$是+-，那么按第三个规则构造，转移到
+	$f[i-1][k], \forall 1 \le k \le j$。答案就是$f[0][1]$。
+	\par 这样的复杂度是$O(n^3)$。通过部分和优化可以做到$O(n^2)$。
+\end{sol}

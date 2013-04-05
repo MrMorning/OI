@@ -1,0 +1,33 @@
+\documentclass[a4paper]{article}
+\usepackage{amssymb}
+\usepackage[slantfont, boldfont, CJKtextspaces, CJKmathspaces]{xeCJK}
+\usepackage{fontspec,xunicode,xltxtra}
+\usepackage[pagestyles]{titlesec}
+\usepackage{indentfirst}
+\usepackage[top=1in,bottom=1in,left=1.25in,right=1.25in]{geometry}
+\usepackage{amsmath}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[colorlinks,linkcolor=red,anchorcolor=Blue,citecolor=green]{hyperref}
+
+\setCJKmainfont[BoldFont={黑体}, ItalicFont={楷体_GB2312}]{宋体}
+\setmainfont{Liberation Serif} 
+\setsansfont{Liberation Sans} 
+\setmonofont{文泉驿等宽微米黑}
+
+\punctstyle{kaiming} % 开明式标点格式  
+\renewcommand{\today}{\number\year 年 \number\month 月}
+\renewcommand{\contentsname}{目录}
+
+\begin{document}
+
+\title{张书茂申诉}
+\author{305 idiots}
+\maketitle
+\tableofcontents
+
+\input{p1}
+\input{p2}
+\input{p3}
+\input{p4}
+
+\end{document}

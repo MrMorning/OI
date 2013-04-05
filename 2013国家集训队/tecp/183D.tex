@@ -1,0 +1,33 @@
+\newproblem{183D. T-shirt}
+\begin{prob}
+	有$n$个人，$m$种衬衫尺寸。你要带$n$件衣服分配到每个人
+	身上。但是你只知道第$i$个人穿$j$尺寸衬衫的概率是$p[i][j]$。
+	求一种方案，使期望配对上的衬衫数目最大。
+\end{prob}
+
+\begin{sol}
+	由于衬衫尺寸之间是独立的，我们可以先计算这样一个数组。
+	定义$f[i][j][k]$表示对于$i$尺寸，前$j$个人中至少$k$
+	个人是这个尺寸的概率。转移:
+	\begin{displaymath}
+		f[i][j][k] = (1-p[j][i]) \times f[i][j-1][k] 
+		+ p[j][i] \times f[i][j-1][k-1]
+	\end{displaymath}
+	答案可以贪心得到，即$f$数组中最大的$n$项对应的期望。
+	不过这样的复杂度会达到$O(n^2m)$，无法承受。\par
+	注意到只需求出最大的$n$项，可以先对于所有$i,k$，求
+	出$f[i][1][k]$。因为$f[i][j][k] \le f[i][j][k-1]$，
+	所以每次只需选出当前最大的$i$，然后扩展出下一项。
+	扩展过程可以做到$O(n)$。因为：
+	\begin{eqnarray}
+		f[i][j][k] &=&(1-p[j][i]) \times f[i][j-1][k] \nonumber \\
+					&+& p[j][i] \times f[i][j-1][k-1]\text{（已知）\nonumber}
+	\end{eqnarray}
+	，而：
+	\begin{eqnarray}
+		f[i][j-1][k] &=& (1-p[j-1][i]) \times f[i][j-2][k] \nonumber \\
+					&+& p[j-1][i] \times f[i][j-2][k-1]\text{（已知）} \nonumber 
+	\end{eqnarray}
+	如此下去，未被计算的只有$O(n)$个状态。于是这样下来，
+	总复杂度为$O(n^2)$。
+\end{sol}

@@ -1,0 +1,16 @@
+\newproblem{217D. Bitonix' Patrol}
+\begin{prob}
+	给出$n(n\le 10000)$
+	个常数$a_1\cdots a_n$，求去
+	掉一些常数后，使
+	$\sum x_i a_i = 0 \pmod m, x_i \in \{-1,0,1\}$
+	无解的方案数。$m \le 120$。
+\end{prob}
+
+\begin{sol}
+	显然，如果按$a_i \bmod m$分类，
+	那么同类至多只能选1个；由抽屉原理
+	，最多只能选6个数，否则$ \ge 2^7 \ge 120$
+	。于是只有$\binom{60}{6} \approx 5 \times 10^7$种情况。
+	爆搜即可。要用位运算加速。
+\end{sol}

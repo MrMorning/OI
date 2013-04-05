@@ -1,0 +1,22 @@
+\newproblem{180B. Divisibility Rules}
+\begin{prob}
+	如果检查一个数能否被2,4,5,8,10整除的时候只需要检查它的最后一位或几位是否满足某个条件。这种规则称为2类型规则(2-type)。\par
+	如果检查一个数能否被给定的数整除意味着计算这个数的各个数位上的数字之和并判断这个和能否被给定的数整除，那么称这个规则为3类型规则（3-type）。\par
+	如果我们需要求出一个数的奇数位上的数字之和与偶数位上的数字之和的差值去检查这个差值能否被给定数整除，那么这个规则被称为11类型规则（11-type）。\par
+	有些情况下我们应当把除数分解成一些因数然后检查是否满足一些不同类型的规则（2-type,3-type,11-type）。这样混合的整除规则被称为6类型规则(6-type)。 \par
+	最后，有些除数是所有类型的规则都无效的，称在这种情况下神秘的7类型规则(7-type)有效。\par
+	要求出$b$进制下除数为$d$的整除规则类型。$b,d \le 100$。
+\end{prob}
+
+\begin{sol}
+	将一个数$x$写成$b^0 d_0 + b^1 d_1 + b^2 d_2 \cdots$的形式。
+	对于每种类型分别讨论：
+	\begin{enumerate}
+		\item 2-type: 意味着$\exists k, b^k = b^{k+1} = \cdots \equiv 0 \pmod d$。
+			通过不断乘$b$知道能被$d$整除来判断。
+		\item 3-type: 意味着$\forall i, b^i \equiv 1 \pmod d$，即$b \equiv 1 \pmod d$。
+		\item 11-type: 意味着$\forall i, b^{2i} \equiv 1 \pmod d, b^{2i+1} \equiv -1 \pmod d$，
+			或者反过来。即$b \equiv -1 \pmod d$。
+		\item 6-type: 分解开，然后判断。
+	\end{enumerate}
+\end{sol}

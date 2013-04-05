@@ -1,0 +1,36 @@
+\newproblem{123E. Maze}
+\begin{prob}
+	一个maze由一个树表示。考虑一个如下的子过程：
+	\begin{verbatim}
+	    DFS(x)
+	        if x == exit vertex then
+	            finish search
+	        flag[x] <- TRUE
+	        random shuffle the vertices' order in V(x) 
+	        for i <- 1 to length[V] do
+	            if flag[V[i]] = FALSE then
+	                count++;
+	                DFS(y);
+	        count++;
+	\end{verbatim} 
+	\par
+	现在给出每个点选为起点和终点的概率，求\verb#count#的期望值。
+	点数不超过$10^5$。
+\end{prob}
+
+\begin{sol}
+	设起点为$s$，终点为$t$，$s$到$t$路径上点数为$l$。
+	如果以$s$为根建树，$sz[x]$表示$x$的子树大小（不含$x$）。
+	那么$t$子树中的点一定不会被经过。
+	而$s->t$对答案的贡献为$l-1$。称$s->t$为主轴，那么
+	父亲在主轴上，本身又不在主轴上的点所代表的子树对
+	答案的贡献又是什么呢？ \par
+	注意到，一旦偏离主轴进入某个点$u$，那么一定是$u$子树
+	中所有点都要走遍，这些点对答案的贡献是2（一进一出）。
+	设$u$的父亲是$p$，$p$主轴上的儿子是$v$。进入$u$的概率等于$p$儿子的所有排列中
+	$u$在$v$前面的概率，即$\frac{1}{2}$。于是，
+	每个不在主轴上且不在$t$子树中的点对答案的贡献恰好是1。
+	设总点数为$n$。那么以$s$为起点，$t$为终点的期望答案
+	就是$n-l-sz[t]+l-1 = n-sz[t]-1$，只与$t$的子树大小有关。
+	于是乎，在一遍dfs过程中动态修改根，维护所有点sz与作为终点概率的乘积和即可。
+\end{sol}

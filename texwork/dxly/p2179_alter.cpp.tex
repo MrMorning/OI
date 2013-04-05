@@ -1,0 +1,44 @@
+\input {highlight.sty}
+
+\pagecolor{bgcolor}
+\newsavebox{\hlboxopenbrace}
+\newsavebox{\hlboxclosebrace}
+\newsavebox{\hlboxlessthan}
+\newsavebox{\hlboxgreaterthan}
+\newsavebox{\hlboxdollar}
+\newsavebox{\hlboxunderscore}
+\newsavebox{\hlboxand}
+\newsavebox{\hlboxhash}
+\newsavebox{\hlboxat}
+\newsavebox{\hlboxbackslash}
+\newsavebox{\hlboxpercent}
+\newsavebox{\hlboxhat}
+\setbox\hlboxopenbrace=\hbox{\verb.{.}
+\setbox\hlboxclosebrace=\hbox{\verb.}.}
+\setbox\hlboxlessthan=\hbox{\verb.<.}
+\setbox\hlboxgreaterthan=\hbox{\verb.>.}
+\setbox\hlboxdollar=\hbox{\verb.$.}
+\setbox\hlboxunderscore=\hbox{\verb._.}
+\setbox\hlboxand=\hbox{\verb.&.}
+\setbox\hlboxhash=\hbox{\verb.#.}
+\setbox\hlboxat=\hbox{\verb.@.}
+\setbox\hlboxbackslash=\hbox{\verb.\.}
+\setbox\hlboxpercent=\hbox{\verb.\%.}
+\setbox\hlboxhat=\hbox{\verb.^.}
+\def\urltilda{\kern -.15em\lower .7ex\hbox{\~{}}\kern .04em}
+\noindent
+\ttfamily
+\hlstd{}\hlkwb{void\ }\hlstd{}\hlkwd{fft}\hlstd{}\hlopt{(}\hlstd{}\hlkwb{int\ }\hlstd{delta}\hlopt{,\ }\hlstd{}\hlkwb{int\ }\hlstd{step}\hlopt{,\ }\hlstd{}\hlkwb{int\ }\hlstd{size}\hlopt{,\ }\hlstd{}\hlkwb{int\ }\hlstd{flag}\hlopt{)\ \usebox{\hlboxopenbrace}}\hspace*{\fill}\\
+\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlkwa{if\ }\hlstd{}\hlopt{(\ }\hlstd{size\ }\hlopt{==\ }\hlstd{}\hlnum{1\ }\hlstd{}\hlopt{)\ \usebox{\hlboxopenbrace}\ }\hlstd{res}\hlopt{{[}}\hlstd{delta}\hlopt{{]}\ =\ }\hlstd{coef}\hlopt{{[}}\hlstd{delta}\hlopt{{]};\ }\hlstd{}\hlkwa{return}\hlstd{}\hlopt{;\ \usebox{\hlboxclosebrace}}\hspace*{\fill}\\
+\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlkwd{fft}\hlstd{}\hlopt{(}\hlstd{delta}\hlopt{,\ }\hlstd{step\ }\hlopt{{*}\ }\hlstd{}\hlnum{2}\hlstd{}\hlopt{,\ }\hlstd{size\ }\hlopt{/\ }\hlstd{}\hlnum{2}\hlstd{}\hlopt{,\ }\hlstd{flag}\hlopt{);}\hspace*{\fill}\\
+\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlkwd{fft}\hlstd{}\hlopt{(}\hlstd{delta\ }\hlopt{+\ }\hlstd{step}\hlopt{,\ }\hlstd{step\ }\hlopt{{*}\ }\hlstd{}\hlnum{2}\hlstd{}\hlopt{,\ }\hlstd{size\ }\hlopt{/\ }\hlstd{}\hlnum{2}\hlstd{}\hlopt{,\ }\hlstd{flag}\hlopt{);}\hspace*{\fill}\\
+\hlstd{}\hlstd{\ \ \ \ }\hlstd{Complex\ }\hlkwd{acc}\hlstd{}\hlopt{(}\hlstd{}\hlnum{1}\hlstd{}\hlopt{,\ }\hlstd{}\hlnum{0}\hlstd{}\hlopt{),\ }\hlstd{}\hlkwd{pri}\hlstd{}\hlopt{(}\hlstd{}\hlkwd{cos}\hlstd{}\hlopt{(}\hlstd{flag\ }\hlopt{{*}\ }\hlstd{}\hlnum{2\ }\hlstd{}\hlopt{{*}\ }\hlstd{PI\ }\hlopt{/\ }\hlstd{size}\hlopt{),\ }\hlstd{}\hlkwd{sin}\hlstd{}\hlopt{(}\hlstd{flag\ }\hlopt{{*}\ }\hlstd{}\hlnum{2\ }\hlstd{}\hlopt{{*}\ }\hlstd{PI\ }\hlopt{/\ }\hlstd{size}\hlopt{));}\hspace*{\fill}\\
+\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlkwa{for\ }\hlstd{}\hlopt{(\ }\hlstd{}\hlkwb{int\ }\hlstd{i\ }\hlopt{=\ }\hlstd{}\hlnum{0}\hlstd{}\hlopt{;\ }\hlstd{i\ }\hlopt{\usebox{\hlboxlessthan}\ }\hlstd{size\ }\hlopt{/\ }\hlstd{}\hlnum{2}\hlstd{}\hlopt{;\ }\hlstd{i\ }\hlopt{++,\ }\hlstd{acc\ }\hlopt{=\ }\hlstd{acc\ }\hlopt{{*}\ }\hlstd{pri\ }\hlopt{)\ }\hspace*{\fill}\\
+\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{tmp}\hlopt{{[}}\hlstd{delta\ }\hlopt{+\ }\hlstd{i\ }\hlopt{{*}\ }\hlstd{step}\hlopt{{]}\ =\ }\hlstd{res}\hlopt{{[}}\hlstd{delta\ }\hlopt{+\ }\hlstd{i\ }\hlopt{{*}\ }\hlstd{step\ }\hlopt{{*}\ }\hlstd{}\hlnum{2}\hlstd{}\hlopt{{]}\ +\ }\hlstd{acc\ }\hlopt{{*}\ }\hlstd{res}\hlopt{{[}}\hlstd{delta\ }\hlopt{+\ }\hlstd{step\ }\hlopt{+\ }\hlstd{i\ }\hlopt{{*}\ }\hlstd{step\ }\hlopt{{*}\ }\hlstd{}\hlnum{2}\hlstd{}\hlopt{{]};}\hspace*{\fill}\\
+\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlkwa{for\ }\hlstd{}\hlopt{(\ }\hlstd{}\hlkwb{int\ }\hlstd{i\ }\hlopt{=\ }\hlstd{size\ }\hlopt{/\ }\hlstd{}\hlnum{2}\hlstd{}\hlopt{;\ }\hlstd{i\ }\hlopt{\usebox{\hlboxlessthan}\ }\hlstd{size}\hlopt{;\ }\hlstd{i\ }\hlopt{++,\ }\hlstd{acc\ }\hlopt{=\ }\hlstd{acc\ }\hlopt{{*}\ }\hlstd{pri\ }\hlopt{)\ }\hspace*{\fill}\\
+\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{tmp}\hlopt{{[}}\hlstd{delta\ }\hlopt{+\ }\hlstd{i\ }\hlopt{{*}\ }\hlstd{step}\hlopt{{]}\ =\ }\hlstd{res}\hlopt{{[}}\hlstd{delta\ }\hlopt{+\ (}\hlstd{i\ }\hlopt{{-}\ }\hlstd{size\ }\hlopt{/\ }\hlstd{}\hlnum{2}\hlstd{}\hlopt{)\ {*}\ }\hlstd{step\ }\hlopt{{*}\ }\hlstd{}\hlnum{2}\hlstd{}\hlopt{{]}\ +\ }\hlstd{acc\ }\hlopt{{*}\ }\hlstd{res}\hlopt{{[}}\hlstd{delta\ }\hlopt{+\ }\hlstd{step\ }\hlopt{+\ (}\hlstd{i\ }\hlopt{{-}\ }\hlstd{size\ }\hlopt{/\ }\hlstd{}\hlnum{2}\hlstd{}\hlopt{)\ {*}\ }\hlstd{step\ }\hlopt{{*}\ }\hlstd{}\hlnum{2}\hlstd{}\hlopt{{]};}\hspace*{\fill}\\
+\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlkwa{for\ }\hlstd{}\hlopt{(\ }\hlstd{}\hlkwb{int\ }\hlstd{i\ }\hlopt{=\ }\hlstd{}\hlnum{0}\hlstd{}\hlopt{;\ }\hlstd{i\ }\hlopt{\usebox{\hlboxlessthan}\ }\hlstd{size}\hlopt{;\ }\hlstd{i\ }\hlopt{++\ )\ }\hlstd{res}\hlopt{{[}}\hlstd{delta\ }\hlopt{+\ }\hlstd{i\ }\hlopt{{*}\ }\hlstd{step}\hlopt{{]}\ =\ }\hlstd{tmp}\hlopt{{[}}\hlstd{delta\ }\hlopt{+\ }\hlstd{i\ }\hlopt{{*}\ }\hlstd{step}\hlopt{{]};}\hspace*{\fill}\\
+\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\hlstd{}\hspace*{\fill}\\
+\mbox{}
+\normalfont
+\normalsize

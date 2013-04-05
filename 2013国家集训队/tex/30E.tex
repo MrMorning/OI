@@ -1,0 +1,24 @@
+\newproblem{30E. Tricky and Clever Password}
+\begin{prob}
+	给定一个加密后的奇数长度的回文串：
+	A+prefix+B+middle+C+suffix
+	，其中prefix,suffix
+	为原串的首尾等长的子串，middle
+	为长度是奇数的回文串。求一种破解方法，
+	使prefix+middle+suffix，即原串，的长度最大。
+	加密后的字符串长度不超过$2 \times 10^5$。
+\end{prob}
+
+\begin{sol}
+	首先预处理出每个位置的最大回文半
+	径。可以证明，若middle以某
+	个位置为中心，那么当middle
+	恰好为以那个位置为中心的最长回文串，得
+	到的解不会更差。再KMP预处理另一个数
+	组$f[i]$表示与字符串$[i,n-1]$（$n$为长度）
+	逆序匹配的最靠前位置。于是可以枚
+	举每个middle，注意到当$i$增
+	加时，$f[i]$不增，所以可以二分位置$k$使
+	$f[k]$在middle之前且$k$最
+	靠左。整个算法的复杂度为$O(n\log n)$。
+\end{sol}

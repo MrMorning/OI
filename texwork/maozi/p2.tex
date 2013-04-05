@@ -1,0 +1,19 @@
+\section{第二题第2小问}
+$\because a \not \in \overline{A} $，且$a \neq 1$，故可设$a = 2^i \cdot j$，$i, j \in N$，
+$j \neq 1$，$2 \nmid j$. \par
+考虑数$1 \cdot 2^{i+1}, 2 \cdot 2^{i+1}, \ldots, (j-1) \cdot 2^{i+1}$共$(j-1)$个数. \par
+首先说明，它们均不被$j$整除. \par
+否则，反设$j \mid t \cdot 2^{i+1}, t \in \{ 1, 2, \ldots, j-1 \}$. 
+$ \because (j, 2^{i+1}) = 1$, $ \therefore j \mid t$. \par
+$ \therefore t \ge j $ 或 $ t = 0 $, 矛盾. \par
+再证，它们模$j$互不同余. \par
+否则，设$x \cdot 2^{i+1} \equiv y \cdot 2^{i+1} \pmod j$. $x, y \in {1, 2, \ldots, j-1}, x \neq y$，
+$\therefore j \mid (y-x) \cdot 2^{i+1}$ \par
+$\because (j, 2^{i+1}) = 1, \therefore j \mid (y-x), \therefore y-x=0$ 或 $y-x \ge j$, 
+与$x, y \in {1, 2, \ldots, j-1}$ 矛盾. \par
+设$B$为$1 \cdot 2^{i+1}, 2 \cdot 2^{i+1}, \ldots, (j-1) \cdot 2^{i+1}$模$j$的最小非负整数构成的集合，\par
+则$B = \{1, 2, \ldots, j-1\}$, $\therefore$ 存在$l \in \{1, 2, \ldots, j-1\}$,使$2^{i+1} \cdot l \equiv j-1 \pmod j$. \par
+$\therefore$ 取 $b = 2^{i+1} \cdot l$，$\therefore b(b+1) = 2^{i+1} \cdot l(2^{i+1} l + 1)$. 
+$\because j \mid (2^{i+1}l + 1), 2^{i+1} \mid 2^{i+1} \cdot l$, $\therefore 2^{i+1} \cdot j \mid b(b+1)$,\par
+即$2a \mid b(b+1)$. 又$b=2^{i+1}l \le 2^{i+1}(j-1) = 2^{i+1} \cdot j - 2^{i+1} < 2^{i+1} \cdot j - 1 = 2a - 1$.
+$\therefore b = 2^{i+1}l$满足要求.

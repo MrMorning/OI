@@ -1,0 +1,48 @@
+#include <cstdio>
+class set_t
+{
+	int p[8];
+	set_t(){for(int i = 0; i < 8; i ++) p[i] = i};
+	int find(int u){return p[u] != u ? p[u] = find(p[u]) : p[u];};
+	void comb(int u, int v){p[find(u)] = find(v)};
+};
+struct node_t
+{
+	int l, r;
+	bool f[4][4];
+};
+
+node_t operator+ (const node_t &lch, const node_t &rch)
+{
+#define LV(i) (i)
+#define RV(i) ((i)+4)
+	static set_t S;
+	S.set_t();
+	node_t x; x.l = lch.l, x.r = rch.r;
+	for(int i = 0; i < 4; i ++){
+		if(lch.f[i][(i+1)%4]) S.comb(LV(i), LV((i+1)%4));
+		if(rch.f[i][(i+1)%4]) S.comb(RV(i), RV((i+1)%4));
+	}
+	if(link[lch.r][0]) S.comb(LV(3), RV(0));
+	if(link[lch.r][1]) S.comb(LV(2), RV(1));
+	for(int i = 0; i <= 1; i ++)
+		for(int j = 2; j <= 3; j ++)
+			if(S.find(LV(i)) == S.find(RV(j))) x.f[i][j] = f[j][i] = 1;
+	if(S.find(LV(0)) == S.find(LV(1))) x.f[0][1] = f[1][0] = 1;
+	if(S.find(RV(2)) == S.find(RV(3))) x.f[2][3] = f[3][2] = 1;
+	return x;
+#undef LV
+#undef RV
+}
+
+void change(int i, int pos, bool e)
+{
+	node_t &x = node[i];
+	if(x.l > pos || x.r < pos) return;
+	if(x.l == pos && x.r == pos){
+		x.f[0][1] = x.f[1][0] = x.f[2][3] = x.f[3][2] = c;
+		return;
+	}
+	change(i * 2, pos, e), change(i * 2 + 1, pos, e);
+	x = node[i * 2] + node[i * 2 + 1];
+}

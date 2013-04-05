@@ -1,0 +1,96 @@
+#include <cstdio>
+#include <cstring>
+#define MIN(a,b) ((a)<(b)?(a):(b))
+#define MAX(a,b) ((a)>(b)?(a):(b))
+#define INPUT "t.in"
+#define OUTPUT "t.out"
+namespace Solve
+{
+	const int MAXN = 100001;
+	class MonoQueue
+	{
+		private:
+			int q[MAXN], qh, qt;
+		public:
+			MonoQueue();
+			int getMin();
+			void push(int x);
+			void refresh(int line);
+	};
+	int f[MAXN], a[MAXN], b[MAXN];
+	int n, m;
+	void initBound();
+	void solve(FILE *fin, FILE *fout);
+	void workForce(FILE *fin, FILE *fout);
+	void workOpt(FILE *fin, FILE *fout);
+}
+
+Solve::MonoQueue::MonoQueue()
+{
+	qh = qt = 0;
+}
+
+int Solve::MonoQueue::getMin()
+{
+	int minVal = 0x3f3f3f3f;
+	for(int i = qh; i < qt; i ++)
+		minVal = MIN(minVal, f[q[i]] + a[q[i + 1]]);
+	return minVal;
+}
+
+void Solve::MonoQueue::push(int x)
+{
+}
+
+void Solve::solve(FILE *fin, FILE *fout)
+{
+	fscanf(fin, "%d%d", &n, &m);
+	for(int i = 1; i <= n; i ++)
+		fscanf(fin, "%d", &a[i]);
+	initBound();
+	workForce(fin, fout);
+}
+
+void Solve::initBound()
+{
+	int i = 0, cnt = 0;
+	for(int j = 1; j <= n; j ++)
+	{
+		cnt += a[j];
+		while(cnt > m && i < j)
+			cnt -= a[++ i];
+		b[j] = i;
+	}
+}
+
+void Solve::workForce(FILE *fin, FILE *fout)
+{
+	memset(f, 0x3f, sizeof(int) * (n + 1));
+	f[0] = 0;
+	for(int i = 1; i <= n; i ++)
+		for(int j = b[i]; j < i; j ++)
+		{
+			int maxNum = 0;
+			for(int k = j + 1; k <= i; k ++)
+				maxNum = MAX(maxNum, a[k]);
+			f[i] = MIN(f[i], f[j] + maxNum);
+		}
+	fprintf(fout, "%d\n", f[n]);
+}
+
+void Solve::workOpt(FILE *fin, FILE *fout)
+{
+	memset(f, 0x3f, sizeof(int) * (n + 1));
+	f[0] = 0;
+}
+
+int main()
+{
+#ifdef STDIO
+	Solve::solve(stdin, stdout);
+#else
+	FILE *fin = fopen(INPUT, "r"),
+		 *fout = fopen(OUTPUT, "w");
+	Solve::solve(fin, fout);
+#endif
+}

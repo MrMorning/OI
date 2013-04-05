@@ -1,0 +1,42 @@
+#include <cstdio>
+
+struct Point {
+	int x, y;
+	Point(){}
+	Point(int xx, int yy):
+		x(xx), y(yy){}
+};
+
+bool isIntDist(const Point &p1, const Point &p2) {
+	return isSqr[sqr(p1.x-p2.x)+sqr(p1.y-p2.y)];
+}
+
+void dfs(int i) {
+	if ( i-1+nArr < ansBest ) return;
+	for ( int k = 0; k < nArr; k ++ ) {
+	}
+}
+
+int main() {
+	freopen("t.in", "r", stdin);
+	for ( int x = 1; x*x <= 20000; x ++ )
+		isSqr[x*x] = true;
+	scanf("%d%d", &n, &m);
+	for ( int i = 1; i <= n; i ++ )
+		for ( int j = 1; j <= m; j ++ ) {
+			chose[0] = Point(i, 0);
+			chose[1] = Point(0, j);
+			for ( int x = 0; x <= n; x ++ )
+				for ( int y = 0; y <= m; y ++ )
+					if ( x != 0 || y != 0 )
+						arr[nArr++] = Point(x, y);
+			for ( int i = 0; i < nArr; i ++ )
+				if ( isIntDist(arr[i], chose[0]) ||
+					isIntDist(arr[i], chose[1]) ) {
+					swap(arr[i], arr[nArr-1]);
+					nArr--;
+					i--;
+				}
+			dfs(2);
+		}
+}

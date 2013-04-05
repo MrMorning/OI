@@ -1,0 +1,14 @@
+\newproblem{105E. Lift and Throw}
+\begin{prob}
+	三个人初始时站在数轴整点上。任意一个人可以进行以下操作不超过一次：
+	\begin{enumerate}
+		\item 移动一段距离，不超过一个定值。
+		\item 抓起另一个人，要求两人距离恰好为1。一但抓起一个人后，将不能移动。被抓起的人不能进行任何操作。
+		\item 将抓起的人扔一段距离，不超过一个定值。
+	\end{enumerate}
+	求三人中任意一人能到达的最远距离。输入所有数均为整数且不超过10。
+\end{prob}
+
+\begin{sol}
+	爆搜+记忆化剪枝，over。
+\end{sol}

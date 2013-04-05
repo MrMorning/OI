@@ -1,0 +1,4 @@
+\section{323. The Great Union}
+求$m$次MST肯定会挂。先求原图的MST，
+可以发现，每次重新求MST时有用的边是$O(n)$级别的，
+而且排序已经做好了。所以整个复杂度只有$O(nm+k\log k)$。

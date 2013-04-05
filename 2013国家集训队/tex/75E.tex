@@ -1,0 +1,12 @@
+\newproblem{75E. Ships Shortest Path}
+\begin{prob}
+	在一片海域中，有一座孤岛（
+	凸多边形）。一艘船要从$A$到$B$，
+	要求航程最短，且只能经过岛上或$AB$连线。
+	可以经过岛上，但航程要按双倍记。
+\end{prob}
+
+\begin{sol}
+	求出交点，然后分情况讨论。为了避免边
+	界精度问题，可以最后用floyd简化。
+\end{sol}

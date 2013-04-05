@@ -1,0 +1,97 @@
+program pku3264;
+type
+Tnode=record
+	s,t,minv,maxv:longint;
+	end;
+var
+node:array[1..140000] of Tnode;
+j:longint;
+N,Q,tbe,ten:longint;
+a:array[1..50000] of longint;
+
+function max(a,b:longint):longint;
+begin
+if a>b then exit(a)
+else exit(b);
+end;
+
+function min(a,b:longint):longint;
+begin
+if a<b then exit(a)
+else exit(b);
+end;
+
+procedure build(i:longint);
+begin
+	if node[i].s=node[i].t then
+		begin
+		node[i].minv:=a[node[i].s]; node[i].maxv:=a[node[i].s];
+		end
+	else
+		begin
+		node[2*i].s:=node[i].s;
+		node[2*i].t:=node[i].s+(node[i].t-node[i].s)div 2;
+		node[2*i+1].s:=node[2*i].t+1;
+		node[2*i+1].t:=node[i].t;
+		node[2*i]:=node[2*i]; node[2*i+1]:=node[2*i+1];
+		build(2*i); build(2*i+1);
+		node[i].maxv:=max(node[2*i].maxv,node[2*i+1].maxv);
+		node[i].minv:=min(node[2*i].minv,node[2*i+1].minv);
+		end;
+end;
+
+function findmax(i,be,en:longint):longint;
+var
+mid:longint;
+begin
+if (node[i].s>en)or(node[i].t<be) then exit(0);
+if (node[i].s=be)and(node[i].t=en) then
+	exit(node[i].maxv);
+mid:=node[i].s+(node[i].t-node[i].s) div 2;
+if mid<be then
+	exit(findmax(2*i+1,be,en))
+else if mid=be
+        then exit(max(a[mid],findmax(2*i+1,mid+1,en)))
+else if mid<en then
+	exit(max(findmax(2*i,be,mid),findmax(2*i+1,mid+1,en)))
+else if mid=en then
+	exit(findmax(2*i,be,en))
+else
+	exit(findmax(2*i,be,en));
+end;
+
+function findmin(i,be,en:longint):longint;
+var
+mid:longint;
+begin
+if (node[i].s>en)or(node[i].t<be) then exit(1000001);
+if (node[i].s=be)and(node[i].t=en) then
+	exit(node[i].minv);
+mid:=node[i].s+(node[i].t-node[i].s) div 2;
+if mid<be then
+	exit(findmin(2*i+1,be,en))
+else if mid=be
+        then exit(min(a[mid],findmin(2*i+1,mid+1,en)))
+else if mid<en then
+	exit(min(findmin(2*i,be,mid),findmin(2*i+1,mid+1,en)))
+else if mid=en then
+	exit(findmin(2*i,be,en))
+else
+	exit(findmin(2*i,be,en));
+end;
+
+begin
+assign(input,'t.in'); reset(input);
+assign(output,'t.out'); rewrite(output);
+readln(N,Q);
+for j:=1 to N do
+	readln(a[j]);
+node[1].s:=1; node[1].t:=N;
+build(1);
+for j:=1 to Q do
+	begin
+	readln(tbe,ten);
+        writeln(findmax(1,tbe,ten)-findmin(1,tbe,ten));
+	end;
+close(input); close(output);
+end.

@@ -1,0 +1,21 @@
+\newproblem{147B. Smile House}
+\begin{prob}
+	给出一个$n(n \le 150)$个点边上带权的有向图。
+	求正权环（环上路径和为正）的最小长度。
+\end{prob}
+
+\begin{sol}
+	修改矩阵乘法，原来是：
+	\begin{displaymath}
+		c[i][j] = \sum a[i][k] \times b[k][j]
+	\end{displaymath}
+	修改为：
+	\begin{displaymath}
+		c[i][j] = \max \{a[i][k] + b[k][j]\}
+	\end{displaymath}
+	可以验证修改后的矩阵乘法依然满足结合律。于是
+	也能进行快速幂。（类似与$O(n^3 \log n)$的APSP最短路）\par
+	现在简化问题。设$E$是边权的邻接矩阵。
+	我们要求的是最小的$t$，满足$F=E^t$中存在$k$，$F[k][k] > 0$。
+	运用倍增即可求出。（类似倍增LCA）。复杂度为$O(n^3 \log n)$。
+\end{sol}

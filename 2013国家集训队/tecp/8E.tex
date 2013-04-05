@@ -1,0 +1,43 @@
+\newproblem{8E. Beads}
+\begin{prob}
+	将$1$-$2^{n-1}$的数分组，
+	同一组的数可以通过二进制下逆序和01取反得到
+	，然后每组保留最小的数。求第$k$大的数。
+	$n \le 50, k \le 10^{16}$。
+\end{prob}
+
+\begin{sol}
+	先二分答案，转化成计算不超过$k$的有多少个满足条件的数：
+	用$\-x$表示对$x$\ 01取反，$rev(x)$表示逆序。
+	原问题对$x$所属组的定义是$\{x,-x,rev(x),rev(-x)\}$。
+	定义子问题1中的组为：${x,rev(x)}$，
+	子问题2的组为：${x,rev(-x)}$。
+	\par 
+	结合数位dp的一般思想和本题的特殊性，可以从两边
+	往中间进行dp。具体分类讨论如下：
+	\par
+	原问题：
+	\begin{enumerate}
+		\item $0 \cdots 0$ $\Rightarrow$ 子问题1
+		\item $0 \cdots 1$ $\Rightarrow$ 子问题2
+		\item $1 \cdots 0$ $\Rightarrow$ impossible
+		\item $1 \cdots 1$ $\Rightarrow$ impossible
+	\end{enumerate}
+	\par
+	子问题1：
+	\begin{enumerate}
+		\item $0 \cdots 0$ $\Rightarrow$ 子问题1
+		\item $0 \cdots 1$ $\Rightarrow$ 全部合法
+		\item $1 \cdots 0$ $\Rightarrow$ impossible
+		\item $1 \cdots 1$ $\Rightarrow$ 子问题1
+	\end{enumerate}
+	\par
+	子问题2：
+	\begin{enumerate}
+		\item $0 \cdots 0$ $\Rightarrow$ 全部合法
+		\item $0 \cdots 1$ $\Rightarrow$ 子问题2
+		\item $1 \cdots 0$ $\Rightarrow$ 子问题2
+		\item $1 \cdots 1$ $\Rightarrow$ impossible
+	\end{enumerate}
+	于是可以设计3个相似的dp，每个dp解决不超过二分的答案的合法数的个数。
+\end{sol}

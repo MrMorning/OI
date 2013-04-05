@@ -1,0 +1,35 @@
+#include <cstdio>
+
+int main() {
+	freopen("t.in", "r", stdin);
+	scanf("%d%d", &n, &L);
+	for ( int i = 0; i < n; i ++ ) {
+		int x;
+		scanf("%d", &x);
+		arr[nArr++] = make_pair(x, HOUSE);
+	}
+	for ( int i = 0; i < n; i ++ ) {
+		int x;
+		scanf("%d", &x);
+		arr[nArr++] = make_pair(x, OFFICE);
+	}
+	sort(arr, arr + nArr);
+	memset(f, -1, sizeof(f));
+	ll acc = 0;
+	int qh1 = 0, qt1 = 0, qh2 = 0, qt2 = 0;
+	for ( int i = 1; i < n - 1; i ++ ) {
+		if ( arr[i].second == HOUSE ) {
+			if ( qh2 != qt2 ) 
+				acc += arr[i].first - arr[que2[qh2++]].first;
+			else
+				que1[qt1++] = i;
+		} else {
+			if ( qh1 != qt1 ) 
+				acc += arr[i].first - arr[que1[qh1++]].first;
+			else
+				que2[qt2++] = i;
+		}
+		if ( qh1 == qt1 && qh2 == qt2 ) 
+			f[i] = acc;
+	}
+}

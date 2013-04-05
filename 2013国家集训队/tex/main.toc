@@ -1,0 +1,335 @@
+\contentsline {section}{\numberline {1}Volume I}{4}{section.1}
+\contentsline {subsection}{\numberline {1.1}7E. Defining Macros}{4}{subsection.1.1}
+\contentsline {paragraph}{题目大意}{4}{paragraph*.1}
+\contentsline {paragraph}{算法简述}{4}{paragraph*.2}
+\contentsline {subsection}{\numberline {1.2}8D. Two Friends}{4}{subsection.1.2}
+\contentsline {paragraph}{题目大意}{4}{paragraph*.3}
+\contentsline {paragraph}{算法简述}{4}{paragraph*.4}
+\contentsline {subsection}{\numberline {1.3}8E. Beads}{4}{subsection.1.3}
+\contentsline {paragraph}{题目大意}{4}{paragraph*.5}
+\contentsline {paragraph}{算法简述}{4}{paragraph*.6}
+\contentsline {subsection}{\numberline {1.4}10E. Greedy Change}{5}{subsection.1.4}
+\contentsline {paragraph}{题目大意}{5}{paragraph*.7}
+\contentsline {paragraph}{算法简述}{5}{paragraph*.8}
+\contentsline {subsection}{\numberline {1.5}15E. Triangles}{6}{subsection.1.5}
+\contentsline {paragraph}{题目大意}{6}{paragraph*.9}
+\contentsline {paragraph}{算法简述}{6}{paragraph*.10}
+\contentsline {subsection}{\numberline {1.6}17E. Palisection}{6}{subsection.1.6}
+\contentsline {paragraph}{题目大意}{6}{paragraph*.11}
+\contentsline {paragraph}{算法简述}{6}{paragraph*.12}
+\contentsline {subsection}{\numberline {1.7}17C. Balance}{7}{subsection.1.7}
+\contentsline {paragraph}{题目大意}{7}{paragraph*.13}
+\contentsline {paragraph}{算法简述}{7}{paragraph*.14}
+\contentsline {subsection}{\numberline {1.8}19E. Fairy}{7}{subsection.1.8}
+\contentsline {paragraph}{题目大意}{7}{paragraph*.15}
+\contentsline {paragraph}{算法简述}{7}{paragraph*.16}
+\contentsline {subsection}{\numberline {1.9}23D. Tetragon}{7}{subsection.1.9}
+\contentsline {paragraph}{题目大意}{7}{paragraph*.17}
+\contentsline {paragraph}{算法简述}{7}{paragraph*.18}
+\contentsline {subsection}{\numberline {1.10}23E. Tree}{7}{subsection.1.10}
+\contentsline {paragraph}{题目大意}{7}{paragraph*.19}
+\contentsline {paragraph}{算法简述}{8}{paragraph*.20}
+\contentsline {section}{\numberline {2}Volume II}{9}{section.2}
+\contentsline {subsection}{\numberline {2.1}26E. Multithreading}{9}{subsection.2.1}
+\contentsline {paragraph}{题目大意}{9}{paragraph*.21}
+\contentsline {paragraph}{算法简述}{9}{paragraph*.22}
+\contentsline {subsection}{\numberline {2.2}28D. Do not fear, DravDe is kind}{9}{subsection.2.2}
+\contentsline {paragraph}{题目大意}{9}{paragraph*.23}
+\contentsline {paragraph}{算法简述}{9}{paragraph*.24}
+\contentsline {subsection}{\numberline {2.3}30D. Kings Problem?}{9}{subsection.2.3}
+\contentsline {paragraph}{题目大意}{9}{paragraph*.25}
+\contentsline {paragraph}{算法简述}{9}{paragraph*.26}
+\contentsline {subsection}{\numberline {2.4}30E. Tricky and Clever Password}{10}{subsection.2.4}
+\contentsline {paragraph}{题目大意}{10}{paragraph*.27}
+\contentsline {paragraph}{算法简述}{10}{paragraph*.28}
+\contentsline {subsection}{\numberline {2.5}32E. Hide-and-Seek}{10}{subsection.2.5}
+\contentsline {paragraph}{题目大意}{10}{paragraph*.29}
+\contentsline {paragraph}{算法简述}{10}{paragraph*.30}
+\contentsline {subsection}{\numberline {2.6}35E. Parade}{10}{subsection.2.6}
+\contentsline {paragraph}{题目大意}{10}{paragraph*.31}
+\contentsline {paragraph}{算法简述}{10}{paragraph*.32}
+\contentsline {subsection}{\numberline {2.7}36E. Two paths}{10}{subsection.2.7}
+\contentsline {paragraph}{题目大意}{10}{paragraph*.33}
+\contentsline {paragraph}{算法简述}{10}{paragraph*.34}
+\contentsline {subsection}{\numberline {2.8}37E. Trial for Chief}{11}{subsection.2.8}
+\contentsline {paragraph}{题目大意}{11}{paragraph*.35}
+\contentsline {paragraph}{算法简述}{11}{paragraph*.36}
+\contentsline {subsection}{\numberline {2.9}39C. Moon Craters}{11}{subsection.2.9}
+\contentsline {paragraph}{题目大意}{11}{paragraph*.37}
+\contentsline {paragraph}{算法简述}{11}{paragraph*.38}
+\contentsline {subsection}{\numberline {2.10}39A. C*++ Calculations}{11}{subsection.2.10}
+\contentsline {paragraph}{题目大意}{11}{paragraph*.39}
+\contentsline {paragraph}{算法简述}{11}{paragraph*.40}
+\contentsline {section}{\numberline {3}Volume III}{12}{section.3}
+\contentsline {subsection}{\numberline {3.1}39E. What Has Dirichlet Got to Do with That?}{12}{subsection.3.1}
+\contentsline {paragraph}{题目大意}{12}{paragraph*.41}
+\contentsline {paragraph}{算法简述}{12}{paragraph*.42}
+\contentsline {subsection}{\numberline {3.2}40E. Number Table}{12}{subsection.3.2}
+\contentsline {paragraph}{题目大意}{12}{paragraph*.43}
+\contentsline {paragraph}{算法简述}{12}{paragraph*.44}
+\contentsline {subsection}{\numberline {3.3}43E. Race}{12}{subsection.3.3}
+\contentsline {paragraph}{题目大意}{12}{paragraph*.45}
+\contentsline {paragraph}{算法简述}{12}{paragraph*.46}
+\contentsline {subsection}{\numberline {3.4}44J. Triminoes}{12}{subsection.3.4}
+\contentsline {paragraph}{题目大意}{12}{paragraph*.47}
+\contentsline {paragraph}{算法简述}{13}{paragraph*.48}
+\contentsline {subsection}{\numberline {3.5}45G. Prime Problem}{13}{subsection.3.5}
+\contentsline {paragraph}{题目大意}{13}{paragraph*.49}
+\contentsline {paragraph}{算法简述}{13}{paragraph*.50}
+\contentsline {subsection}{\numberline {3.6}45E. Director}{13}{subsection.3.6}
+\contentsline {paragraph}{题目大意}{13}{paragraph*.51}
+\contentsline {paragraph}{算法简述}{13}{paragraph*.52}
+\contentsline {subsection}{\numberline {3.7}46F. HerculePoirot Problem}{13}{subsection.3.7}
+\contentsline {paragraph}{题目大意}{13}{paragraph*.53}
+\contentsline {paragraph}{算法简述}{13}{paragraph*.54}
+\contentsline {subsection}{\numberline {3.8}47E. Cannon}{13}{subsection.3.8}
+\contentsline {paragraph}{题目大意}{13}{paragraph*.55}
+\contentsline {paragraph}{算法简述}{14}{paragraph*.56}
+\contentsline {subsection}{\numberline {3.9}49E. Common ancestor}{14}{subsection.3.9}
+\contentsline {paragraph}{题目大意}{14}{paragraph*.57}
+\contentsline {paragraph}{算法简述}{14}{paragraph*.58}
+\contentsline {subsection}{\numberline {3.10}51F. Caterpillar}{14}{subsection.3.10}
+\contentsline {paragraph}{题目大意}{14}{paragraph*.59}
+\contentsline {paragraph}{算法简述}{14}{paragraph*.60}
+\contentsline {section}{\numberline {4}Volume IV}{15}{section.4}
+\contentsline {subsection}{\numberline {4.1}53E. Dead Ends}{15}{subsection.4.1}
+\contentsline {paragraph}{题目大意}{15}{paragraph*.61}
+\contentsline {paragraph}{算法简述}{15}{paragraph*.62}
+\contentsline {subsection}{\numberline {4.2}57D. Journey}{15}{subsection.4.2}
+\contentsline {paragraph}{题目大意}{15}{paragraph*.63}
+\contentsline {paragraph}{算法简述}{15}{paragraph*.64}
+\contentsline {subsection}{\numberline {4.3}226E. Noble Knights Path}{15}{subsection.4.3}
+\contentsline {paragraph}{题目大意}{15}{paragraph*.65}
+\contentsline {paragraph}{算法简述}{15}{paragraph*.66}
+\contentsline {subsection}{\numberline {4.4}217D. Bitonix' Patrol}{16}{subsection.4.4}
+\contentsline {paragraph}{题目大意}{16}{paragraph*.67}
+\contentsline {paragraph}{算法简述}{16}{paragraph*.68}
+\contentsline {subsection}{\numberline {4.5}67E. Save the City!}{16}{subsection.4.5}
+\contentsline {paragraph}{题目大意}{16}{paragraph*.69}
+\contentsline {paragraph}{算法简述}{16}{paragraph*.70}
+\contentsline {subsection}{\numberline {4.6}67C. Sequence of Balls}{16}{subsection.4.6}
+\contentsline {paragraph}{题目大意}{16}{paragraph*.71}
+\contentsline {paragraph}{算法简述}{16}{paragraph*.72}
+\contentsline {subsection}{\numberline {4.7}70D. Professors task}{16}{subsection.4.7}
+\contentsline {paragraph}{题目大意}{16}{paragraph*.73}
+\contentsline {paragraph}{算法简述}{17}{paragraph*.74}
+\contentsline {subsection}{\numberline {4.8}70E. Information Reform}{17}{subsection.4.8}
+\contentsline {paragraph}{题目大意}{17}{paragraph*.75}
+\contentsline {paragraph}{算法简述}{17}{paragraph*.76}
+\contentsline {subsection}{\numberline {4.9}156E. Mrs. Hudson's Pancakes}{17}{subsection.4.9}
+\contentsline {paragraph}{题目大意}{17}{paragraph*.77}
+\contentsline {paragraph}{算法简述}{17}{paragraph*.78}
+\contentsline {subsection}{\numberline {4.10}105D. Entertaining Geodetics}{17}{subsection.4.10}
+\contentsline {paragraph}{题目大意}{17}{paragraph*.79}
+\contentsline {paragraph}{算法简述}{17}{paragraph*.80}
+\contentsline {section}{\numberline {5}Volume V}{18}{section.5}
+\contentsline {subsection}{\numberline {5.1}193D. Two Segments}{18}{subsection.5.1}
+\contentsline {paragraph}{题目大意}{18}{paragraph*.81}
+\contentsline {paragraph}{算法简述}{18}{paragraph*.82}
+\contentsline {subsection}{\numberline {5.2}75E. Ships Shortest Path}{18}{subsection.5.2}
+\contentsline {paragraph}{题目大意}{18}{paragraph*.83}
+\contentsline {paragraph}{算法简述}{18}{paragraph*.84}
+\contentsline {subsection}{\numberline {5.3}76F. Tourist}{18}{subsection.5.3}
+\contentsline {paragraph}{题目大意}{18}{paragraph*.85}
+\contentsline {paragraph}{算法简述}{18}{paragraph*.86}
+\contentsline {subsection}{\numberline {5.4}76A. Gift}{19}{subsection.5.4}
+\contentsline {paragraph}{题目大意}{19}{paragraph*.87}
+\contentsline {paragraph}{算法简述}{19}{paragraph*.88}
+\contentsline {subsection}{\numberline {5.5}77E. Martian Food}{19}{subsection.5.5}
+\contentsline {paragraph}{题目大意}{19}{paragraph*.89}
+\contentsline {paragraph}{算法简述}{19}{paragraph*.90}
+\contentsline {subsection}{\numberline {5.6}79D. Password}{19}{subsection.5.6}
+\contentsline {paragraph}{题目大意}{19}{paragraph*.91}
+\contentsline {paragraph}{算法简述}{19}{paragraph*.92}
+\contentsline {subsection}{\numberline {5.7}81E. Pairs}{20}{subsection.5.7}
+\contentsline {paragraph}{题目大意}{20}{paragraph*.93}
+\contentsline {paragraph}{算法简述}{20}{paragraph*.94}
+\contentsline {subsection}{\numberline {5.8}82E. Corridor}{20}{subsection.5.8}
+\contentsline {paragraph}{题目大意}{20}{paragraph*.95}
+\contentsline {paragraph}{算法简述}{20}{paragraph*.96}
+\contentsline {subsection}{\numberline {5.9}83E. Two Subsequences}{20}{subsection.5.9}
+\contentsline {paragraph}{题目大意}{20}{paragraph*.97}
+\contentsline {paragraph}{算法简述}{20}{paragraph*.98}
+\contentsline {subsection}{\numberline {5.10}85E. Guard Towers}{21}{subsection.5.10}
+\contentsline {paragraph}{题目大意}{21}{paragraph*.99}
+\contentsline {paragraph}{算法简述}{21}{paragraph*.100}
+\contentsline {section}{\numberline {6}Volume VI}{22}{section.6}
+\contentsline {subsection}{\numberline {6.1}86E. Long sequence}{22}{subsection.6.1}
+\contentsline {paragraph}{题目大意}{22}{paragraph*.101}
+\contentsline {paragraph}{算法简述}{22}{paragraph*.102}
+\contentsline {subsection}{\numberline {6.2}89D. Space mines}{22}{subsection.6.2}
+\contentsline {paragraph}{题目大意}{22}{paragraph*.103}
+\contentsline {paragraph}{算法简述}{22}{paragraph*.104}
+\contentsline {subsection}{\numberline {6.3}91D. Grocer's Problem}{22}{subsection.6.3}
+\contentsline {paragraph}{题目大意}{22}{paragraph*.105}
+\contentsline {paragraph}{算法简述}{22}{paragraph*.106}
+\contentsline {subsection}{\numberline {6.4}93D. Flags}{23}{subsection.6.4}
+\contentsline {paragraph}{题目大意}{23}{paragraph*.107}
+\contentsline {paragraph}{算法简述}{23}{paragraph*.108}
+\contentsline {subsection}{\numberline {6.5}97C. Winning Strategy}{23}{subsection.6.5}
+\contentsline {paragraph}{题目大意}{23}{paragraph*.109}
+\contentsline {paragraph}{算法简述}{23}{paragraph*.110}
+\contentsline {subsection}{\numberline {6.6}97A. Domino}{24}{subsection.6.6}
+\contentsline {paragraph}{题目大意}{24}{paragraph*.111}
+\contentsline {paragraph}{算法简述}{24}{paragraph*.112}
+\contentsline {subsection}{\numberline {6.7}98D. Help Monks}{24}{subsection.6.7}
+\contentsline {paragraph}{题目大意}{24}{paragraph*.113}
+\contentsline {paragraph}{算法简述}{24}{paragraph*.114}
+\contentsline {subsection}{\numberline {6.8}98C. Help Greg the Dwarf}{25}{subsection.6.8}
+\contentsline {paragraph}{题目大意}{25}{paragraph*.115}
+\contentsline {paragraph}{算法简述}{25}{paragraph*.116}
+\contentsline {subsection}{\numberline {6.9}191D. Metro Scheme}{25}{subsection.6.9}
+\contentsline {paragraph}{题目大意}{25}{paragraph*.117}
+\contentsline {paragraph}{算法简述}{25}{paragraph*.118}
+\contentsline {subsection}{\numberline {6.10}164D. Minimum Diameter}{26}{subsection.6.10}
+\contentsline {paragraph}{题目大意}{26}{paragraph*.119}
+\contentsline {paragraph}{算法简述}{26}{paragraph*.120}
+\contentsline {section}{\numberline {7}Volumn VII}{27}{section.7}
+\contentsline {subsection}{\numberline {7.1}150E. Freezing with Style}{27}{subsection.7.1}
+\contentsline {paragraph}{题目大意}{27}{paragraph*.121}
+\contentsline {paragraph}{算法简述}{27}{paragraph*.122}
+\contentsline {subsection}{\numberline {7.2}101E. Candies and Stones}{27}{subsection.7.2}
+\contentsline {paragraph}{题目大意}{27}{paragraph*.123}
+\contentsline {paragraph}{算法简述}{27}{paragraph*.124}
+\contentsline {subsection}{\numberline {7.3}103E. Buying Sets}{27}{subsection.7.3}
+\contentsline {paragraph}{题目大意}{27}{paragraph*.125}
+\contentsline {paragraph}{算法简述}{27}{paragraph*.126}
+\contentsline {subsection}{\numberline {7.4}105E. Lift and Throw}{28}{subsection.7.4}
+\contentsline {paragraph}{题目大意}{28}{paragraph*.127}
+\contentsline {paragraph}{算法简述}{28}{paragraph*.128}
+\contentsline {subsection}{\numberline {7.5}107D. Crime Management}{28}{subsection.7.5}
+\contentsline {paragraph}{题目大意}{28}{paragraph*.129}
+\contentsline {paragraph}{算法简述}{28}{paragraph*.130}
+\contentsline {subsection}{\numberline {7.6}113D. Museum}{28}{subsection.7.6}
+\contentsline {paragraph}{题目大意}{28}{paragraph*.131}
+\contentsline {paragraph}{算法简述}{28}{paragraph*.132}
+\contentsline {subsection}{\numberline {7.7}115D. Unambiguous Arithmetic Expression}{29}{subsection.7.7}
+\contentsline {paragraph}{题目大意}{29}{paragraph*.133}
+\contentsline {paragraph}{算法简述}{29}{paragraph*.134}
+\contentsline {subsection}{\numberline {7.8}120I. Luck is in Numbers}{29}{subsection.7.8}
+\contentsline {paragraph}{题目大意}{29}{paragraph*.135}
+\contentsline {paragraph}{算法简述}{29}{paragraph*.136}
+\contentsline {subsection}{\numberline {7.9}123E. Maze}{29}{subsection.7.9}
+\contentsline {paragraph}{题目大意}{29}{paragraph*.137}
+\contentsline {paragraph}{算法简述}{30}{paragraph*.138}
+\contentsline {subsection}{\numberline {7.10}125E. MST Company}{30}{subsection.7.10}
+\contentsline {paragraph}{题目大意}{30}{paragraph*.139}
+\contentsline {paragraph}{算法简述}{30}{paragraph*.140}
+\contentsline {section}{\numberline {8}Volumn VIII}{31}{section.8}
+\contentsline {subsection}{\numberline {8.1}193E. Fibonacci Number}{31}{subsection.8.1}
+\contentsline {paragraph}{题目大意}{31}{paragraph*.141}
+\contentsline {paragraph}{算法简述}{31}{paragraph*.142}
+\contentsline {subsection}{\numberline {8.2}145D. Lucky Pair}{31}{subsection.8.2}
+\contentsline {paragraph}{题目大意}{31}{paragraph*.143}
+\contentsline {paragraph}{算法简述}{31}{paragraph*.144}
+\contentsline {subsection}{\numberline {8.3}132E. Bits of merry old England}{31}{subsection.8.3}
+\contentsline {paragraph}{题目大意}{31}{paragraph*.145}
+\contentsline {paragraph}{算法简述}{32}{paragraph*.146}
+\contentsline {subsection}{\numberline {8.4}138D. World of Darkraft}{32}{subsection.8.4}
+\contentsline {paragraph}{题目大意}{32}{paragraph*.147}
+\contentsline {paragraph}{算法简述}{32}{paragraph*.148}
+\contentsline {subsection}{\numberline {8.5}140F. New Year Snowflake}{32}{subsection.8.5}
+\contentsline {paragraph}{题目大意}{32}{paragraph*.149}
+\contentsline {paragraph}{算法简述}{32}{paragraph*.150}
+\contentsline {subsection}{\numberline {8.6}147B. Smile House}{32}{subsection.8.6}
+\contentsline {paragraph}{题目大意}{32}{paragraph*.151}
+\contentsline {paragraph}{算法简述}{33}{paragraph*.152}
+\contentsline {subsection}{\numberline {8.7}152D. Frame}{33}{subsection.8.7}
+\contentsline {paragraph}{题目大意}{33}{paragraph*.153}
+\contentsline {paragraph}{算法简述}{33}{paragraph*.154}
+\contentsline {subsection}{\numberline {8.8}183D. T-shirt}{33}{subsection.8.8}
+\contentsline {paragraph}{题目大意}{33}{paragraph*.155}
+\contentsline {paragraph}{算法简述}{33}{paragraph*.156}
+\contentsline {subsection}{\numberline {8.9}217E. Alien DNA}{34}{subsection.8.9}
+\contentsline {paragraph}{题目大意}{34}{paragraph*.157}
+\contentsline {paragraph}{算法简述}{34}{paragraph*.158}
+\contentsline {subsection}{\numberline {8.10}135E. Weak Subsequence}{34}{subsection.8.10}
+\contentsline {paragraph}{题目大意}{34}{paragraph*.159}
+\contentsline {paragraph}{算法简述}{34}{paragraph*.160}
+\contentsline {section}{\numberline {9}Volume IX}{35}{section.9}
+\contentsline {subsection}{\numberline {9.1}163D. Large Refrigerator}{35}{subsection.9.1}
+\contentsline {paragraph}{题目大意}{35}{paragraph*.161}
+\contentsline {paragraph}{算法简述}{35}{paragraph*.162}
+\contentsline {subsection}{\numberline {9.2}167E. Wizards and Bets}{35}{subsection.9.2}
+\contentsline {paragraph}{题目大意}{35}{paragraph*.163}
+\contentsline {paragraph}{算法简述}{35}{paragraph*.164}
+\contentsline {subsection}{\numberline {9.3}232D. Fence}{35}{subsection.9.3}
+\contentsline {paragraph}{题目大意}{35}{paragraph*.165}
+\contentsline {paragraph}{算法简述}{36}{paragraph*.166}
+\contentsline {subsection}{\numberline {9.4}175E. Power Defence}{36}{subsection.9.4}
+\contentsline {paragraph}{题目大意}{36}{paragraph*.167}
+\contentsline {paragraph}{算法简述}{36}{paragraph*.168}
+\contentsline {subsection}{\numberline {9.5}176D. Hyper string}{36}{subsection.9.5}
+\contentsline {paragraph}{题目大意}{36}{paragraph*.169}
+\contentsline {paragraph}{算法简述}{36}{paragraph*.170}
+\contentsline {subsection}{\numberline {9.6}178F. Representative Sampling}{36}{subsection.9.6}
+\contentsline {paragraph}{题目大意}{36}{paragraph*.171}
+\contentsline {paragraph}{算法简述}{36}{paragraph*.172}
+\contentsline {subsection}{\numberline {9.7}178E. The Beaver's Problem II}{37}{subsection.9.7}
+\contentsline {paragraph}{题目大意}{37}{paragraph*.173}
+\contentsline {paragraph}{算法简述}{37}{paragraph*.174}
+\contentsline {subsection}{\numberline {9.8}180B. Divisibility Rules}{37}{subsection.9.8}
+\contentsline {paragraph}{题目大意}{37}{paragraph*.175}
+\contentsline {paragraph}{算法简述}{37}{paragraph*.176}
+\contentsline {subsection}{\numberline {9.9}185D. Visit of the Great}{38}{subsection.9.9}
+\contentsline {paragraph}{题目大意}{38}{paragraph*.177}
+\contentsline {paragraph}{算法简述}{38}{paragraph*.178}
+\contentsline {subsection}{\numberline {9.10}187D. BRT Contract}{38}{subsection.9.10}
+\contentsline {paragraph}{题目大意}{38}{paragraph*.179}
+\contentsline {paragraph}{算法简述}{38}{paragraph*.180}
+\contentsline {section}{\numberline {10}Volume X}{39}{section.10}
+\contentsline {subsection}{\numberline {10.1}176E. Archaeology}{39}{subsection.10.1}
+\contentsline {paragraph}{题目大意}{39}{paragraph*.181}
+\contentsline {paragraph}{算法简述}{39}{paragraph*.182}
+\contentsline {subsection}{\numberline {10.2}196D. The Next Good String}{39}{subsection.10.2}
+\contentsline {paragraph}{题目大意}{39}{paragraph*.183}
+\contentsline {paragraph}{算法简述}{39}{paragraph*.184}
+\contentsline {subsection}{\numberline {10.3}198E. Gripping Story}{39}{subsection.10.3}
+\contentsline {paragraph}{题目大意}{39}{paragraph*.185}
+\contentsline {paragraph}{算法简述}{40}{paragraph*.186}
+\contentsline {subsection}{\numberline {10.4}200E. Tractor College}{40}{subsection.10.4}
+\contentsline {paragraph}{题目大意}{40}{paragraph*.187}
+\contentsline {paragraph}{算法简述}{40}{paragraph*.188}
+\contentsline {subsection}{\numberline {10.5}200A. Cinema}{40}{subsection.10.5}
+\contentsline {paragraph}{题目大意}{40}{paragraph*.189}
+\contentsline {paragraph}{算法简述}{40}{paragraph*.190}
+\contentsline {subsection}{\numberline {10.6}201E. Thoroughly Bureaucratic Organization}{41}{subsection.10.6}
+\contentsline {paragraph}{题目大意}{41}{paragraph*.191}
+\contentsline {paragraph}{算法简述}{41}{paragraph*.192}
+\contentsline {subsection}{\numberline {10.7}201D. Brand New Problem}{41}{subsection.10.7}
+\contentsline {paragraph}{题目大意}{41}{paragraph*.193}
+\contentsline {paragraph}{算法简述}{41}{paragraph*.194}
+\contentsline {subsection}{\numberline {10.8}204E. Little Elephant and Strings}{41}{subsection.10.8}
+\contentsline {paragraph}{题目大意}{41}{paragraph*.195}
+\contentsline {paragraph}{算法简述}{42}{paragraph*.196}
+\contentsline {subsection}{\numberline {10.9}207B. Military Trainings}{42}{subsection.10.9}
+\contentsline {paragraph}{题目大意}{42}{paragraph*.197}
+\contentsline {paragraph}{算法简述}{42}{paragraph*.198}
+\contentsline {subsection}{\numberline {10.10}207A. Beaver's Calculator}{42}{subsection.10.10}
+\contentsline {paragraph}{题目大意}{42}{paragraph*.199}
+\contentsline {paragraph}{算法简述}{43}{paragraph*.200}
+\contentsline {section}{\numberline {11}Volume XI}{44}{section.11}
+\contentsline {subsection}{\numberline {11.1}167D. Wizards and Roads}{44}{subsection.11.1}
+\contentsline {paragraph}{题目大意}{44}{paragraph*.201}
+\contentsline {paragraph}{算法简述}{44}{paragraph*.202}
+\contentsline {subsection}{\numberline {11.2}209C. Trails and Glades}{44}{subsection.11.2}
+\contentsline {paragraph}{题目大意}{44}{paragraph*.203}
+\contentsline {paragraph}{算法简述}{44}{paragraph*.204}
+\contentsline {subsection}{\numberline {11.3}212B. Polycarpus is Looking for Good Substrings}{45}{subsection.11.3}
+\contentsline {paragraph}{题目大意}{45}{paragraph*.205}
+\contentsline {paragraph}{算法简述}{45}{paragraph*.206}
+\contentsline {subsection}{\numberline {11.4}212D. Cutting a Fence}{45}{subsection.11.4}
+\contentsline {paragraph}{题目大意}{45}{paragraph*.207}
+\contentsline {paragraph}{算法简述}{45}{paragraph*.208}
+\contentsline {subsection}{\numberline {11.5}212C. Cowboys}{45}{subsection.11.5}
+\contentsline {paragraph}{题目大意}{45}{paragraph*.209}
+\contentsline {paragraph}{算法简述}{46}{paragraph*.210}
+\contentsline {subsection}{\numberline {11.6}213E. Two Permutations}{46}{subsection.11.6}
+\contentsline {paragraph}{题目大意}{46}{paragraph*.211}
+\contentsline {paragraph}{算法简述}{46}{paragraph*.212}
+\contentsline {subsection}{\numberline {11.7}217C. Formurosa}{46}{subsection.11.7}
+\contentsline {paragraph}{题目大意}{46}{paragraph*.213}
+\contentsline {paragraph}{算法简述}{46}{paragraph*.214}
+\contentsline {subsection}{\numberline {11.8}229E. Gifts}{47}{subsection.11.8}
+\contentsline {paragraph}{题目大意}{47}{paragraph*.215}
+\contentsline {paragraph}{算法简述}{47}{paragraph*.216}

@@ -1,0 +1,18 @@
+\newproblem{91D. Grocer's Problem}
+\begin{prob}
+	给定一个$n(n \le 10^5)$的排列，每次可以选择不超过5个数进行任意重排。求最少操作次数。
+\end{prob}
+
+\begin{sol}
+	首先将所有的循环节找到。对于长度大于5的循环节，可以每次操作使其长度减少4。
+	于是只用考虑长度为1-5的循环节。
+	\begin{enumerate}
+		\item 长度为1：已经在正确的位置上的，不管；
+		\item 长度为4、5：操作一次全部到位；
+		\item 长度为2、3：显然，先将2、3尽可能多的配对，一次消去一对。最后只剩2或者3：
+			\begin{enumerate}
+				\item 剩2，尽可能多的两个一消去，如果有剩余再操作一次；
+				\item 剩3，这个情况比较坑。实际上可以操作两次消去三个，如果有剩就再做一次。
+			\end{enumerate}
+	\end{enumerate}
+\end{sol}

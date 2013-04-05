@@ -1,0 +1,87 @@
+#include <cstdio>
+#include <cstring>
+#include <vector>
+using namespace std;
+
+const int NODE_MAX = 200000;
+
+struct Node {
+	Node *go[28], *pre;
+	bool marked;
+	int id;
+} node[NODE_MAX];
+int free_pos;
+
+Node *alloc() {
+	Node *x = node + free_pos ++;
+	x->marked = false;
+	memset(x->go, 0, sizeof(x->Go));
+}
+
+int des[22], des_len;
+vector<int> res;
+
+int conv(char ch) {
+	if ( 'a' <= ch && ch <= 'z' )
+		return ch - 'a';
+	else if ( ch == '?' )
+		return 26;
+	else
+		return 27;
+}
+
+void dfs(Node *x, int i) {
+	if ( i == des_len ) {
+		if ( x->marked )
+			res.push_back(x->id);
+		return;
+	}
+	if ( x == x->pre->go[conv('*')] )
+		dfs(x, i + 1);
+	if ( x->go[des[i]] )
+		dfs(x->go[des[i]], i + 1);
+	if ( x->go[conv('?')] )
+		dfs(x->go[conv('?')], i + 1);
+	if ( x->go[conv('*')] ) {
+		dfs(x->go[conv('*')], i);
+	}
+}
+
+int main() {
+	freopen("t.in", "r", stdin);
+	scanf("%d%d", &N, &M);
+	root = alloc();
+	for ( int i = 0; i < N; i ++ ) {
+		static char str[10];
+		scanf("%s", str);
+		int len = strlen(str);
+		Node *cur = root;
+		for ( int j = 0; j < len; j ++ ) {
+			int t = conv(str[j]);
+			if ( cur->go[t] == NULL)
+				cur->go[t] = alloc();
+			cur = cur->go[t];
+		}
+		cur->marked = true;
+		cur->id = i;
+	}
+	for ( int i = 0; i < M; i ++ ) {
+		static char str[22];
+		scanf("%s", str);
+		des_len = strlen(des);
+		for ( int i = 0; i < des_len; i ++ )
+			des[i] = conv(str[i]);
+		res.clear();
+		dfs(root, 0);
+		if ( res.size() == 0 )
+			printf("Not match\n");
+		else {
+			sort(res.begin(), res.end());
+			res.resize(unique(res.begin(), res.end()) - res.begin());
+			int sz = res.size();
+			for ( int k = 0; k < sz; k ++ )
+				printf("%d ", res[k]);
+			puts("");
+		}
+	}
+}

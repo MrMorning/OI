@@ -1,0 +1,68 @@
+digraph G {
+//	ranksep=.75;
+//	size = "4, 4";
+	node [/*fontname=Ubuntu Mono, */shape=box, color=greenyellow];
+	get_up [label="get up && hurry to the playground (6:30 - 6:40)"];
+	morning_exercise [label="morning exercise (6:40 - 6:50)"];
+	have_breakfast [label="have breakfast (6:50 - 7:10)"]
+	sort_room [label="do washing && sort out the room (7:10 - 7:30)"]
+   	get_up -> morning_exercise -> have_breakfast -> sort_room;
+
+	sort_room -> morning_class[weight=0.1];
+
+	morning_class [label="reading in the morning (7:30 - 8:00)"];
+	revise_words_and_phrases [label="revise words and phrases"];
+	memorize_classical_chinese_things [label="memorize classical Chinese writings and poems"];
+	morning_class -> revise_words_and_phrases [style=dotted, label="English?"];
+	morning_class -> memorize_classical_chinese_things [style=dotted, label="Chinese?"];
+
+
+	morning_classes [label="classes in the morning (8:00 - 12:10)"]
+	revise_words_and_phrases -> morning_classes
+	memorize_classical_chinese_things -> morning_classes
+
+	confusion [label="understand?", shape=diamond];
+	follow_teachers_steps [label="follow teacher's steps"];
+	ask_for_help [label="ask nearby classmates for help"];
+
+	drift [shape=ellipse, label="stay in drift"]
+	morning_classes -> follow_teachers_steps [style=dotted];
+	follow_teachers_steps -> confusion [weight=4];
+	confusion -> follow_teachers_steps [label="feel good"];
+	confusion -> ask_for_help [label="in such a muddle"];
+	ask_for_help -> drift [weight=4, label="still confused?"];
+	drift -> drift [label="zzz"];
+
+	have_lunch [label="have lunch (12:10 - 12:40)"];
+	build_vocabulary [label="build English vocabulary (12:40 - 13:00)"];
+	noon_nap [label="noon nap (13:00 - 13:50)"]
+	morning_classes -> have_lunch [weight=4];
+	have_lunch -> build_vocabulary;
+	build_vocabulary -> noon_nap;
+
+	afternoon_classes [label="afternoon classes (13:00 - 17:45)"]
+	noon_nap -> afternoon_classes;
+	afternoon_classes -> follow_teachers_steps [style=dotted];
+
+	dinner [label="dinner (17:45 - 18:30)"];
+	self_study [label="self-study (18:30 - 21:30)"];
+	programming_contests [label="enjoy!"];
+	buke [label="learning missed lessons"];
+	shuati [label="solve problems on OJ"];
+
+	afternoon_classes -> dinner;
+	dinner -> self_study;
+	self_study -> programming_contests [weight=5, label="has scheduled contests ?"]
+	self_study -> buke [weight=4, label="difficulty in subjects ?"];
+	self_study -> shuati [weight=3, label="still full of passion ?"];
+
+	run_to_end [label="1500m running (21:30 - 21:50)"];
+	back_to_dormitory [label="back to dormitory (21:50 - 23:00)"];
+	read_novels [label="read novels"];
+	enjoy_snack_food [label="share snack food"];
+	go_to_bed [label="go to bed"];
+
+	self_study -> run_to_end [label="run to end"];
+	run_to_end -> back_to_dormitory;
+	back_to_dormitory -> {read_novels; enjoy_snack_food; go_to_bed;}
+}
